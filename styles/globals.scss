@@ -5,9 +5,11 @@ body {
   background: #ffff;
   ::selection {
     background-color: #ff9c33;
+    color: #fff;
   }
   ::-moz-selection {
     background-color: #ff9c33;
+    color: #fff;
   }
 
   /* width */

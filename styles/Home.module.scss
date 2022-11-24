@@ -1,0 +1,1373 @@
+@import "./theme.scss";
+@import "../caros-cufonfonts-webfont/style.css";
+
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+@mixin transition($time) {
+  transition: all ease $time;
+}
+
+@mixin zero {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin inbetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin list {
+  @include zero;
+  list-style: none;
+}
+
+.HomeContainer {
+  font-family: "Caros Regular";
+  // font-weight: 600;
+  // padding: 0 2rem;
+  background: $background;
+  color: $text;
+
+  .nav {
+    padding: 0 5vw;
+    @include inbetween;
+    width: 100%;
+    height: 5vw;
+    background: $background;
+    color: $text;
+
+    img {
+      width: 10vw;
+    }
+
+    div {
+      width: 18vw;
+      font-size: 2vw;
+      @include inbetween;
+      cursor: pointer;
+
+      span {
+        width: 1vw;
+        height: 0.2vw;
+        position: relative;
+        border-radius: 1vw;
+        background-color: $text;
+        @include transition(0.2s);
+        cursor: pointer;
+
+        &::after {
+          position: absolute;
+          content: " ";
+          width: 1.3vw;
+          height: 0.2vw;
+          border-radius: 1vw;
+
+          right: 0;
+          background-color: $text;
+          top: -0.4vw;
+        }
+        &::before {
+          position: absolute;
+          content: " ";
+          border-radius: 1vw;
+
+          width: 1.3vw;
+          height: 0.2vw;
+          right: 0;
+          background-color: $text;
+          bottom: -0.4vw;
+        }
+
+        &:hover {
+          @include transition(0.2s);
+          width: 1.3vw;
+        }
+      }
+    }
+  }
+
+  main {
+    .Banner {
+      @include center;
+      flex-direction: column;
+
+      div {
+        @include center;
+        width: 80vw;
+
+        div {
+          cursor: default;
+          display: block;
+          ::selection {
+            background: none;
+          }
+
+          hr {
+            width: 5vw;
+            border: none;
+            margin: 0;
+            border-radius: 1.2vw;
+            height: 0.4vw;
+            background: $orange;
+            font-size: 3vw;
+          }
+          h2 {
+            width: 38vw;
+            font-size: 4.3vw;
+            color: $orange;
+            font-weight: 700;
+            line-height: 4.2vw;
+
+            font-family: "Caros ExtraBold";
+            span {
+              font-size: 3.8vw;
+              font-family: "Caros Bold";
+
+              color: $text;
+            }
+          }
+          p {
+            letter-spacing: 0.01vw;
+            font-size: 1.3vw;
+            width: 50vw;
+            text-align: left;
+          }
+
+          button {
+            cursor: pointer;
+            padding: 1vw 1.5vw;
+            background: $orangelight;
+            border: 0.1vw solid $orangedark;
+            border: none;
+            font-size: 1.3vw;
+            color: $background;
+            border-radius: 10vw;
+
+            &:first-of-type {
+              margin-right: 1vw;
+              color: $orangelight;
+              background: transparent;
+              border: 0.1vw solid $orangedark;
+            }
+          }
+        }
+
+        img {
+          width: 23vw;
+          height: max-content;
+        }
+      }
+    }
+    .we {
+      @include center;
+      flex-direction: column;
+      margin: 2vw 0;
+      hr {
+        width: 5vw;
+        border: none;
+        margin: 0;
+        border-radius: 1.2vw;
+        height: 0.4vw;
+        background: $orange;
+        font-size: 3vw;
+      }
+      h2 {
+        font-size: 2.3vw;
+        color: $textbold;
+        font-weight: 700;
+        font-family: "Caros ExtraBold";
+      }
+      p {
+        padding: 0 10vw;
+        letter-spacing: 0.01vw;
+        font-size: 1.3vw;
+        width: 90vw;
+        text-align: center;
+      }
+    }
+
+    .service {
+      @include center;
+      flex-direction: column;
+      hr {
+        margin: 0;
+        width: 5vw;
+        border: none;
+        border-radius: 1.2vw;
+        height: 0.4vw;
+        background: $orange;
+      }
+      h3 {
+        font-family: "Caros Bold";
+        // @include zero();
+        margin-bottom: 1vw;
+        opacity: 0.6;
+        font-size: 2.1vw;
+        color: $textbold;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        @include center;
+
+        li {
+          @include center;
+          flex-direction: column;
+          margin: 1vw;
+
+          div {
+            background: $orangeshade;
+            width: 8vw;
+            height: 8vw;
+            border-radius: 50%;
+            @include center;
+            img {
+              width: 12vw;
+              height: max-content;
+              // background: #0070f3;
+            }
+          }
+          p {
+            margin: 0;
+            padding: 0;
+            font-weight: 500;
+            width: 15vw;
+            font-size: 1.5vw;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .progress {
+      background: $orangeshade;
+      padding: 1vw 5vw;
+      ul {
+        list-style: none;
+        padding: 1vw 2vw;
+        background: $background;
+        border-radius: 0.2vw;
+        @include center;
+
+        li {
+          @include center;
+          flex-direction: column;
+          padding: 2vw 0;
+
+          h3 {
+            color: $orangedark;
+            font-size: 3.5vw;
+            font-family: "Caros ExtraBold";
+
+            @include zero;
+          }
+
+          h6 {
+            @include zero;
+            font-weight: 500;
+            width: 15vw;
+            font-size: 1.2vw;
+            text-align: center;
+          }
+        }
+
+        hr {
+          width: 0.01vw;
+          height: 10vw;
+          border-radius: 10vw;
+          opacity: 0.1;
+          border: none;
+          background: $orangelight;
+        }
+      }
+    }
+
+    .clients {
+      @include center;
+      // max-height: 20vw;
+      flex-direction: column;
+      width: 100%;
+
+      hr {
+        margin: 0;
+
+        width: 5vw;
+        border: none;
+        border-radius: 1.2vw;
+        height: 0.4vw;
+
+        background: $orange;
+        font-size: 3vw;
+      }
+      h2 {
+        opacity: 0.6;
+        font-family: "Caros ExtraBold";
+        margin-bottom: 1vw;
+        font-size: 2vw;
+        color: $textbold;
+      }
+
+      ul {
+        width: 100%;
+
+        list-style: none;
+        @include inbetween;
+        overflow-x: scroll;
+        padding: 0 1vw;
+        &::-webkit-scrollbar {
+          width: 0;
+        }
+        li {
+          @include center;
+          flex-direction: column;
+          div {
+            margin: 1vw;
+            box-shadow: 0px 26.9192px 35.8922px rgba(212, 217, 232, 0.2);
+            height: 5vw;
+            // background: #0070f3;
+            border-radius: 0.5vw;
+            width: 10vw;
+            img {
+              padding: 1vw;
+              width: 10vw;
+              height: 5vw;
+              object-fit: contain;
+            }
+          }
+        }
+        hr {
+          width: 0.01vw;
+          height: 10vw;
+          border-radius: 10vw;
+          opacity: 0.3;
+          border: none;
+          background: $orangelight;
+        }
+      }
+    }
+
+    .testimonial {
+      @include center;
+      flex-direction: column;
+      // max-height: 20vw;
+      background: $orangelight;
+      hr {
+        height: 0.01vw;
+        width: 70vw;
+        border-radius: 10vw;
+        opacity: 0.3;
+        border: none;
+        background: $background;
+        // border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 100px 26000.9192px 30005.8922px rgba(0, 0, 0, 0.712);
+      }
+
+      h2 {
+        font-family: "Caros Bold";
+        margin-bottom: 1vw;
+        font-size: 2.1vw;
+        color: $background;
+      }
+
+      .carousel {
+        display: flex;
+        div {
+          margin: 1vw;
+          .comment {
+            width: 40vw;
+            height: 15vw;
+            background: $background;
+            padding: 1vw;
+            position: relative;
+            text-align: center;
+            border-radius: 1vw;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0;
+              height: 0;
+              border-left: 1vw solid transparent;
+              border-right: 1vw solid transparent;
+
+              border-top: 1.5vw solid $background;
+              bottom: -1.5vw;
+              left: 5vw;
+            }
+            p {
+              font-size: 1.2vw;
+            }
+          }
+          .author {
+            margin-left: 4vw;
+            margin-top: 3vw;
+            display: flex;
+            img {
+              margin-right: 1vw;
+              width: 5vw;
+              border-radius: 50%;
+              height: 5vw;
+            }
+            b {
+              @include zero;
+              font-size: 1.5vw;
+              letter-spacing: 0.02vw;
+              color: $background;
+            }
+            p {
+              @include zero;
+              letter-spacing: 0.02vw;
+              font-size: 1.2vw;
+              color: $background;
+            }
+          }
+        }
+      }
+    }
+
+    .project {
+      @include center;
+      flex-direction: column;
+      margin: 2vw 0;
+      hr {
+        width: 6vw;
+        border: none;
+        margin: 0;
+
+        border-radius: 1.2vw;
+        height: 0.4vw;
+        background: $orange;
+        font-size: 3vw;
+      }
+      h3 {
+        margin: 1vw 0;
+        font-size: 2vw;
+        color: $textbold;
+      }
+      div {
+        @include around();
+        width: 80vw;
+        margin: 1vw 0;
+        ul {
+          list-style: none;
+          @include zero;
+          width: 55vw;
+          display: flex;
+          align-items: stretch;
+          li {
+            @include center();
+            // width: 20vw;
+            flex-direction: column;
+            img {
+              padding: 0.2vw;
+            }
+
+            &:nth-child(1) {
+              img {
+                height: max-content;
+                &:nth-child(1) {
+                  width: 15vw;
+                }
+                &:nth-child(2) {
+                  width: 15vw;
+                }
+              }
+            }
+            &:nth-child(2) {
+              img {
+                height: max-content;
+                &:nth-child(1) {
+                  width: 11vw;
+                }
+                &:nth-child(2) {
+                  width: 11.4vw;
+                }
+                &:nth-child(3) {
+                  width: 11vw;
+                }
+              }
+            }
+            &:nth-child(3) {
+              img {
+                height: max-content;
+                &:nth-child(1) {
+                  width: 16vw;
+                }
+                &:nth-child(2) {
+                  margin-top: 1vw;
+                  width: 16vw;
+                }
+              }
+            }
+          }
+        }
+        div {
+          width: 30vw;
+          display: block;
+          h6 {
+            font-size: 1.2vw;
+            opacity: 0.3;
+          }
+          h2 {
+            opacity: 0.8;
+            font-size: 2.5vw;
+          }
+
+          h5 {
+            font-size: 1.3vw;
+          }
+          button {
+            padding: 1vw;
+            background: #ffba3c;
+            border: none;
+            font-size: 1.2vw;
+            box-shadow: 0px 5.36886px 10.7377px rgba(255, 143, 26, 0.25);
+            border-radius: 0.4vw;
+          }
+        }
+
+        &:last-of-type {
+          // @include center();
+          ul {
+            justify-content: end;
+            align-items: flex-end;
+            li {
+              @include center();
+              // width: 20vw;
+              flex-direction: column;
+              img {
+                filter: drop-shadow(0px 0.1vw 0.3vw #ffd3a6);
+                padding: -2vw;
+              }
+
+              &:nth-child(1) {
+                img {
+                  height: max-content;
+                  &:nth-child(1) {
+                    width: 10vw;
+                    filter: drop-shadow(0px 0.2vw 0.8vw #ffd3a600);
+                  }
+                  &:nth-child(2) {
+                    width: 10vw;
+                  }
+                }
+              }
+              &:nth-child(2) {
+                img {
+                  height: max-content;
+                  &:nth-child(1) {
+                    width: 7vw;
+                  }
+                  &:nth-child(2) {
+                    width: 7.5vw;
+                  }
+                }
+              }
+              &:nth-child(3) {
+                img {
+                  height: max-content;
+                  &:nth-child(1) {
+                    width: 8vw;
+                  }
+                  &:nth-child(2) {
+                    width: 7vw;
+                  }
+                }
+              }
+              &:nth-child(4) {
+                img {
+                  height: max-content;
+                  &:nth-child(1) {
+                    width: 7vw;
+                  }
+                  &:nth-child(2) {
+                    width: 7vw;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .projectM {
+      display: none;
+    }
+
+    .contact {
+      @include around();
+      margin: 5vw 0;
+
+      div {
+        @include center;
+        flex-direction: column;
+        width: 40vw;
+
+        hr {
+          margin: 0;
+          width: 5vw;
+          border: none;
+          border-radius: 1.2vw;
+          height: 0.4vw;
+          background: $orange;
+          font-size: 3vw;
+        }
+        h3 {
+          opacity: 0.8;
+          font-size: 2vw;
+          color: $textbold;
+        }
+      }
+      align-items: flex-start;
+
+      ul {
+        @include list();
+        @include inbetween();
+        align-items: flex-start;
+        // background: #fcc220;
+        li {
+          width: 12vw;
+          @include center();
+          flex-direction: column;
+          img {
+            width: 4vw;
+            border-radius: 1vw;
+            height: 4vw;
+            background: $orangeshade;
+            padding: 1vw;
+            margin: 1vw;
+          }
+          p {
+            text-align: center;
+            @include zero();
+            font-size: 1vw;
+            font-family: "Caros ExtraLight";
+          }
+        }
+      }
+    }
+
+    .belowbanner {
+      @include center();
+      flex-direction: column;
+      background: linear-gradient(
+        89.99deg,
+        #ff9c33 12.34%,
+        #fcc220 110.97%,
+        rgba(252, 194, 32, 0.34) 110.97%
+      );
+      color: $background;
+      padding: 1.5vw;
+      h4 {
+        font-size: 2vw;
+        @include zero;
+      }
+      b {
+        margin: 0.5vw;
+
+        font-size: 1.5vw;
+      }
+      button {
+        margin: 1vw;
+        padding: 1vw;
+        background: $orangelight;
+        border: none;
+        font-size: 1.3vw;
+        border-radius: 0.4vw;
+      }
+    }
+  }
+}
+
+.footer {
+  @include around;
+  padding: 4vw;
+  div {
+    width: 20vw;
+
+    img {
+      width: 10vw;
+      height: max-content;
+    }
+    p {
+      font-size: 1vw;
+    }
+  }
+  ul {
+    @include list;
+    width: 20vw;
+
+    li {
+      text-align: left;
+      padding: 0.2vw;
+      font-size: 1.1vw;
+
+      &:first-child {
+        // background: #0070f3;
+        padding: 1.2vw 0;
+        font-size: 1.5vw;
+        font-weight: 500;
+      }
+      span {
+        color: aqua;
+      }
+
+      img {
+        width: 2vw;
+        margin-right: 1.5vw;
+        height: max-content;
+      }
+    }
+  }
+}
+.bottom {
+  background: $textbold;
+  color: $background;
+  padding: 1vw;
+  font-size: 1.2vw;
+  @include center();
+}
+
+@media screen and (max-width: 600px) {
+  .HomeContainer {
+    .nav {
+      padding: 0 5vw;
+      height: max-content;
+      img {
+        width: 30vw;
+        height: max-content;
+      }
+      div {
+        width: 40vw;
+        font-size: 4.8vw;
+        span {
+          width: 2vw;
+          height: 0.5vw;
+
+          &::after {
+            width: 3.3vw;
+            height: 0.5vw;
+
+            top: -1.2vw;
+          }
+          &::before {
+            width: 3.3vw;
+            height: 0.5vw;
+            bottom: -1.2vw;
+          }
+
+          &:hover {
+            width: 3.3vw;
+          }
+        }
+      }
+    }
+
+    main {
+      .Banner {
+        @include center;
+        flex-direction: column;
+
+        div {
+          @include center;
+          width: 90vw;
+
+          div {
+            position: relative;
+            cursor: default;
+            display: block;
+            ::selection {
+              background: none;
+            }
+
+            h2 {
+              width: 38vw;
+              font-size: 4.3vw;
+              color: $orange;
+              font-weight: 700;
+              line-height: 4.2vw;
+
+              font-family: "Caros ExtraBold";
+              span {
+                font-size: 3.8vw;
+                font-family: "Caros Bold";
+
+                color: $text;
+              }
+            }
+            p {
+              letter-spacing: 0.01vw;
+              font-size: 2.2vw;
+              width: 60vw;
+              text-align: start;
+            }
+
+            button {
+              cursor: pointer;
+              padding: 1vw 1.5vw;
+              background: $orangelight;
+              border: 0.1vw solid $orangedark;
+              border: none;
+              font-size: 2.3vw;
+              color: $background;
+              border-radius: 1vw;
+
+              &:first-of-type {
+                display: none;
+              }
+            }
+          }
+
+          img {
+            position: absolute;
+            width: 45vw;
+            right: 0;
+            height: max-content;
+          }
+        }
+      }
+      .we {
+        margin: 0 4vw;
+        flex-direction: column;
+        display: block;
+        hr {
+          margin-top: 5vw;
+          height: 0.8vw;
+          width: 15vw;
+        }
+        h2 {
+          font-size: 5vw;
+        }
+        p {
+          @include zero();
+          text-align: left;
+          font-size: 3vw;
+        }
+      }
+
+      .service {
+        margin: 0 4vw;
+
+        display: block;
+        flex-direction: column;
+        hr {
+          margin-top: 5vw;
+          height: 0.8vw;
+          width: 15vw;
+        }
+        h3 {
+          opacity: 0.6;
+          font-size: 5.3vw;
+          color: $textbold;
+        }
+
+        ul {
+          flex-wrap: wrap;
+          li {
+            @include center;
+            flex-direction: column;
+            margin: 5vw;
+            img {
+              min-width: 20vw;
+            }
+            p {
+              margin-top: 3vw;
+              width: 20vw;
+              font-size: 3vw;
+            }
+          }
+        }
+      }
+
+      .progress {
+        ul {
+          @include center;
+          flex-direction: column;
+          border-radius: 1vw;
+
+          li {
+            flex-direction: column;
+            padding: 2vw 0;
+
+            h3 {
+              font-size: 10.5vw;
+            }
+
+            h6 {
+              font-size: 3.5vw;
+              width: max-content;
+              font-weight: 500;
+              text-align: center;
+            }
+          }
+
+          hr {
+            height: 0.4vw;
+            width: 60vw;
+          }
+        }
+      }
+
+      .clients {
+        display: block;
+        hr {
+          margin-left: 4vw;
+
+          margin-top: 5vw;
+          height: 0.8vw;
+          width: 15vw;
+        }
+        h2 {
+          margin-left: 4vw;
+
+          opacity: 1;
+          font-size: 5.3vw;
+        }
+
+        ul {
+          list-style: none;
+          @include inbetween;
+          overflow-x: scroll;
+          padding: 0 1vw;
+          &::-webkit-scrollbar {
+            width: 0;
+          }
+          li {
+            @include center;
+            flex-direction: column;
+            div {
+              margin: 2vw;
+              box-shadow: 0px 26.9192px 35.8922px rgba(212, 217, 232, 0.2);
+              height: 15vw;
+              // background: #0070f3;
+              border-radius: 0.5vw;
+              width: 30vw;
+              img {
+                padding: 2vw;
+                width: 30vw;
+                height: 15vw;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+      }
+
+      .testimonial {
+        @include center;
+        flex-direction: column;
+        // max-height: 20vw;
+        background: $orangelight;
+        hr {
+          height: 0.7vw;
+          width: 70vw;
+          border-radius: 10vw;
+          opacity: 0.3;
+          border: none;
+          background: $background;
+          // border: 1px solid rgba(255, 255, 255, 0.3);
+          box-shadow: 100px 26000.9192px 30005.8922px rgba(0, 0, 0, 0.712);
+        }
+
+        h2 {
+          font-family: "Caros Bold";
+          margin-bottom: 1vw;
+          font-size: 4vw;
+          letter-spacing: 0.02vw;
+          color: $background;
+        }
+
+        .carousel {
+          display: flex;
+          width: 100%;
+          overflow-x: scroll;
+          div {
+            margin: 1vw;
+            .comment {
+              width: 70vw;
+              height: 30vw;
+              padding: 2vw;
+
+              &::after {
+                border-left: 2vw solid transparent;
+                border-right: 2vw solid transparent;
+
+                border-top: 2.5vw solid $background;
+                bottom: -2vw;
+                left: 10vw;
+              }
+              b {
+                font-size: 3.8vw;
+              }
+              p {
+                font-size: 2.2vw;
+              }
+            }
+            .author {
+              margin-left: 8vw;
+              margin-top: 1vw;
+              display: flex;
+              img {
+                margin-right: 1vw;
+                width: 10vw;
+                margin-top: 3vw;
+
+                border-radius: 50%;
+                height: 10vw;
+              }
+              b {
+                @include zero;
+                font-size: 3.5vw;
+                letter-spacing: 0.1vw;
+                color: $background;
+              }
+              p {
+                @include zero;
+                letter-spacing: 0.03vw;
+                font-size: 2.6vw;
+                font-weight: 200;
+                color: $background;
+              }
+            }
+          }
+        }
+      }
+
+      .project {
+        display: none;
+      }
+
+      .projectM {
+        @include center;
+        flex-direction: column;
+        display: block;
+        margin: 5vw;
+        hr {
+          width: 15vw;
+          border: none;
+          margin: 0;
+          border-radius: 1.2vw;
+          height: 0.4vw;
+          background: $orange;
+        }
+        h3 {
+          margin: 2vw 0;
+          font-size: 4.5vw;
+          color: $textbold;
+          margin-bottom: 5vw;
+          font-family: "Caros ExtraBold";
+        }
+        div {
+          display: flex;
+          flex-wrap: wrap;
+          width: 90vw;
+          margin: 1vw 0;
+
+          // @include center();
+          // width: 20vw;
+          // flex-direction: column;
+          img {
+            padding: 1vw;
+            width: 10vw;
+            // width: 100%;
+            border-radius: 2vw;
+
+            height: max-content;
+
+            &:nth-child(2) {
+              width: 35vw;
+            }
+            &:nth-child(3) {
+              width: 41vw;
+            }
+
+            &:nth-child(5) {
+              width: 32vw;
+            }
+          }
+
+          span {
+            display: flex;
+            flex-direction: column;
+
+            br {
+              width: 0;
+            }
+            img {
+              &:nth-child(1) {
+                width: 17vw;
+              }
+              &:nth-child(2) {
+                margin-top: 0.8vw;
+                width: 17vw;
+              }
+            }
+          }
+
+          div {
+            width: 55vw;
+            display: block;
+            h6 {
+              font-size: 3.2vw;
+              opacity: 0.3;
+              @include zero;
+            }
+            h2 {
+              opacity: 0.8;
+              font-size: 4.5vw;
+              @include zero;
+              margin-top: 0.5vw;
+              font-family: "Caros ExtraBold";
+            }
+            h5 {
+              @include zero;
+              margin-top: 1vw;
+              font-size: 3.5vw;
+              font-family: "Caros Light";
+            }
+            button {
+              padding: 1.5vw;
+              background: #ffba3c;
+              margin-top: 2vw;
+              border: none;
+              font-size: 3.2vw;
+              box-shadow: 0px 5.36886px 10.7377px rgba(255, 143, 26, 0.25);
+              border-radius: 1vw;
+            }
+          }
+
+          &:last-of-type {
+            // @include center();
+
+            div {
+              width: 50vw;
+              padding: 2vw;
+            }
+            img {
+              padding: 1vw;
+              width: 10vw;
+              // width: 100%;
+              border-radius: 2vw;
+
+              height: max-content;
+
+              &:nth-child(1) {
+                width: 20vw;
+              }
+              &:nth-child(2) {
+                width: 20vw;
+              }
+              &:nth-child(4) {
+                width: 38vw;
+              }
+
+              &:nth-child(6) {
+                width: 32vw;
+              }
+            }
+
+            span {
+              display: flex;
+              flex-direction: column;
+
+              br {
+                width: 0;
+              }
+              img {
+                &:nth-child(1) {
+                  width: 20vw;
+                }
+                &:nth-child(2) {
+                  margin-top: 0.8vw;
+                  width: 20vw;
+                }
+              }
+            }
+          }
+        }
+        .Time {
+          margin: 5vw 0;
+          height: 90vw;
+          overflow-y: hidden;
+        }
+      }
+
+      .contact {
+        @include center();
+        width: 100%;
+        flex-direction: column;
+        // background: #ff9c33;
+
+        div {
+          margin: 2vw 0;
+          @include center;
+          width: 100%;
+
+          &:last-child {
+            display: flex;
+            hr {
+              margin: 0;
+              width: 15vw;
+              border: none;
+              border-radius: 1.2vw;
+              height: 0.5vw;
+              font-size: 3vw;
+            }
+            ul {
+              @include center();
+              width: max-content;
+              li {
+                width: 10vw;
+                margin: 0 2vw;
+
+                img {
+                  width: 10vw;
+                  height: 10vw;
+                  padding: 3vw;
+                }
+                p {
+                  font-size: 2vw;
+                }
+              }
+            }
+          }
+          hr {
+            margin: 0;
+            width: 15vw;
+            border: none;
+            border-radius: 1.2vw;
+            height: 0.4vw;
+            font-size: 3vw;
+          }
+          h3 {
+            opacity: 1;
+            font-size: 3.5vw;
+          }
+        }
+
+        ul {
+          li {
+            width: 30vw;
+            @include center();
+            flex-direction: column;
+            img {
+              width: 10vw;
+              height: 10vw;
+              padding: 3vw;
+            }
+            p {
+              font-size: 2vw;
+            }
+          }
+        }
+      }
+
+      .belowbanner {
+        padding: 1.5vw;
+        h4 {
+          font-size: 3vw;
+          @include zero;
+          letter-spacing: 0.2vw;
+        }
+        b {
+          margin: 0.5vw;
+          letter-spacing: 0.2vw;
+
+          font-size: 2.5vw;
+        }
+        button {
+          margin: 2vw;
+          padding: 2vw;
+          background: $orangelight;
+          letter-spacing: 0.1vw;
+          border: none;
+          font-size: 3vw;
+          border-radius: 0.4vw;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 5vw;
+    div {
+      width: 100vw;
+      img {
+        width: 35vw;
+        height: max-content;
+      }
+      p {
+        font-size: 3vw;
+      }
+    }
+    ul {
+      width: 40vw;
+      li {
+        text-align: left;
+        font-size: 3.5vw;
+        padding: 1.2vw 0;
+        &:first-child {
+          // background: #0070f3;
+          padding: 3.2vw 0;
+          font-size: 4.5vw;
+          font-weight: 600;
+        }
+        span {
+          color: aqua;
+        }
+
+        img {
+          height: max-content;
+          width: 2vw;
+          margin-right: 1.5vw;
+          height: max-content;
+        }
+      }
+
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+
+  .bottom {
+    padding: 1.5vw;
+    font-size: 4.2vw;
+  }
+}
+
+// @media (prefers-color-scheme: dark) {
+//   .card,
+//   .footer {
+//     border-color: #222;
+//   }
+//   .code {
+//     background: #111;
+//   }
+//   .logo img {
+//     filter: invert(1);
+//   }
+// }

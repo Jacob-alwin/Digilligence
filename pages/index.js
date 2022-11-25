@@ -471,21 +471,11 @@ export default function Home() {
             alt="Your Name"
           />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-            libero consequuntur in ipsa sapiente dolorem sunt a dicta quasi
-            maiores magni repellat, eum omnis numquam est corrupti quae suscipit
-            dolorum.
+            Thane's Best Digital Marketing agency that believes in taking your
+            ideas to the pinnacle of success.
           </p>
         </div>
-        <ul>
-          <li>Quick Links</li>
-          <li>Our Work</li>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>
-            Careers <span>We're hiring</span>
-          </li>
-        </ul>
+
         <ul>
           <li>Services</li>
           <li>Social Media Marketing</li>
@@ -494,6 +484,15 @@ export default function Home() {
           <li>Website Development</li>
           <li>UI/UX Designing</li>
           <li>Search Engine Optimization </li>
+        </ul>
+        <ul>
+          <li>Quick Links</li>
+          <li>Our Work</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>
+            Careers <span>We're hiring</span>
+          </li>
         </ul>
         <ul>
           <li>Reach us</li>

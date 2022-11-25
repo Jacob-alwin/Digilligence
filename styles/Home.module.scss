@@ -1,5 +1,6 @@
 @import "./theme.scss";
 @import "../caros-cufonfonts-webfont/style.css";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 
 @mixin bordered($color, $width) {
   border: $width solid $color;
@@ -730,7 +731,8 @@
         font-weight: 500;
       }
       span {
-        color: aqua;
+        color: #2ec5ce;
+        font-family: "Nanum Pen Script", cursive;
       }
 
       img {
@@ -857,10 +859,12 @@
           width: 15vw;
         }
         h2 {
+          margin-top: 1.5vw;
           font-size: 5vw;
         }
         p {
           @include zero();
+
           text-align: left;
           font-size: 3vw;
         }
@@ -872,7 +876,7 @@
         display: block;
         flex-direction: column;
         hr {
-          margin-top: 5vw;
+          margin-top: 1vw;
           height: 0.8vw;
           width: 15vw;
         }
@@ -894,6 +898,7 @@
             p {
               margin-top: 3vw;
               width: 20vw;
+              font-family: "Caros Light";
               font-size: 3vw;
             }
           }
@@ -1083,44 +1088,40 @@
           flex-wrap: wrap;
           width: 90vw;
           margin: 1vw 0;
-
-          // @include center();
-          // width: 20vw;
-          // flex-direction: column;
           img {
-            padding: 1vw;
             width: 10vw;
-            // width: 100%;
-            border-radius: 2vw;
 
             height: max-content;
 
             &:nth-child(2) {
+              border-radius: 4vw 4vw 0 0;
               width: 35vw;
             }
             &:nth-child(3) {
-              width: 41vw;
+              border-radius: 4vw 0vw 0 4vw;
+              width: 40.4vw;
             }
 
             &:nth-child(5) {
-              width: 32vw;
+              border-radius: 0 0vw 4vw 0;
+              width: 31vw;
             }
           }
 
           span {
             display: flex;
             flex-direction: column;
+            padding: 1vw;
 
             br {
               width: 0;
             }
             img {
               &:nth-child(1) {
-                width: 17vw;
+                width: 16.6vw;
               }
               &:nth-child(2) {
-                margin-top: 0.8vw;
-                width: 17vw;
+                width: 16.6vw;
               }
             }
           }
@@ -1207,7 +1208,7 @@
           }
         }
         .Time {
-          margin: 5vw 0;
+          margin: 10vw 0 0 0;
           height: 90vw;
           overflow-y: hidden;
         }
@@ -1335,9 +1336,13 @@
           padding: 3.2vw 0;
           font-size: 4.5vw;
           font-weight: 600;
+          position: relative;
         }
         span {
-          color: aqua;
+          position: absolute;
+          margin-left: 0.8vw;
+          margin-top: -0.8vw;
+          font-size: 5.2vw;
         }
 
         img {
@@ -1350,13 +1355,22 @@
 
       &:last-child {
         width: 100%;
+
+        li {
+          display: flex;
+          align-items: center;
+        }
+        img {
+          width: 5vw;
+        }
       }
     }
   }
 
   .bottom {
     padding: 1.5vw;
-    font-size: 4.2vw;
+    letter-spacing: 0.1vw;
+    font-size: 2.5vw;
   }
 }
 

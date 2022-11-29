@@ -1,13 +1,27 @@
-$background:#ffff;
-$text:#000;
-$texthead:#18191F;
-$textbold:#263238;
-$textshade:#50585E;
-$orange:#FF8F1A;
-$orangedark:#FF8300;
-$orangebutton:#FFBA3C;
-$orangelight:#FF9C33;
-$orangeback:#FFB566;
-$orangestroke:#FF870A;
-$orangeshade:#FFE3C5;
-// $gradiant:
+// @if (2==3) {
+$background: #ffff;
+$text: #000;
+$texthead: #18191f;
+$textbold: #263238;
+$textshade: #50585e;
+$orange: #ff8f1a;
+$orangedark: #ff8300;
+$orangebutton: #ffba3c;
+$orangelight: #ff9c33;
+$orangeback: #ffb566;
+$orangestroke: #ff870a;
+$orangeshade: #ffe3c5;
+// }
+// @else {
+// $background: #18191f;
+// $text: #ffff;
+// $textbold: rgb(245, 245, 245);
+// $textshade: #f1f1f1;
+// $orange: #ff8f1a;
+// $orangedark: #ff8300;
+// $orangebutton: #ffba3c;
+// $orangelight: #ff9c33;
+// $orangeback: #ffb566;
+// $orangestroke: #ff870a;
+// $orangeshade: #ffe3c5;
+// }

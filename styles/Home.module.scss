@@ -235,25 +235,32 @@
           @include center;
           flex-direction: column;
           margin: 1vw;
+          height: 20vw;
 
-          div {
+          .back {
             background: $orangeshade;
-            width: 13vw;
-            height: 13vw;
-            border-radius: 50%;
             @include center;
+            width: 8vw;
+            height: 8vw;
+            border-radius: 50%;
             img {
-              width: 12vw;
-              height: max-content;
-              margin-bottom: 2.5vw;
-              // background: #0070f3;
+              width: 10vw;
+              height: 10vw;
+              object-fit: contain;
             }
           }
+
+          // &:nth-child(2) {
+          //   img {
+          //     width: 20vw;
+          //   }
+          // }
           p {
             margin: 0;
             padding: 0;
             font-weight: 500;
             width: 15vw;
+            margin-top: 1.5vw;
             font-size: 1.5vw;
             text-align: center;
           }
@@ -415,23 +422,28 @@
               bottom: -1.5vw;
               left: 5vw;
             }
+            b {
+              font-size: 1.6vw;
+            }
             p {
               font-size: 1.2vw;
             }
           }
           .author {
-            margin-left: 4vw;
-            margin-top: 3vw;
+            margin-left: 4.5vw;
+            margin-top: 1vw;
             display: flex;
+            align-items: center;
             img {
               margin-right: 1vw;
+              margin-top: 1.5vw;
               width: 5vw;
               border-radius: 50%;
               height: 5vw;
             }
             b {
               @include zero;
-              font-size: 1.5vw;
+              font-size: 1.2vw;
               letter-spacing: 0.02vw;
               color: $background;
             }
@@ -723,7 +735,8 @@
       text-align: left;
       padding: 0.2vw;
       font-size: 1.1vw;
-
+      display: flex;
+      align-items: center;
       &:first-child {
         // background: #0070f3;
         padding: 1.2vw 0;
@@ -1117,10 +1130,13 @@
               width: 0;
             }
             img {
+              padding: 0.5vw;
+
               &:nth-child(1) {
                 width: 16.6vw;
               }
               &:nth-child(2) {
+                border-radius: 0vw 0;
                 width: 16.6vw;
               }
             }

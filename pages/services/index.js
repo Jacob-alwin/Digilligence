@@ -1,10 +1,11 @@
-import { imageConfigDefault } from "next/dist/shared/lib/image-config";
+// import { imageConfigDefault } from "next/dist/shared/lib/image-config";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/Services.module.scss";
-import { clients, comments, service } from "../../data/image";
-import Script from "next/script";
+// import { clients, comments, service } from "../../data/image";
+// import Script from "next/script";
 import CountUp from "react-countup";
+// import 'react-select/dist/react-select.css'
 
 // import Size from "../utils/ScreenSize";
 

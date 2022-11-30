@@ -4,7 +4,7 @@ import styles from "../../styles/AboutUs.module.scss";
 
 // import Size from "../utils/ScreenSize";
 
-export default function Home() {
+export default function AboutUs() {
   return (
     <div className={styles.HomeContainer}>
       <Head>
@@ -15,13 +15,6 @@ export default function Home() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-        <link
-          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-          rel="stylesheet"
-        />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-        <script>AOS.init();</script>
       </Head>
 
       <nav className={styles.nav}>
@@ -69,49 +62,23 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.we}>
-          <Image
-            src="/./images/Banner/1.png" // Route of the image file
-            height={144} //Desired size with correct aspect ratio
-            width={144} // Desired size with correct aspect ratio
-            alt="Your Name"
-            className="animate__animated animate__jackInTheBox"
-          />
           <div>
             <hr />
-            <h2>We are Digiligence</h2>
-            <p>
-              We're a team of Young Guns lead by our Founder Mr. Mervin Agera
-              who believes in the tech revolution and understands the importance
-              of delivery timely results to all the client.
-            </p>
-            <p>
-              who believes in the tech revolution and understands the importance
-              of delivery timely results to all the client.
-            </p>
-          </div>
-        </section>{" "}
-        <section className={styles.we}>
-          <div>
+            <h2>Our Process</h2>
             <hr />
-            <h2>We are Digiligence</h2>
+          </div>
+
+          <div>
+            <img src="" alt="" />
+            <h5>Strategize</h5>
             <p>
-              We're a team of Young Guns lead by our Founder Mr. Mervin Agera
-              who believes in the tech revolution and understands the importance
-              of delivery timely results to all the client.
-            </p>
-            <p>
-              who believes in the tech revolution and understands the importance
-              of delivery timely results to all the client.
+              After analyzing your requirements, our team will strategize & come
+              with the Plan of Action. We begin quick by hunting the results
+              needed to deliver immediate value, exceed expectations & out grow
+              your competition!
             </p>
           </div>
-          <Image
-            src="/./images/Banner/1.png" // Route of the image file
-            height={144} //Desired size with correct aspect ratio
-            width={144} // Desired size with correct aspect ratio
-            alt="Your Name"
-            className="animate__animated animate__jackInTheBox"
-          />
-        </section>{" "}
+        </section>
         <section className={styles.we}>
           <Image
             src="/./images/Banner/1.png" // Route of the image file
@@ -121,16 +88,63 @@ export default function Home() {
             className="animate__animated animate__jackInTheBox"
           />
           <div>
+            <h2>What we do</h2>
             <hr />
-            <h2>We are Digiligence</h2>
             <p>
               We're a team of Young Guns lead by our Founder Mr. Mervin Agera
               who believes in the tech revolution and understands the importance
               of delivery timely results to all the client.
             </p>
             <p>
-              who believes in the tech revolution and understands the importance
-              of delivery timely results to all the client.
+              Building an Enterprise is still a matter of paperwork, but there's
+              alot that goes in order to turn it into a Brand. We will build
+              that Brand for you at Digilligence.
+            </p>
+          </div>
+        </section>
+        <section className={styles.we}>
+          <div>
+            <h2>Our Mission</h2>
+            <hr />
+            <p>
+              We are on a Mission to provide Digital Business Solutions for all
+              types of industries across the globe and help them stand on their
+              feet.
+            </p>
+            <p>
+              Our team is set on a Mission to Build Brands of tomorrow by
+              understanding our client's goals & working towards achieving it.
+              The Mission mainly includes helping Small Business and Startups
+              reach new heights with the help of our Digital Services!
+            </p>
+          </div>
+          <Image
+            src="/./images/Banner/1.png" // Route of the image file
+            height={144} //Desired size with correct aspect ratio
+            width={144} // Desired size with correct aspect ratio
+            alt="Your Name"
+            className="animate__animated animate__jackInTheBox"
+          />
+        </section>
+        <section className={styles.we}>
+          <Image
+            src="/./images/Banner/1.png" // Route of the image file
+            height={144} //Desired size with correct aspect ratio
+            width={144} // Desired size with correct aspect ratio
+            alt="Your Name"
+            className="animate__animated animate__jackInTheBox"
+          />
+          <div>
+            <h2>Our Vision</h2>
+            <hr />
+            <p>
+              We have Vision to help India reach the pinnacle of Digital success
+              and contribute towards the growth of the nation. We believe in
+              Mutual Growth; the organization plans on growing Internationally.
+            </p>
+            <p>
+              With a futuristic vision, Team Digilligence looks to Cater to a
+              wider audience with Empirical approach towa
             </p>
           </div>
         </section>

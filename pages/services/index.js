@@ -2,14 +2,18 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/Services.module.scss";
-// import { clients, comments, service } from "../../data/image";
-// import Script from "next/script";
 import CountUp from "react-countup";
-// import 'react-select/dist/react-select.css'
-
 // import Size from "../utils/ScreenSize";
 
-export default function Home() {
+export default function Services() {
+  // .box {
+  //   width: 500px;
+  //   height: 100px;
+  //   border: solid 5px #000;
+  //   border-color: #000 transparent transparent transparent;
+  //   border-radius: 50%/100px 100px 0 0;
+  // }
+
   return (
     <div className={styles.HomeContainer}>
       <Head>
@@ -20,13 +24,6 @@ export default function Home() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-        <link
-          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-          rel="stylesheet"
-        />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-        <script>AOS.init();</script>
       </Head>
 
       <nav className={styles.nav}>
@@ -90,6 +87,8 @@ export default function Home() {
             <h6>Identify the Target Audience</h6>
           </div>
         </section>
+
+
         <section className={styles.we}>
           <Image
             src="/./images/Banner/1.png" // Route of the image file
@@ -119,6 +118,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+
 
         <section className={styles.we}>
           <div>
@@ -288,6 +288,7 @@ export default function Home() {
           </div>
         </section>
 
+  
         <section className={styles.belowbanner}>
           <b>Let's connect over a cup of coffe</b>
           <button type="" data-aos="zoom-in">

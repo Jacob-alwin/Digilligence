@@ -825,6 +825,8 @@
 
 @media screen and (max-width: 600px) {
   .HomeContainer {
+    width: 100vw;
+    overflow-x: hidden;
     .nav {
       padding: 0 5vw;
       height: max-content;
@@ -1415,7 +1417,7 @@
         }
         span {
           position: absolute;
-          margin-left: 0.8vw;
+          margin-left: 15vw;
           margin-top: -0.8vw;
           font-size: 5.2vw;
         }

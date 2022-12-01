@@ -45,12 +45,13 @@ export default function Home() {
         />
 
         <div>
+          <h6></h6>
           <h6>
             <Link href="/aboutus">About Us</Link>
           </h6>
-          <h6>
+          {/* <h6>
             <Link href="/clients">Clients</Link>
-          </h6>
+          </h6> */}
           <span></span>
         </div>
       </header>

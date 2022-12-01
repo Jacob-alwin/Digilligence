@@ -1,12 +1,13 @@
 import { imageConfigDefault } from "next/dist/shared/lib/image-config";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.scss";
-import { clients, comments, service } from "../data/image";
+import styles from "../../styles/Clients.module.scss";
+import { clients, comments, service } from "../../data/home";
 import Script from "next/script";
 import CountUp from "react-countup";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 // import Size from "../utils/ScreenSize";
 
@@ -41,9 +42,16 @@ export default function Clients() {
         />
 
         <div>
-          <h6>Clients</h6>
-          <h6>Contact</h6>
-          <span></span>
+          <h6>
+            <Link href="/">Home</Link>
+          </h6>
+          <h6>
+            <Link href="/aboutus">About Us</Link>
+          </h6>
+          <h6>
+            <Link href="/clients">Contact</Link>
+          </h6>
+          {/* <span></span> */}
         </div>
       </nav>
       <main>

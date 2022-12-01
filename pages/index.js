@@ -7,6 +7,7 @@ import Script from "next/script";
 import CountUp from "react-countup";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 // import Size from "../utils/ScreenSize";
 
@@ -44,12 +45,20 @@ export default function Home() {
         />
 
         <div>
-          <h6>Clients</h6>
-          <h6>Contact</h6>
-          <span></span>
+          <h6>
+            <Link href="/aboutus">About Us</Link>
+          </h6>
+          <h6>
+            <Link href="/clients">Clients</Link>
+          </h6>
+          <h6>
+            <Link href="/clients">Contact</Link>
+          </h6>
+          {/* <span></span> */}
         </div>
       </header>
-      <nav>
+
+      {/* <nav className={styles.menu}>
         <ul>
           <li>About Us</li>
           <li>
@@ -73,7 +82,8 @@ export default function Home() {
             <i></i>
           </div>
         </div>
-      </nav>
+      </nav> */}
+
       <main>
         <section className={styles.Banner}>
           <div>

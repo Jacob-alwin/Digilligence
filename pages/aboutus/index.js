@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/AboutUs.module.scss";
+import Link from "next/link";
 
 // import Size from "../utils/ScreenSize";
 
@@ -26,9 +27,16 @@ export default function AboutUs() {
         />
 
         <div>
-          <h6>Clients</h6>
-          <h6>Contact</h6>
-          <span></span>
+          <h6>
+            <Link href="/">Home</Link>
+          </h6>
+          <h6>
+            <Link href="/clients">Clients</Link>
+          </h6>
+          <h6>
+            <Link href="/clients">Contact</Link>
+          </h6>
+          {/* <span></span> */}
         </div>
       </nav>
       <main>

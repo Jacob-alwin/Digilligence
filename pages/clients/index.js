@@ -2,7 +2,8 @@ import { imageConfigDefault } from "next/dist/shared/lib/image-config";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/Clients.module.scss";
-import { clients, comments, service } from "../../data/home";
+// import { clients, serve, grew, social, develop, Ui } from "../../data/clients";
+import { serve } from '../../data/clients'
 import Script from "next/script";
 import CountUp from "react-countup";
 import AOS from "aos";
@@ -32,7 +33,6 @@ export default function Clients() {
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init();</script> */}
       </Head>
-
       <nav className={styles.nav}>
         <Image
           src="/images/logo.svg" // Route of the image file
@@ -48,77 +48,47 @@ export default function Clients() {
           <h6>
             <Link href="/aboutus">About Us</Link>
           </h6>
-          <h6>
-            <Link href="/clients">Contact</Link>
-          </h6>
-          {/* <span></span> */}
+
+          <span></span>
         </div>
       </nav>
       <main>
-        <section className={styles.clients}>
+        {/* <section className={styles.serve}>
           <h2>INDUSTRIES WE SERVE</h2>
           <ul>
-            {clients.map((list, index) => (
+            {serve.map((list, index) => (
               <li key={index}>
-                {list.map((img, imgIndex) => (
-                  <div key={imgIndex}>
-                    <Image
-                      src={img} // Route of the image file
-                      height={144} // Desired size with correct aspect ratio
-                      width={144} // Desired size with correct aspect ratio
-                      alt="Your Name"
-                    />
-                  </div>
-                ))}
+                <Image
+                  src={list} // Route of the image file
+                  height={144} // Desired size with correct aspect ratio
+                  width={144} // Desired size with correct aspect ratio
+                  alt="Your Name"
+                />
               </li>
             ))}
           </ul>
         </section>
 
-        <section className={styles.clients}>
+        <section className={styles.grew}>
           <h2>START-UPS WE GREW WITH</h2>
           <ul>
-            {clients.map((list, index) => (
+            {grew.map((list, index) => (
               <li key={index}>
-                {list.map((img, imgIndex) => (
-                  <div key={imgIndex}>
-                    <Image
-                      src={img} // Route of the image file
-                      height={144} // Desired size with correct aspect ratio
-                      width={144} // Desired size with correct aspect ratio
-                      alt="Your Name"
-                    />
-                  </div>
-                ))}
+                <Image
+                  src={list} // Route of the image file
+                  height={144} // Desired size with correct aspect ratio
+                  width={144} // Desired size with correct aspect ratio
+                  alt="Your Name"
+                />
               </li>
             ))}
           </ul>
-        </section>
+        </section> */}
 
-        <section className={styles.clients}>
-          <h2>SOCIAL MEDIA MARKETING</h2>
-          <ul>
-            {clients.map((list, index) => (
-              <li key={index}>
-                {list.map((img, imgIndex) => (
-                  <div key={imgIndex}>
-                    <Image
-                      src={img} // Route of the image file
-                      height={144} // Desired size with correct aspect ratio
-                      width={144} // Desired size with correct aspect ratio
-                      alt="Your Name"
-                    />
-                  </div>
-                ))}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className={styles.clients}>
+        {/* <section className={styles.market}>
           <h2>MOBILE APP & WEBSITE DEVELOPMENT</h2>
           <ul>
-            {clients.map((list, index) => (
+            {develop.map((list, index) => (
               <li key={index}>
                 {list.map((img, imgIndex) => (
                   <div key={imgIndex}>
@@ -135,21 +105,37 @@ export default function Clients() {
           </ul>
         </section>
 
-        <section className={styles.clients}>
+        <section className={styles.social}>
           <h2>UX/UI DESIGNING</h2>
           <ul>
-            {clients.map((list, index) => (
+            {social.map((list, index) => (
               <li key={index}>
-                {list.map((img, imgIndex) => (
-                  <div key={imgIndex}>
-                    <Image
-                      src={img} // Route of the image file
-                      height={144} // Desired size with correct aspect ratio
-                      width={144} // Desired size with correct aspect ratio
-                      alt="Your Name"
-                    />
-                  </div>
-                ))}
+                <div>
+                  <Image
+                    src={list} // Route of the image file
+                    height={144} // Desired size with correct aspect ratio
+                    width={144} // Desired size with correct aspect ratio
+                    alt="Your Name"
+                  />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className={styles.market}>
+          <h2>UX/UI DESIGNING</h2>
+          <ul>
+            {Ui.map((list, index) => (
+              <li key={index}>
+                <div>
+                  <Image
+                    src={list} // Route of the image file
+                    height={144} // Desired size with correct aspect ratio
+                    width={144} // Desired size with correct aspect ratio
+                    alt="Your Name"
+                  />
+                </div>
               </li>
             ))}
           </ul>
@@ -161,7 +147,7 @@ export default function Clients() {
           <button type="" data-aos="zoom-in">
             Book your Free Coffee
           </button>
-        </section>
+        </section> */}
       </main>
 
       <footer className={styles.footer}>

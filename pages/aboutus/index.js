@@ -33,10 +33,7 @@ export default function AboutUs() {
           <h6>
             <Link href="/clients">Clients</Link>
           </h6>
-          <h6>
-            <Link href="/clients">Contact</Link>
-          </h6>
-          {/* <span></span> */}
+          <span></span>
         </div>
       </nav>
       <main>
@@ -69,7 +66,7 @@ export default function AboutUs() {
             />
           </div>
         </section>
-        <section className={styles.we}>
+        {/* <section className={styles.we}>
           <div>
             <hr />
             <h2>Our Process</h2>
@@ -86,10 +83,11 @@ export default function AboutUs() {
               your competition!
             </p>
           </div>
-        </section>
+        </section> */}
+
         <section className={styles.we}>
           <Image
-            src="/./images/Banner/1.png" // Route of the image file
+            src="/./images/AboutUs/Shared.png" // Route of the image file
             height={144} //Desired size with correct aspect ratio
             width={144} // Desired size with correct aspect ratio
             alt="Your Name"
@@ -127,7 +125,7 @@ export default function AboutUs() {
             </p>
           </div>
           <Image
-            src="/./images/Banner/1.png" // Route of the image file
+            src="/./images/AboutUs/Social.png" // Route of the image file
             height={144} //Desired size with correct aspect ratio
             width={144} // Desired size with correct aspect ratio
             alt="Your Name"
@@ -136,7 +134,7 @@ export default function AboutUs() {
         </section>
         <section className={styles.we}>
           <Image
-            src="/./images/Banner/1.png" // Route of the image file
+            src="/./images/AboutUs/SocialStratergy.png" // Route of the image file
             height={144} //Desired size with correct aspect ratio
             width={144} // Desired size with correct aspect ratio
             alt="Your Name"

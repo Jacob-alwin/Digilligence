@@ -51,10 +51,7 @@ export default function Home() {
           <h6>
             <Link href="/clients">Clients</Link>
           </h6>
-          <h6>
-            <Link href="/clients">Contact</Link>
-          </h6>
-          {/* <span></span> */}
+          <span></span>
         </div>
       </header>
 

@@ -179,7 +179,136 @@
       }
     }
 
-    .clients {
+    .serve {
+      @include center;
+      flex-direction: column;
+      width: 100%;
+
+      hr {
+        margin: 0;
+
+        width: 5vw;
+        border: none;
+        border-radius: 1.2vw;
+        height: 0.4vw;
+
+        background: $orange;
+        font-size: 3vw;
+      }
+      h2 {
+        opacity: 0.6;
+        font-family: "Caros ExtraBold";
+        margin-bottom: 1vw;
+        font-size: 2vw;
+        color: $textbold;
+      }
+
+      ul {
+        width: 100%;
+
+        list-style: none;
+        @include center;
+        overflow-x: scroll;
+        padding: 0 1vw;
+        &::-webkit-scrollbar {
+          width: 0;
+        }
+        li {
+          @include center;
+          flex-direction: column;
+          background: rgb(241, 241, 241);
+
+          box-shadow: 0 0.2vw 0.2vw 0 rgba(0, 0, 0, 0.322);
+          border-radius: 50%;
+          padding: 1vw;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 1vw;
+          img {
+            padding: 1vw;
+            width: 8vw;
+            height: 8vw;
+            object-fit: contain;
+          }
+        }
+        hr {
+          width: 0.01vw;
+          height: 10vw;
+          border-radius: 10vw;
+          opacity: 0.3;
+          border: none;
+          background: $orangelight;
+        }
+      }
+    }
+
+    .grew {
+      @include center;
+      flex-direction: column;
+      width: 100%;
+
+      hr {
+        margin: 0;
+
+        width: 5vw;
+        border: none;
+        border-radius: 1.2vw;
+        height: 0.4vw;
+
+        background: $orange;
+        font-size: 3vw;
+      }
+      h2 {
+        opacity: 0.6;
+        font-family: "Caros ExtraBold";
+        margin-bottom: 1vw;
+        font-size: 2vw;
+        color: $textbold;
+      }
+
+      ul {
+        width: 100%;
+
+        list-style: none;
+        @include center;
+        overflow-x: scroll;
+        padding: 0 1vw;
+        &::-webkit-scrollbar {
+          width: 0;
+        }
+        li {
+          @include center;
+          flex-direction: column;
+          // background: rgb(241, 241, 241);
+
+          // box-shadow: 0 0.2vw 0.2vw 0 rgba(0, 0, 0, 0.322);
+          border-radius: 50%;
+          // padding: 1vw;
+          cursor: pointer;
+          display: flex;
+          // justify-content: center;
+          align-items: center;
+          margin: 1vw;
+          img {
+            padding: 1vw;
+            width: 8vw;
+            height: 8vw;
+            object-fit: contain;
+          }
+        }
+        hr {
+          width: 0.01vw;
+          height: 10vw;
+          border-radius: 10vw;
+          opacity: 0.3;
+          border: none;
+          background: $orangelight;
+        }
+      }
+    }
+    .market {
       @include center;
       flex-direction: column;
       width: 100%;

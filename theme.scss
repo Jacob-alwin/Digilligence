@@ -1,3 +1,4 @@
+
 // @if (2==3) {
 $background: #ffff;
 $text: #000;
@@ -25,3 +26,42 @@ $orangeshade: #ffe3c5;
 // $orangestroke: #ff870a;
 // $orangeshade: #ffe3c5;
 // }
+
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+@mixin transition($time) {
+  transition: all ease $time;
+}
+
+@mixin zero {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin inbetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin list {
+  @include zero;
+  list-style: none;
+}

@@ -24,22 +24,7 @@ export default function Services() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-      </Head>
-
-      <nav className={styles.nav}>
-        <Image
-          src="/./images/logo.svg" // Route of the image file
-          height={144} // Desired size with correct aspect ratio
-          width={144} // Desired size with correct aspect ratio
-          alt="Your Name"
-        />
-
-        <div>
-          <h6>Clients</h6>
-          <h6>Contact</h6>
-          <span></span>
-        </div>
-      </nav>
+      </Head>{" "}
       <main>
         <section className={styles.Banner}>
           <div>
@@ -88,7 +73,6 @@ export default function Services() {
           </div>
         </section>
 
-
         <section className={styles.we}>
           <Image
             src="/./images/Banner/1.png" // Route of the image file
@@ -118,7 +102,6 @@ export default function Services() {
             </p>
           </div>
         </section>
-
 
         <section className={styles.we}>
           <div>
@@ -288,7 +271,6 @@ export default function Services() {
           </div>
         </section>
 
-  
         <section className={styles.belowbanner}>
           <b>Let's connect over a cup of coffe</b>
           <button type="" data-aos="zoom-in">
@@ -296,71 +278,6 @@ export default function Services() {
           </button>
         </section>
       </main>
-
-      <footer className={styles.footer}>
-        <div>
-          <Image
-            src="/./images/logo.svg" // Route of the image file
-            height={144} // Desired size with correct aspect ratio
-            width={144} // Desired size with correct aspect ratio
-            alt="Your Name"
-          />
-          <p>
-            Thane's Best Digital Marketing agency that believes in taking your
-            ideas to the pinnacle of success.
-          </p>
-        </div>
-
-        <ul>
-          <li>Services</li>
-          <li>Social Media Marketing</li>
-          <li>Mobile Development</li>
-          <li>Branding and Designing</li>
-          <li>Website Development</li>
-          <li>UI/UX Designing</li>
-          <li>Search Engine Optimization </li>
-        </ul>
-        <ul>
-          <li>Quick Links</li>
-          <li>Our Work</li>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>
-            Careers <span>We're hiring</span>
-          </li>
-        </ul>
-        <ul>
-          <li>Reach us</li>
-          <li>
-            <Image
-              src="/./images/footericons/email.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
-              alt="Your Name"
-            />
-            biz@digillence.in
-          </li>
-          <li>
-            <Image
-              src="/./images/footericons/location.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
-              alt="Your Name"
-            />
-            +91 86559974455
-          </li>
-          <li>
-            <Image
-              src="/./images/footericons/phone.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
-              alt="Your Name"
-            />
-            +91 86559974455
-          </li>
-        </ul>
-      </footer>
-      <div className={styles.bottom}>2022 , Digiligence copyright</div>
     </div>
   );
 }

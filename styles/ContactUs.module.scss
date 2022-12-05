@@ -2,51 +2,78 @@
 @import "../caros-cufonfonts-webfont/style.css";
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 
-@mixin bordered($color, $width) {
-  border: $width solid $color;
-}
-
-@mixin bordered($color, $width) {
-  border: $width solid $color;
-}
-@mixin transition($time) {
-  transition: all ease $time;
-}
-
-@mixin zero {
-  padding: 0;
-  margin: 0;
-}
-
-@mixin center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin inbetween {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@mixin around {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-@mixin list {
-  @include zero;
-  list-style: none;
-}
-
-.ServiceContainer {
+.ContactContainer {
   font-family: "Caros Regular";
   // font-weight: 600;
   // padding: 0 2rem;
   background: $background;
   color: $text;
+  display: flex;
+
+  .left {
+    padding: 5vw;
+    width: 50%;
+    background: $orangelight;
+    ul {
+      background: $orangeshade;
+      @include list;
+      padding: 5vw 5vw;
+
+      margin: 0 -5vw;
+      li {
+        font-size: 1.2vw;
+        margin: 1.5vw;
+        &:first-child {
+          font-size: 1.5vw;
+        }
+      }
+    }
+
+    div {
+      margin: 5vw 0;
+      i {
+        font-size: 2vw;
+        margin: 1.5vw;
+      }
+    }
+  }
+
+  .right {
+    padding: 5vw;
+    width: 50%;
+
+    div {
+      @include around;
+      width: 100%;
+      label {
+        font-size: 1.1vw;
+        opacity: 0.6;
+      }
+      input {
+        border: none;
+        padding: 1.1vw;
+        border-bottom: 0.1vw solid $orangelight;
+        &:focus {
+          border: none;
+          border-bottom: 0.1vw solid $orange;
+          outline: none;
+        }
+      }
+    }
+
+    hr {
+      margin: 5vw 2vw;
+    }
+    button {
+      border: none;
+
+      padding: 1vw 3vw;
+      font-size: 1.3vw;
+      color: $orange;
+      border: 0.1vw solid $orange;
+      background: transparent;
+    }
+  }
 
   .Banner {
     @include center;
@@ -448,112 +475,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .ServiceContainer {
-    .Banner {
-      @include center;
-      flex-direction: column;
-
-      div {
-        @include center;
-        width: 90vw;
-
-        div {
-          position: relative;
-          cursor: default;
-          display: block;
-          ::selection {
-            background: none;
-          }
-
-          h2 {
-            width: 38vw;
-            font-size: 4.3vw;
-            color: $orange;
-            font-weight: 700;
-            line-height: 4.2vw;
-
-            font-family: "Caros ExtraBold";
-            span {
-              font-size: 3.8vw;
-              font-family: "Caros Bold";
-
-              color: $text;
-            }
-          }
-          p {
-            letter-spacing: 0.01vw;
-            font-size: 2.2vw;
-            width: 60vw;
-            text-align: start;
-          }
-
-          button {
-            cursor: pointer;
-            padding: 1vw 1.5vw;
-            background: $orangelight;
-            border: 0.1vw solid $orangedark;
-            border: none;
-            font-size: 2.3vw;
-            color: $background;
-            border-radius: 1vw;
-
-            &:first-of-type {
-              display: none;
-            }
-          }
-        }
-
-        img {
-          position: absolute;
-          width: 45vw;
-          right: 0;
-          height: max-content;
-        }
-      }
-    }
-    .we {
-      margin: 0 4vw;
-      flex-direction: column;
-      display: block;
-      hr {
-        margin-top: 5vw;
-        height: 0.8vw;
-        width: 15vw;
-      }
-      h2 {
-        margin-top: 1.5vw;
-        font-size: 5vw;
-      }
-      p {
-        @include zero();
-
-        text-align: left;
-        font-size: 3vw;
-      }
-    }
-
-    .belowbanner {
-      padding: 1.5vw;
-      h4 {
-        font-size: 3vw;
-        @include zero;
-        letter-spacing: 0.2vw;
-      }
-      b {
-        margin: 0.5vw;
-        letter-spacing: 0.2vw;
-
-        font-size: 2.5vw;
-      }
-      button {
-        margin: 2vw;
-        padding: 2vw;
-        background: $orangelight;
-        letter-spacing: 0.1vw;
-        border: none;
-        font-size: 3vw;
-        border-radius: 0.4vw;
-      }
-    }
+  .ContactContainer {
   }
 }

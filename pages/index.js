@@ -1,13 +1,11 @@
-import { imageConfigDefault } from "next/dist/shared/lib/image-config";
+// import { imageConfigDefault } from "next/dist/shared/lib/image-config";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { clients, comments, service } from "../data/home";
-import Script from "next/script";
+// import Script from "next/script";
 import CountUp from "react-countup";
-import AOS from "aos";
 import "aos/dist/aos.css";
-import Link from "next/link";
 
 // import Size from "../utils/ScreenSize";
 
@@ -36,32 +34,7 @@ export default function Home() {
         AOS.init()
       </Script> */}
 
-      {/* <nav className={styles.menu}>
-        <ul>
-          <li>About Us</li>
-          <li>
-            Services
-            <ul>
-              <li>Social Media Marketing</li>
-              <li>Mobile App Development</li>
-              <li>Branding & Graphic Designing</li>
-              <li>Website Development</li>
-              <li>UX/UI Design</li>
-              <li>Search Engine Optimization</li>
-            </ul>
-          </li>
-
-          <li>Careers</li>
-          <li>Contact</li>
-        </ul>
-
-        <div>
-          <div>
-            <i></i>
-          </div>
-        </div>
-      </nav> */}
-
+    
       <main>
         <section className={styles.Banner}>
           <div>
@@ -558,6 +531,7 @@ export default function Home() {
           </button>
         </section>
       </main>
+
     </div>
   );
 }

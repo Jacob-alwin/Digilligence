@@ -18,6 +18,7 @@ export default function Clients() {
       </Head>
 
       <main>
+
         <section className={styles.serve}>
           <h2>INDUSTRIES WE SERVE</h2>
           <ul>
@@ -113,6 +114,7 @@ export default function Clients() {
             Book your Free Coffee
           </button>
         </section>
+
       </main>
     </div>
   );

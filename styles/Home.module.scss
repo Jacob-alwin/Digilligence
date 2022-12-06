@@ -8,7 +8,6 @@
   background: $background;
   color: $text;
 
-
   main {
     .Banner {
       @include center;
@@ -610,19 +609,19 @@
         background: $orangelight;
         border: none;
         font-size: 1.3vw;
+        color: $background;
+
         border-radius: 0.4vw;
       }
     }
   }
 }
 
-
-
 @media screen and (max-width: 600px) {
   .HomeContainer {
     width: 100vw;
     overflow-x: hidden;
- 
+
     main {
       .Banner {
         @include center;
@@ -1150,7 +1149,6 @@
     }
   }
 }
- 
 
 // @media (prefers-color-scheme: dark) {
 //   .card,

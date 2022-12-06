@@ -14,6 +14,15 @@
     padding: 5vw;
     width: 50%;
     background: $orangelight;
+
+    h2 {
+      font-size: 2.5vw;
+    }
+
+    h4 {
+      font-size: 1.5vw;
+    }
+
     ul {
       background: $orangeshade;
       @include list;
@@ -201,6 +210,7 @@
       }
     }
   }
+
   .blog {
     @include around();
     // flex-direction: column;
@@ -469,13 +479,13 @@
       padding: 1vw;
       background: $orangelight;
       border: none;
+      color: $background;
       font-size: 1.3vw;
+
       border-radius: 0.4vw;
     }
   }
 }
 
 @media screen and (max-width: 600px) {
-  .ContactContainer {
-  }
 }

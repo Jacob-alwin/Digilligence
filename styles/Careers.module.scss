@@ -1,0 +1,351 @@
+@import "./theme.scss";
+@import "../caros-cufonfonts-webfont/style.css";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+.CareersContainer {
+  font-family: "Caros Regular";
+  // font-weight: 600;
+  // padding: 0 2rem;
+  background: $background;
+  color: $text;
+  display: flex;
+  flex-direction: column;
+  @include zero;
+
+  .Banner {
+    position: relative;
+    height: max-content;
+    @include center;
+    width: 100vw;
+    span {
+      position: absolute;
+      background: rgb(27, 27, 27);
+      height: 100%;
+      width: 100vw;
+      opacity: 0.4;
+    }
+    img {
+      // position: absolute;
+      width: 100vw;
+      height: max-content;
+    }
+    h2 {
+      font-size: 4vw;
+      color: $background;
+      font-family: "Caros ExtraBold";
+      position: absolute;
+    }
+    h5 {
+      margin-top: 10vw;
+      text-align: center;
+      font-size: 1.3vw;
+      width: 70vw;
+      color: $background;
+      font-family: "Caros Thin";
+      position: absolute;
+      letter-spacing: 0.1vw;
+    }
+
+    button {
+      // outline: none;
+      border: none;
+      background: $orangelight;
+      padding: 1.2vw 2vw;
+      border-radius: 0.5vw;
+      color: $background;
+      font-size: 1.2vw;
+      position: absolute;
+      margin-top: 20vw;
+    }
+  }
+
+  .Openings {
+    @include center;
+    flex-direction: column;
+    padding: 0 5vw;
+
+    h3 {
+      font-size: 2.5vw;
+    }
+
+    button {
+      border: 0.1vw solid $orangelight;
+      align-self: flex-start;
+      background: transparent;
+      padding: 1.2vw 2vw;
+      border-radius: 0.5vw;
+      color: $orangelight;
+      font-size: 1.2vw;
+    }
+
+    div {
+      padding: 1vw 0;
+
+      input {
+        display: none;
+      }
+      label {
+        margin: 0 1vw;
+        position: relative;
+        font-size: 1.5vw;
+        opacity: 0.8;
+        &::after {
+          bottom: -0.5vw;
+          left: 0;
+          content: " ";
+          height: 0.1vw;
+          background: #ffffff;
+          position: absolute;
+          width: 100%;
+        }
+      }
+      input[type="radio"] {
+        &:checked {
+          ~ label {
+            // color: #fcc220;
+
+            &::after {
+              bottom: -0.5vw;
+              left: 0;
+              content: " ";
+              height: 0.1vw;
+              background: #fcc220;
+              position: absolute;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    ul {
+      @include list;
+      width: 100%;
+      align-items: center;
+      li {
+        @include center;
+        width: 100%;
+        border-bottom: 0.1vw solid $orangeshade;
+
+        justify-content: space-between;
+        div {
+          display: block;
+          // background: #d633ff;
+          height: max-content;
+          h3 {
+            @include zero;
+            font-size: 1.5vw;
+          }
+          p {
+            @include zero;
+            margin-top: 1vw;
+            font-size: 1.3vw;
+            opacity: 0.6;
+            font-weight: 600;
+          }
+        }
+        button {
+          color: $background;
+          background: $orange;
+          padding: 0.8vw 2.5vw;
+          margin-top: 1.2vw;
+        }
+      }
+    }
+  }
+
+  .work {
+    @include center;
+    flex-direction: column;
+    padding: 5vw;
+
+    h3 {
+      @include zero;
+      font-size: 2vw;
+    }
+
+    button {
+      border: 0.1vw solid $orangelight;
+      align-self: flex-start;
+      background: transparent;
+      padding: 1.2vw 2vw;
+      border-radius: 0.5vw;
+      color: $orangelight;
+      font-size: 1.2vw;
+    }
+
+    div {
+      width: 100%;
+      @include around;
+      flex-wrap: wrap;
+      div {
+        @include list;
+        @include center;
+        width: 40vw;
+        img {
+          width: 10vw;
+          height: max-content;
+        }
+
+        dl {
+          margin-left: 1vw;
+          display: block;
+          // background: #d633ff;
+          height: max-content;
+          width: 23vw;
+          dt {
+            @include zero;
+            font-size: 1.5vw;
+          }
+          dd {
+            @include zero;
+            margin-top: 0.5vw;
+            font-family: "Caros ExtraLight";
+            font-weight: 100;
+            font-size: 1.1vw;
+            opacity: 0.6;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .testimonial {
+    @include center;
+    flex-direction: column;
+    // padding: 5vw;
+
+    h3 {
+      @include zero;
+      font-size: 2vw;
+    }
+
+    ul {
+      @include list;
+      @include center;
+
+      li {
+        margin: 0.5vw;
+        div {
+          flex-direction: column;
+          img {
+            margin-top: -2vw;
+            height: 5vw;
+            border-radius: 50%;
+            width: 5vw;
+            object-fit: cover;
+          }
+          b {
+            font-size: 1.2vw;
+          }
+          span {
+            font-size: 1.2vw;
+          }
+          &:first-child {
+            margin-top: 1.5vw;
+
+            padding: 2vw;
+            // background: #fcc220;
+            width: 22vw;
+            border: 0.1vw solid #e1e1e1;
+            box-shadow: 0px 0.5vw 2vw rgba(184, 184, 184, 0.25);
+            border-radius: 0.5vw;
+            height: max-content;
+            img {
+              border-radius: 0;
+              margin: 0;
+              width: max-content;
+              height: 5vw;
+            }
+            p {
+              text-align: center;
+              font-size: 1.1vw;
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      border: 0.1vw solid $orangelight;
+      align-self: flex-start;
+      background: transparent;
+      padding: 1.2vw 2vw;
+      border-radius: 0.5vw;
+      color: $orangelight;
+      font-size: 1.2vw;
+    }
+
+    div {
+      width: 100%;
+      @include around;
+      flex-wrap: wrap;
+      div {
+        @include list;
+        @include center;
+        width: 40vw;
+        img {
+          width: 10vw;
+          height: max-content;
+        }
+
+        dl {
+          margin-left: 1vw;
+          display: block;
+          // background: #d633ff;
+          height: max-content;
+          width: 23vw;
+          dt {
+            @include zero;
+            font-size: 1.5vw;
+          }
+          dd {
+            @include zero;
+            margin-top: 0.5vw;
+            font-family: "Caros ExtraLight";
+            font-weight: 100;
+            font-size: 1.1vw;
+            opacity: 0.6;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .belowbanner {
+    @include center();
+    flex-direction: column;
+    background: linear-gradient(
+      89.99deg,
+      #ff9c33 12.34%,
+      #fcc220 110.97%,
+      rgba(252, 194, 32, 0.34) 110.97%
+    );
+    color: $background;
+    padding: 1.5vw;
+    h4 {
+      font-size: 2vw;
+      @include zero;
+    }
+    b {
+      margin: 0.5vw;
+
+      font-size: 1.5vw;
+    }
+    button {
+      margin: 1vw;
+      padding: 1vw;
+      background: $orangelight;
+      border: none;
+      font-size: 1.3vw;
+      border-radius: 0.4vw;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .CareersContainer {
+  }
+}

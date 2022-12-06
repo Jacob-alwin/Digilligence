@@ -43,6 +43,7 @@
     width: 50%;
 
     div {
+      margin: 2vw 0;
       @include around;
       width: 100%;
       label {

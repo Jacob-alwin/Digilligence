@@ -29,6 +29,14 @@ function ContactUs() {
             <label for="">People call me</label>
             <input type="text" placeholder="Type.." />
           </div>
+          <div>
+            <label for="">People call me</label>
+            <input type="text" placeholder="Type.." />
+          </div>
+          <div>
+            <label for="">People call me</label>
+            <input type="text" placeholder="Type.." />
+          </div>
 
           <hr />
 

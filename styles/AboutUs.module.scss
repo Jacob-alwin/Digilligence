@@ -166,7 +166,8 @@
       // flex-direction: column;
       padding: 5vw 0;
 
-      &:nth-child(3) {
+      &:nth-child(even) {
+        flex-direction: row-reverse;
         background: #f8f8f8;
       }
 

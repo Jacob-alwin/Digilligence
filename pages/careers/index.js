@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { Fragment } from "react";
 import styles from "../../styles/Careers.module.scss";
+import { team, here } from "../../data/career";
 
 function Careers() {
   return (
@@ -25,7 +26,7 @@ function Careers() {
           <button>Get in touch</button>
         </section>
 
-        <section className={styles.Openings}>
+        {/* <section className={styles.Openings}>
           <h3>JOB OPENINGS</h3>
 
           <button>Internship Openings</button>
@@ -71,66 +72,26 @@ function Careers() {
               <button>Apply Now</button>
             </li>
           </ul>
-        </section>
+        </section> */}
 
         <section className={styles.work}>
           <h3>ABOUT WORKING HERE</h3>
           <div>
-            <div>
-              <Image
-                src="/images/Career/careerbanner.png" // Route of the image file
-                height={144} //Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
-                alt="Your Name"
-                className="animate__animated animate__jackInTheBox"
-              />
-              <dl>
-                <dt>Growth & Development</dt>
-                <dd>Here lots of growth avaialbe and we providing alot</dd>
-              </dl>
-            </div>
-
-            <div>
-              <Image
-                src="/images/Career/careerbanner.png" // Route of the image file
-                height={144} //Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
-                alt="Your Name"
-                className="animate__animated animate__jackInTheBox"
-              />
-              <dl>
-                <dt>Growth & Development</dt>
-                <dd>Here lots of growth avaialbe and we providing alot</dd>
-              </dl>
-            </div>
-
-            <div>
-              <Image
-                src="/images/Career/careerbanner.png" // Route of the image file
-                height={144} //Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
-                alt="Your Name"
-                className="animate__animated animate__jackInTheBox"
-              />
-              <dl>
-                <dt>Growth & Development</dt>
-                <dd>Here lots of growth avaialbe and we providing alot</dd>
-              </dl>
-            </div>
-
-            <div>
-              <Image
-                src="/images/Career/careerbanner.png" // Route of the image file
-                height={144} //Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
-                alt="Your Name"
-                className="animate__animated animate__jackInTheBox"
-              />
-              <dl>
-                <dt>Growth & Development</dt>
-                <dd>Here lots of growth avaialbe and we providing alot</dd>
-              </dl>
-            </div>
+            {here.map((here, index) => (
+              <div>
+                <Image
+                  src={here.img} // Route of the image file
+                  height={144} //Desired size with correct aspect ratio
+                  width={144} // Desired size with correct aspect ratio
+                  alt="Your Name"
+                  className="animate__animated animate__jackInTheBox"
+                />
+                <dl>
+                  <dt>{here.head}</dt>
+                  <dd>{here.paragraph}</dd>
+                </dl>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -138,122 +99,31 @@ function Careers() {
           <h3>LIFE AT DIGILLIGENCE</h3>
 
           <ul>
-            <li>
-              <div>
-                <Image
-                  src="/images/Career/careerbanner.png" // Route of the image file
-                  height={144} //Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                  className="animate__animated animate__jackInTheBox"
-                />
-                <p>
-                  The Company encourages employees to work to the best of their
-                  abilities.My job enables me to make use of my skills and
-                  abilities. I get a sense of personal accomplishment from my
-                  work. I would recommend the Company as a great place to work.
-                  I would recommend working at the Company to my friends. Thanks
-                </p>
-              </div>
-              <div>
-                <Image
-                  src="/images/Career/careerbanner.png" // Route of the image file
-                  height={144} //Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                  className="animate__animated animate__jackInTheBox"
-                />
-                <b>Tisha Kakkar </b>
-                <span>UX/UI Designer</span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <Image
-                  src="/images/Career/careerbanner.png" // Route of the image file
-                  height={144} //Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                  className="animate__animated animate__jackInTheBox"
-                />
-                <p>
-                  The Company encourages employees to work to the best of their
-                  abilities.My job enables me to make use of my skills and
-                  abilities. I get a sense of personal accomplishment from my
-                  work. I would recommend the Company as a great place to work.
-                  I would recommend working at the Company to my friends. Thanks
-                </p>
-              </div>
-              <div>
-                <Image
-                  src="/images/Career/careerbanner.png" // Route of the image file
-                  height={144} //Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                  className="animate__animated animate__jackInTheBox"
-                />
-                <b>Tisha Kakkar </b>
-                <span>UX/UI Designer</span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <Image
-                  src="/images/Career/careerbanner.png" // Route of the image file
-                  height={144} //Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                  className="animate__animated animate__jackInTheBox"
-                />
-                <p>
-                  The Company encourages employees to work to the best of their
-                  abilities.My job enables me to make use of my skills and
-                  abilities. I get a sense of personal accomplishment from my
-                  work. I would recommend the Company as a great place to work.
-                  I would recommend working at the Company to my friends. Thanks
-                </p>
-              </div>
-              <div>
-                <Image
-                  src="/images/Career/careerbanner.png" // Route of the image file
-                  height={144} //Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                  className="animate__animated animate__jackInTheBox"
-                />
-                <b>Tisha Kakkar </b>
-                <span>UX/UI Designer</span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <Image
-                  src="/images/Career/careerbanner.png" // Route of the image file
-                  height={144} //Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                  className="animate__animated animate__jackInTheBox"
-                />
-                <p>
-                  The Company encourages employees to work to the best of their
-                  abilities.My job enables me to make use of my skills and
-                  abilities. I get a sense of personal accomplishment from my
-                  work. I would recommend the Company as a great place to work.
-                  I would recommend working at the Company to my friends. Thanks
-                </p>
-              </div>
-              <div>
-                <Image
-                  src="/images/Career/careerbanner.png" // Route of the image file
-                  height={144} //Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                  className="animate__animated animate__jackInTheBox"
-                />
-                <b>Tisha Kakkar </b>
-                <span>UX/UI Designer</span>
-              </div>
-            </li>
+            {team.map((person, index) => (
+              <li>
+                <div>
+                  <Image
+                    src="/images/Career/qoutes.png" // Route of the image file
+                    height={144} //Desired size with correct aspect ratio
+                    width={144} // Desired size with correct aspect ratio
+                    alt="Your Name"
+                    className="animate__animated animate__jackInTheBox"
+                  />
+                  <p>{person.paragraph}</p>
+                </div>
+                <div>
+                  <Image
+                    src={person.picture} // Route of the image file
+                    height={144} //Desired size with correct aspect ratio
+                    width={144} // Desired size with correct aspect ratio
+                    alt="Your Name"
+                    className="animate__animated animate__jackInTheBox"
+                  />
+                  <b>{person.name}</b>
+                  <span>{person.designation}</span>
+                </div>
+              </li>
+            ))}
           </ul>
         </section>
       </div>

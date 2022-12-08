@@ -1,4 +1,4 @@
-import Worker from "./common/Worker";
+import Worker from "../../common/Worker";
 import { Branding } from "../../data/services";
 
 export default function BrandingDesigning() {

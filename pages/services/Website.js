@@ -1,4 +1,4 @@
-import Worker from "./common/Worker";
+import Worker from "../../common/Worker";
 import { Web } from "../../data/services";
 
 export default function Website() {

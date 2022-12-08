@@ -1,4 +1,4 @@
-import Worker from "./common/Worker";
+import Worker from "../../common/Worker";
 import { UI } from "../../data/services";
 
 export default function UXUI() {

@@ -1,7 +1,7 @@
 // import { imageConfigDefault } from "next/dist/shared/lib/image-config";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../../../styles/Services.module.scss";
+import styles from "../styles/Services.module.scss";
 import CountUp from "react-countup";
 // import Size from "../utils/ScreenSize";
 

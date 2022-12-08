@@ -78,7 +78,7 @@ function Careers() {
           <h3>ABOUT WORKING HERE</h3>
           <div>
             {here.map((here, index) => (
-              <div>
+              <div key={index}>
                 <Image
                   src={here.img} // Route of the image file
                   height={144} //Desired size with correct aspect ratio
@@ -100,7 +100,7 @@ function Careers() {
 
           <ul>
             {team.map((person, index) => (
-              <li>
+              <li key={index}>
                 <div>
                   <Image
                     src="/images/Career/qoutes.png" // Route of the image file

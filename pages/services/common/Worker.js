@@ -52,7 +52,7 @@ export default function Worker(props) {
         <h5>Our Process</h5>
         <div>
           {props.data.process.map((list, index) => (
-            <div>
+            <div key={index}>
               <Image
                 src={list.img} // Route of the image file
                 height={50} //Desired size with correct aspect ratio
@@ -95,7 +95,7 @@ export default function Worker(props) {
           </div>
           <div>
             {props.data.do.map((list, index) => (
-              <div>
+              <div key={index}>
                 <Image
                   src={list.img} // Route of the image file
                   height={144} //Desired size with correct aspect ratio
@@ -123,7 +123,7 @@ export default function Worker(props) {
           </div>
           <ul>
             {props.data.strength.map((list, index) => (
-              <li>
+              <li key={index}>
                 {list.count ? (
                   <h3>
                     <CountUp
@@ -150,7 +150,7 @@ export default function Worker(props) {
         <section className={styles.project}>
           <h5>Projects</h5>
           {props.data.project.map((list, index) => (
-            <div>
+            <div key={index}>
               <div>
                 <h4>{props.data.title}</h4>
                 <h2 className="animate__animated animate__fadeInUp">
@@ -180,7 +180,7 @@ export default function Worker(props) {
 
       <section className={styles.services}>
         {props.data.serivce.map((list, index) => (
-          <div>
+          <div key={index}>
             <Image
               src={list.img} // Route of the image file
               height={144} //Desired size with correct aspect ratio

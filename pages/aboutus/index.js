@@ -121,7 +121,7 @@ export default function AboutUs() {
         </section>
 
         {about.map((list, index) => (
-          <section className={styles.we}>
+          <section className={styles.we} key={index}>
             <Image
               src={list.img} // Route of the image file
               height={144} //Desired size with correct aspect ratio
@@ -133,13 +133,11 @@ export default function AboutUs() {
               <h2>{list.head}</h2>
               <hr />
               <p>{list.decription1}</p>
-              <p>
-              {list.decription2}
-              </p>
+              <p>{list.decription2}</p>
             </div>
           </section>
         ))}
-      
+
         <section className={styles.belowbanner}>
           <b>Let's connect over a cup of coffe</b>
           <button type="" data-aos="zoom-in">

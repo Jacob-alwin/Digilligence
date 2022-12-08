@@ -84,408 +84,76 @@
       background: transparent;
     }
   }
-
-  .Banner {
-    @include center;
-    flex-direction: column;
-    margin: 2vw 0;
-
-    h4 {
-      margin-top: 3vw;
-      color: $orangedark;
-      font-size: 1.3vw;
-    }
-
-    div {
-      @include center;
-      width: 80vw;
-
-      div {
-        cursor: default;
-        display: block;
-        ::selection {
-          background: none;
-        }
-
-        h4 {
-          width: 38vw;
-          color: $orange;
-          font-weight: 700;
-          font-size: 1.3vw;
-          opacity: 0.6;
-          letter-spacing: 0.2vw;
-          font-family: "Caros Regular";
-          @include zero();
-          margin-bottom: 1vw;
-
-          color: $text;
-        }
-        h2 {
-          width: 30vw;
-          color: $orange;
-          font-weight: 700;
-          font-size: 3.3vw;
-          font-family: "Caros Bold";
-          @include zero();
-        }
-        p {
-          letter-spacing: 0.01vw;
-          word-spacing: 0.2vw;
-          font-size: 1.3vw;
-          width: 35vw;
-          font-family: "Caros Light";
-          @include zero();
-          padding: 1.5vw 0;
-          text-align: left;
-          // opacity: 0.4;
-        }
-
-        button {
-          cursor: pointer;
-          padding: 1vw 1.5vw;
-          background: $orangelight;
-          border: 0.1vw solid $orangedark;
-          border: none;
-          font-size: 1.3vw;
-          color: $background;
-          border-radius: 10vw;
-
-          &:hover {
-            color: $orangelight;
-            background: transparent;
-            border: 0.1vw solid $orangedark;
-          }
-        }
-      }
-
-      img {
-        width: 23vw;
-        height: max-content;
-      }
-    }
-  }
-
-  .process {
-    @include center;
-    flex-direction: column;
-
-    hr {
-      align-self: flex-end;
-      width: 25vw;
-      border: none;
-      margin: 0;
-      margin-top: 1vw;
-      margin-bottom: 0.5vw;
-      border-radius: 1.2vw;
-      height: 0.4vw;
-      background: $orange;
-      font-size: 3vw;
-
-      &:first-child {
-        align-self: flex-start;
-      }
-    }
-
-    h5 {
-      @include zero;
-      font-weight: 700;
-      margin: 2vw 0;
-      font-size: 1.5vw;
-    }
-    div {
-      width: 100%;
-      @include center;
-      div {
-        flex-direction: column;
-
-        img {
-          border-radius: 50%;
-        }
-        h6 {
-          font-weight: 100;
-          font-size: 1vw;
-          width: 10vw;
-          text-align: center;
-        }
-      }
-    }
-  }
-
-  .blog {
-    @include around();
-    // flex-direction: column;
-    padding: 5vw 0;
-
-    &:nth-child(3) {
-      background: #f8f8f8;
-    }
-
-    img {
-      width: 20vw;
-      height: max-content;
-    }
-
-    div {
-      width: 40vw;
-      hr {
-        width: 5vw;
-        border: none;
-        margin: 0;
-        border-radius: 1.2vw;
-        height: 0.4vw;
-        background: $orange;
-        font-size: 3vw;
-      }
-      h2 {
-        font-size: 1.5vw;
-        color: $textbold;
-        font-weight: 300;
-        font-family: "Caros Bold";
-      }
-      p {
-        letter-spacing: 0.01vw;
-        font-size: 1.3vw;
-        width: 40vw;
-        opacity: 0.7;
-        font-family: "Caros Light";
-        // text-align: center;
-      }
-    }
-  }
-
-  .do {
-    @include center;
-    flex-direction: column;
-
-    hr {
-      width: 20vw;
-      border: none;
-      margin: 0;
-      margin-top: 1vw;
-      margin-bottom: 0.5vw;
-      border-radius: 1.2vw;
-      height: 0.2vw;
-      background: $orange;
-      font-size: 3vw;
-    }
-
-    h5 {
-      @include zero;
-      font-weight: 700;
-      margin: 2vw 0;
-      font-size: 1.5vw;
-    }
-    div {
-      width: 100%;
-      @include center;
-
-      &:first-child {
-        @include around();
-      }
-
-      div {
-        flex-direction: column;
-        img {
-          border-radius: 50%;
-          width: 10vw;
-          height: 10vw;
-          padding: 1vw;
-          background: linear-gradient(180deg, #ffe81a 50%, #ff9c33 50%);
-        }
-        h6 {
-          font-weight: 100;
-          font-size: 1vw;
-          width: 10vw;
-          color: $orangedark;
-          text-align: center;
-        }
-
-        &:nth-child(odd) {
-          img {
-            background: linear-gradient(0deg, #ffe81a 50%, #ff9c33 50%);
-          }
-        }
-      }
-    }
-  }
-
-  .progress {
-    @include center;
-    flex-direction: column;
-
-    hr {
-      width: 20vw;
-      border: none;
-      margin: 0;
-      margin-top: 1vw;
-      margin-bottom: 0.5vw;
-      border-radius: 1.2vw;
-      height: 0.2vw;
-      background: $orange;
-      font-size: 3vw;
-    }
-
-    h5 {
-      @include zero;
-      font-weight: 700;
-      margin: 2vw 0;
-      font-size: 1.5vw;
-    }
-    div {
-      width: 100%;
-      @include around();
-    }
-
-    ul {
-      @include list();
-      @include center();
-      flex-wrap: wrap;
-      margin: 0 20vw;
-      li {
-        color: $orangedark;
-        @include around();
-        width: 25vw;
-        display: flex;
-      }
-    }
-  }
-
-  .project {
-    @include center;
-    flex-direction: column;
-    margin: 2vw 0;
-
-    h5 {
-      align-self: flex-start;
-      // margin-top: 3vw;
-      background: $text;
-      color: $background;
-      font-size: 1.2vw;
-      padding: 0.5vw 2.5vw;
-    }
-
-    div {
-      @include center;
-      width: 80vw;
-
-      div {
-        cursor: default;
-        display: block;
-        ::selection {
-          background: none;
-        }
-
-        h4 {
-          width: 38vw;
-          color: $orange;
-          font-weight: 700;
-          font-size: 1.3vw;
-          opacity: 0.6;
-          letter-spacing: 0.2vw;
-          font-family: "Caros Regular";
-          @include zero();
-          margin-bottom: 1vw;
-
-          color: $text;
-        }
-        h2 {
-          width: 30vw;
-          color: $orange;
-          font-weight: 700;
-          font-size: 3.3vw;
-          font-family: "Caros Bold";
-          @include zero();
-        }
-        p {
-          letter-spacing: 0.01vw;
-          word-spacing: 0.2vw;
-          font-size: 1.3vw;
-          width: 35vw;
-          font-family: "Caros Light";
-          @include zero();
-          padding: 1.5vw 0;
-          text-align: left;
-          // opacity: 0.4;
-        }
-
-        button {
-          cursor: pointer;
-          padding: 1vw 1.5vw;
-          background: $orangelight;
-          border: 0.1vw solid $orangedark;
-          border: none;
-          font-size: 1.3vw;
-          color: $background;
-          border-radius: 10vw;
-
-          &:hover {
-            color: $orangelight;
-            background: transparent;
-            border: 0.1vw solid $orangedark;
-          }
-        }
-      }
-
-      img {
-        width: 23vw;
-        height: max-content;
-      }
-    }
-  }
-
-  .services {
-    @include center();
-    flex-wrap: wrap;
-    div {
-      @include center();
-      min-width: 30vw;
-      flex-direction: column;
-
-      img {
-        width: 15vw;
-        height: max-content;
-      }
-
-      h6 {
-        text-align: center;
-        font-size: 1.2vw;
-        width: 15vw;
-      }
-    }
-  }
-
-  .belowbanner {
-    @include center();
-    flex-direction: column;
-    background: linear-gradient(
-      89.99deg,
-      #ff9c33 12.34%,
-      #fcc220 110.97%,
-      rgba(252, 194, 32, 0.34) 110.97%
-    );
-    color: $background;
-    padding: 1.5vw;
-    h4 {
-      font-size: 2vw;
-      @include zero;
-    }
-    b {
-      margin: 0.5vw;
-
-      font-size: 1.5vw;
-    }
-    button {
-      margin: 1vw;
-      padding: 1vw;
-      background: $orangelight;
-      border: none;
-      color: $background;
-      font-size: 1.3vw;
-
-      border-radius: 0.4vw;
-    }
-  }
 }
 
 @media screen and (max-width: 600px) {
+  .ContactContainer {
+    flex-direction: column-reverse;
+    .left {
+      padding: 10vw;
+      width: 100%;
+      h2 {
+        font-size: 4.5vw;
+      }
+
+      h4 {
+        font-size: 2vw;
+      }
+
+      ul {
+        padding: 10vw;
+        margin: 0 -10vw;
+        li {
+          font-size: 2.2vw;
+          margin: 1.5vw;
+          &:first-child {
+            font-size: 2.8vw;
+          }
+        }
+      }
+
+      div {
+        margin: 5vw 0;
+        @include center;
+        i {
+          font-size: 6vw;
+          margin: 3vw;
+        }
+      }
+    }
+
+    .right {
+      padding: 10vw;
+      width: 100%;
+
+      @include center;
+      flex-direction: column;
+
+      div {
+        margin: 2vw 0;
+        @include around;
+        width: 100%;
+        label {
+          font-size: 3.1vw;
+          width: 40vw;
+        }
+        input {
+          padding: 1.5vw;
+        font-size: 3.5vw;
+        }
+      }
+
+      hr {
+        margin: 5vw 2vw;
+        width: 80vw;
+
+      }
+      button {
+
+        padding: 2vw 5vw;
+        font-size: 3.3vw;
+        border: 0.3vw solid $orange;
+      }
+    }
+  }
 }

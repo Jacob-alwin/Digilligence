@@ -34,7 +34,6 @@ export default function Home() {
         AOS.init()
       </Script> */}
 
-    
       <main>
         <section className={styles.Banner}>
           <div>
@@ -173,22 +172,40 @@ export default function Home() {
         <section className={styles.clients}>
           <h2>Our Clients</h2>
           <hr />
-          <ul>
-            {clients.map((list, index) => (
-              <li key={index}>
-                {list.map((img, imgIndex) => (
-                  <div key={imgIndex}>
-                    <Image
-                      src={img} // Route of the image file
-                      height={144} // Desired size with correct aspect ratio
-                      width={144} // Desired size with correct aspect ratio
-                      alt="Your Name"
-                    />
-                  </div>
-                ))}
-              </li>
-            ))}
-          </ul>
+          <div>
+            <ul>
+              {clients.map((list, index) => (
+                <li key={index}>
+                  {list.map((img, imgIndex) => (
+                    <div key={imgIndex}>
+                      <Image
+                        src={img} // Route of the image file
+                        height={144} // Desired size with correct aspect ratio
+                        width={144} // Desired size with correct aspect ratio
+                        alt="Your Name"
+                      />
+                    </div>
+                  ))}
+                </li>
+              ))}
+            </ul>
+            <ul>
+              {clients.map((list, index) => (
+                <li key={index}>
+                  {list.map((img, imgIndex) => (
+                    <div key={imgIndex}>
+                      <Image
+                        src={img} // Route of the image file
+                        height={144} // Desired size with correct aspect ratio
+                        width={144} // Desired size with correct aspect ratio
+                        alt="Your Name"
+                      />
+                    </div>
+                  ))}
+                </li>
+              ))}
+            </ul>
+          </div>
         </section>
 
         <section className={styles.testimonial}>
@@ -531,7 +548,6 @@ export default function Home() {
           </button>
         </section>
       </main>
-
     </div>
   );
 }

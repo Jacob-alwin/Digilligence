@@ -18,7 +18,6 @@ export default function AboutUs() {
         />
       </Head>
 
- 
       <main>
         <section className={styles.Banner}>
           <div>
@@ -41,7 +40,7 @@ export default function AboutUs() {
               </button>
             </div>
             <Image
-              src="/./images/Banner/1.png" // Route of the image file
+              src="/images/AboutUs/banner.png" // Route of the image file
               height={144} //Desired size with correct aspect ratio
               width={144} // Desired size with correct aspect ratio
               alt="Your Name"
@@ -49,24 +48,48 @@ export default function AboutUs() {
             />
           </div>
         </section>
-        {/* <section className={styles.we}>
+        <section className={styles.process}>
           <div>
             <hr />
             <h2>Our Process</h2>
             <hr />
           </div>
 
-          <div>
-            <img src="" alt="" />
-            <h5>Strategize</h5>
-            <p>
-              After analyzing your requirements, our team will strategize & come
-              with the Plan of Action. We begin quick by hunting the results
-              needed to deliver immediate value, exceed expectations & out grow
-              your competition!
-            </p>
-          </div>
-        </section> */}
+          <ul>
+            <li>
+              <Image
+                src="/images/Banner/3.png" // Route of the image file
+                height={144} //Desired size with correct aspect ratio
+                width={144} // Desired size with correct aspect ratio
+                alt="Your Name"
+                className="animate__animated animate__jackInTheBox"
+              />
+              <h5>Strategize</h5>
+              <p>
+                After analyzing your requirements, our team will strategize &
+                come with the Plan of Action. We begin quick by hunting the
+                results needed to deliver immediate value, exceed expectations &
+                out grow your competition!
+              </p>
+            </li>
+            <li>
+              <Image
+                src="/images/Banner/3.png" // Route of the image file
+                height={144} //Desired size with correct aspect ratio
+                width={144} // Desired size with correct aspect ratio
+                alt="Your Name"
+                className="animate__animated animate__jackInTheBox"
+              />
+              <h5>Strategize</h5>
+              <p>
+                After analyzing your requirements, our team will strategize &
+                come with the Plan of Action. We begin quick by hunting the
+                results needed to deliver immediate value, exceed expectations &
+                out grow your competition!
+              </p>
+            </li>
+          </ul>
+        </section>
 
         <section className={styles.we}>
           <Image
@@ -144,6 +167,6 @@ export default function AboutUs() {
           </button>
         </section>
       </main>
-     </div>
+    </div>
   );
 }

@@ -18,18 +18,21 @@ export default function Clients() {
       </Head>
 
       <main>
-
         <section className={styles.serve}>
           <h2>INDUSTRIES WE SERVE</h2>
           <ul>
-            {serve.map((img, index) => (
+            {serve.map((list, index) => (
               <li key={index}>
-                <Image
-                  src={img} // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                />
+                <div>
+                  <Image
+                    src={list.img} // Route of the image file
+                    height={144} // Desired size with correct aspect ratio
+                    width={144} // Desired size with correct aspect ratio
+                    alt="Your Name"
+                  />
+                </div>
+
+                <p>{list.caption}</p>
               </li>
             ))}
           </ul>
@@ -71,37 +74,18 @@ export default function Clients() {
           </ul>
         </section>
 
-        <section className={styles.market}>
+        <section className={styles.grid}>
           <h2>UX/UI DESIGNING</h2>
           <ul>
+            <li></li>
             {social.map((list, index) => (
               <li key={index}>
-                <div>
-                  <Image
-                    src={list} // Route of the image file
-                    height={144} // Desired size with correct aspect ratio
-                    width={144} // Desired size with correct aspect ratio
-                    alt="Your Name"
-                  />
-                </div>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className={styles.market}>
-          <h2>UX/UI DESIGNING</h2>
-          <ul>
-            {Ui.map((list, index) => (
-              <li key={index}>
-                <div>
-                  <Image
-                    src={list} // Route of the image file
-                    height={144} // Desired size with correct aspect ratio
-                    width={144} // Desired size with correct aspect ratio
-                    alt="Your Name"
-                  />
-                </div>
+                <Image
+                  src={list} // Route of the image file
+                  height={144} // Desired size with correct aspect ratio
+                  width={144} // Desired size with correct aspect ratio
+                  alt="Your Name"
+                />
               </li>
             ))}
           </ul>
@@ -114,7 +98,6 @@ export default function Clients() {
             Book your Free Coffee
           </button>
         </section>
-
       </main>
     </div>
   );

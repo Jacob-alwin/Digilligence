@@ -87,17 +87,6 @@
       flex-direction: column;
       width: 100%;
 
-      hr {
-        margin: 0;
-
-        width: 5vw;
-        border: none;
-        border-radius: 1.2vw;
-        height: 0.4vw;
-
-        background: $orange;
-        font-size: 3vw;
-      }
       h2 {
         opacity: 0.6;
         font-family: "Caros ExtraBold";
@@ -108,7 +97,6 @@
 
       ul {
         width: 100%;
-
         list-style: none;
         @include center;
         overflow-x: scroll;
@@ -119,30 +107,30 @@
         li {
           @include center;
           flex-direction: column;
-          background: rgb(241, 241, 241);
+          div {
+            background: rgb(241, 241, 241);
 
-          box-shadow: 0 0.2vw 0.2vw 0 rgba(0, 0, 0, 0.322);
-          border-radius: 50%;
-          padding: 1vw;
-          cursor: pointer;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 1vw;
+            box-shadow: 0 0.2vw 0.2vw 0 rgba(0, 0, 0, 0.322);
+            border-radius: 50%;
+            padding: 1vw;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1vw;
+          }
           img {
             padding: 1vw;
             width: 8vw;
             height: 8vw;
             object-fit: contain;
           }
-        }
-        hr {
-          width: 0.01vw;
-          height: 10vw;
-          border-radius: 10vw;
-          opacity: 0.3;
-          border: none;
-          background: $orangelight;
+
+          p {
+            text-align: center;
+            width: 10vw;
+            font-size: 1.3vw;
+          }
         }
       }
     }
@@ -151,18 +139,6 @@
       @include center;
       flex-direction: column;
       width: 100%;
-
-      hr {
-        margin: 0;
-
-        width: 5vw;
-        border: none;
-        border-radius: 1.2vw;
-        height: 0.4vw;
-
-        background: $orange;
-        font-size: 3vw;
-      }
       h2 {
         opacity: 0.6;
         font-family: "Caros ExtraBold";
@@ -186,10 +162,11 @@
           flex-direction: column;
           // background: rgb(241, 241, 241);
 
-          // box-shadow: 0 0.2vw 0.2vw 0 rgba(0, 0, 0, 0.322);
-          border-radius: 50%;
-          // padding: 1vw;
+          box-shadow: 0 0.1vw 1vw 0vw rgba(0, 0, 0, 0.123);
+          border-radius: 0%;
+          padding: 0 2vw;
           cursor: pointer;
+          border-radius: 0.5vw;
           display: flex;
           // justify-content: center;
           align-items: center;
@@ -201,32 +178,14 @@
             object-fit: contain;
           }
         }
-        hr {
-          width: 0.01vw;
-          height: 10vw;
-          border-radius: 10vw;
-          opacity: 0.3;
-          border: none;
-          background: $orangelight;
-        }
       }
     }
     .market {
       @include center;
       flex-direction: column;
+      /* Add the blur effect */
       width: 100%;
 
-      hr {
-        margin: 0;
-
-        width: 5vw;
-        border: none;
-        border-radius: 1.2vw;
-        height: 0.4vw;
-
-        background: $orange;
-        font-size: 3vw;
-      }
       h2 {
         opacity: 0.6;
         font-family: "Caros ExtraBold";
@@ -237,11 +196,28 @@
 
       ul {
         width: 100%;
+        background: rgba(255, 166, 0, 0.404);
+        background: radial-gradient(
+          rgba(255, 166, 0, 0.404),
+          rgba(255, 166, 0, 0)
+        );
+        // background: radial-gradient(closest-side, #3f87a6, #ff9d2e4f, #f69c3c3f);
+        clip-path: polygon(
+          50% 15%,
+          80% 30%,
+          100% 0,
+          100% 100%,
+          0 100%,
+          0 0,
+          20% 30%
+        );
 
         list-style: none;
-        @include inbetween;
+        @include center;
         overflow-x: scroll;
         padding: 0 1vw;
+        padding-top: 8vw;
+
         &::-webkit-scrollbar {
           width: 0;
         }
@@ -252,6 +228,9 @@
             margin: 1vw;
             box-shadow: 0px 26.9192px 35.8922px rgba(212, 217, 232, 0.2);
             height: 5vw;
+            background: $background;
+            box-shadow: 0 0.1vw 1vw 0vw rgba(0, 0, 0, 0.123);
+
             // background: #0070f3;
             border-radius: 0.5vw;
             width: 10vw;
@@ -270,6 +249,61 @@
           opacity: 0.3;
           border: none;
           background: $orangelight;
+        }
+      }
+    }
+
+    .grid {
+      @include center;
+      flex-direction: column;
+      width: 100%;
+      h2 {
+        opacity: 0.6;
+        font-family: "Caros ExtraBold";
+        margin-bottom: 1vw;
+        font-size: 2vw;
+        color: $textbold;
+      }
+
+      ul {
+        width: 100%;
+
+        list-style: none;
+        @include center;
+        overflow-x: scroll;
+        padding: 0vw;
+        width: 80vw;
+        height: max-content;
+        flex-wrap: wrap;
+        &::-webkit-scrollbar {
+          width: 0;
+        }
+        li {
+          &:first-child {
+            position: absolute;
+            height: 17vw;
+            border: 0.5vw solid $background;
+            z-index: 10;
+            width: 80vw;
+          }
+          z-index: 0;
+          @include center;
+          // flex-direction: column;
+          // background: rgb(241, 241, 241);
+          border: 0.1vw solid rgba(224, 224, 224, 0.568);
+
+          padding: 0 2.53vw;
+          cursor: pointer;
+          display: flex;
+          // justify-content: center;
+          align-items: center;
+          // margin: 1vw;
+          img {
+            padding: 1vw;
+            width: 8vw;
+            height: 8vw;
+            object-fit: contain;
+          }
         }
       }
     }

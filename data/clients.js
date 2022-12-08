@@ -1,11 +1,28 @@
-
 export const serve = [
-  "/images/Clients/serve/1.svg",
-  "/images/Clients/serve/2.svg",
-  "/images/Clients/serve/3.svg",
-  "/images/Clients/serve/4.svg",
-  "/images/Clients/serve/5.svg",
-  "/images/Clients/serve/6.svg",
+  {
+    img: "/images/Clients/serve/1.svg",
+    caption: "food & resturant",
+  },
+  {
+    img: "/images/Clients/serve/2.svg",
+    caption: "food & resturant",
+  },
+  {
+    img: "/images/Clients/serve/3.svg",
+    caption: "food & resturant",
+  },
+  {
+    img: "/images/Clients/serve/4.svg",
+    caption: "food & resturant",
+  },
+  {
+    img: "/images/Clients/serve/5.svg",
+    caption: "food & resturant",
+  },
+  {
+    img: "/images/Clients/serve/6.svg",
+    caption: "food & resturant",
+  },
 ];
 
 export const grew = [

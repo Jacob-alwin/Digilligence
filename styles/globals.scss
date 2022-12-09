@@ -60,9 +60,10 @@ body {
     width: 18vw;
     font-size: 2vw;
     @include inbetween;
-    cursor: pointer;
 
     span {
+      cursor: pointer;
+
       width: 1vw;
       height: 0.2vw;
       position: relative;

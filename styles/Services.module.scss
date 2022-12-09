@@ -488,117 +488,464 @@
       }
     }
   }
-  
- 
-
 }
 
 @media screen and (max-width: 600px) {
   .ServiceContainer {
+    font-family: "Caros Regular";
+    // font-weight: 600;
+    // padding: 0 2rem;
+    background: $background;
+    color: $text;
+
     .Banner {
       @include center;
       flex-direction: column;
+      margin: 2vw 0;
+      position: relative;
+
+      h4 {
+        padding: 02vw;
+        text-align: center;
+        margin-top: 3vw;
+        color: $orangedark;
+        font-size: 3vw;
+      }
 
       div {
         @include center;
-        width: 90vw;
+        width: 100vw;
 
         div {
-          position: relative;
-          cursor: default;
-          display: block;
-          ::selection {
-            background: none;
+          h4 {
+            text-align: left;
+            font-size: 2.5vw;
+            margin-bottom: 1vw;
+            margin-left: 5vw;
+            margin-top: 5vw;
+            color: $text;
           }
-
           h2 {
-            width: 38vw;
-            font-size: 4.3vw;
-            color: $orange;
-            font-weight: 700;
-            line-height: 4.2vw;
-
-            font-family: "Caros ExtraBold";
-            span {
-              font-size: 3.8vw;
-              font-family: "Caros Bold";
-
-              color: $text;
-            }
+            width: 50vw;
+            font-size: 7vw;
+            margin-left: 5vw;
           }
           p {
-            letter-spacing: 0.01vw;
-            font-size: 2.2vw;
-            width: 60vw;
-            text-align: start;
+            font-size: 3.3vw;
+            width: 100%;
+            padding: 1.5vw 0;
+            margin-top: 10vw;
+            margin-left: 5vw;
+            text-align: left;
           }
 
           button {
-            cursor: pointer;
-            padding: 1vw 1.5vw;
-            background: $orangelight;
-            border: 0.1vw solid $orangedark;
-            border: none;
-            font-size: 2.3vw;
-            color: $background;
-            border-radius: 1vw;
-
-            &:first-of-type {
-              display: none;
-            }
+            display: none;
           }
         }
 
         img {
           position: absolute;
-          width: 45vw;
           right: 0;
+          top: 0;
+          width: 35vw;
+          height: 35vw;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .process {
+      @include center;
+      flex-direction: column;
+
+      hr {
+        width: 35vw;
+      }
+
+      h5 {
+        font-size: 4.5vw;
+      }
+      div {
+        width: 100%;
+        @include center;
+        flex-wrap: wrap;
+        div {
+          flex-direction: column;
+          width: 30vw;
+
+          img {
+            width: 20vw;
+            padding: 1vw;
+            height: max-content;
+            border-radius: 50%;
+            object-fit: contain;
+          }
+          h6 {
+            font-size: 3vw;
+            width: 20vw;
+          }
+        }
+      }
+    }
+
+    .blog {
+      margin: 10vw 0;
+      @include around();
+      // flex-direction: column;
+      padding: 5vw 0;
+      flex-direction: row-reverse;
+      position: relative;
+
+      &:nth-child(even) {
+        background: #ffffff;
+      }
+
+      img {
+        position: absolute;
+        top: 15vw;
+        right: 10vw;
+        height: 40vw;
+        width: max-content;
+      }
+
+      div {
+        width: 90%;
+        hr {
+          width: 30vw;
+          border: none;
+          margin: 0;
+          border-radius: 1.2vw;
+          height: 0.4vw;
+          background: $orange;
+        }
+        h2 {
+          font-size: 4vw;
+          color: $textbold;
+          font-weight: 300;
+          font-family: "Caros Bold";
+        }
+        p {
+          letter-spacing: 0.01vw;
+          font-size: 3vw;
+          width: 90vw;
+          opacity: 0.7;
+          font-family: "Caros Light";
+
+          &:first-of-type {
+            width: 40vw;
+            height: 35vw;
+          }
+          // text-align: center;
+        }
+      }
+    }
+
+    .do {
+      @include center;
+      flex-direction: column;
+
+      hr {
+        width: 20vw;
+        border: none;
+        margin: 0;
+        margin-top: 1vw;
+        margin-bottom: 0.5vw;
+        border-radius: 1.2vw;
+        height: 0.2vw;
+        background: $orange;
+        font-size: 3vw;
+      }
+
+      h5 {
+        @include zero;
+        font-weight: 700;
+        margin: 2vw 0;
+        font-size: 1.5vw;
+      }
+      div {
+        width: 100%;
+        @include center;
+
+        &:first-child {
+          @include around();
+        }
+
+        div {
+          flex-direction: column;
+          .holder {
+            background: linear-gradient(180deg, #ffe81a 50%, #ff9c33 50%);
+            width: 10vw;
+            height: 10vw;
+            border-radius: 50%;
+            img {
+              width: 8vw;
+              height: 8vw;
+              object-fit: contain;
+              // padding: 0.5vw;
+
+              background: #ffface;
+              box-shadow: 0px 2vw 4vw rgba(0, 0, 0, 0.33);
+              border-radius: 50%;
+            }
+          }
+          h6 {
+            font-weight: 100;
+            font-size: 1vw;
+            width: 10vw;
+            color: $orangedark;
+            text-align: center;
+          }
+
+          &:nth-child(odd) {
+            .holder {
+              background: linear-gradient(0deg, #ffe81a 50%, #ff9c33 50%);
+            }
+          }
+        }
+      }
+    }
+
+    .progress {
+      @include center;
+      flex-direction: column;
+
+      hr {
+        width: 40vw;
+        text-align: left;
+        border: none;
+        margin: 0;
+        margin-left: -5vw;
+        border-radius: 1.2vw;
+        height: 0.4vw;
+
+        display: none;
+        &:first-of-type {
+          display: block;
+        }
+      }
+
+      h5 {
+        width: 90%;
+        padding: 0 25vw;
+        text-align: center;
+        font-size: 4.5vw;
+      }
+      div {
+        width: 90%;
+        @include around();
+        display: block;
+        flex-direction: column;
+      }
+
+      ul {
+        @include list();
+        @include center();
+        flex-wrap: wrap;
+        margin: 0 5vw;
+        li {
+          font-size: 4vw;
+          width: 40vw;
+          text-align: flex-start;
+          color: $orangedark;
+          @include around();
+          flex-direction: column;
+          display: flex;
+        }
+      }
+    }
+
+    .project {
+      h5 {
+        font-size: 3.5vw;
+        padding: 2vw 10vw 2vw 15vw;
+      }
+
+      div {
+        @include inbetween;
+        width: 90vw;
+        // background: #bd96fd;
+        margin: 5vw;
+        padding: 0;
+        flex-direction: row-reverse;
+        &:nth-child(even) {
+          flex-direction: row;
+        }
+
+        div {
+          // background: #aefd96;
+          padding: 0;
+          margin: 0;
+          width: 43vw;
+          cursor: default;
+          display: block;
+          ::selection {
+            background: none;
+          }
+          align-items: flex-start;
+          text-align: left;
+          h4 {
+            width: 38vw;
+            color: $orange;
+            font-weight: 700;
+            font-size: 2.5vw;
+            opacity: 0.6;
+            letter-spacing: 0.2vw;
+            font-family: "Caros Regular";
+            @include zero();
+            margin-bottom: 1vw;
+
+            color: $text;
+          }
+          h2 {
+            width: 43vw;
+            color: $textbold;
+            font-weight: 700;
+            font-size: 5vw;
+            font-family: "Caros Bold";
+            @include zero();
+          }
+          p {
+            letter-spacing: 0.01vw;
+            word-spacing: 0.2vw;
+            font-size: 3.2vw;
+            width: 43vw;
+            opacity: 0.9;
+            font-family: "Caros Light";
+            @include zero();
+            padding: 1.5vw 0;
+            text-align: left;
+            // opacity: 0.4;
+          }
+
+          button {
+            cursor: pointer;
+            padding: 2vw 3vw;
+            background: $orangelight;
+            border: 0.1vw solid $orangedark;
+            font-size: 3vw;
+            color: $background;
+            border-radius: 10vw;
+            transition: all ease 0.3s;
+
+            &:hover {
+              transition: all ease 0.3s;
+
+              color: $orangelight;
+              background: transparent;
+              border: 0.1vw solid $orangedark;
+            }
+          }
+        }
+
+        img {
+          width: 45vw;
           height: max-content;
         }
       }
     }
-    .we {
-      margin: 0 4vw;
-      flex-direction: column;
-      display: block;
-      hr {
-        margin-top: 5vw;
-        height: 0.8vw;
-        width: 15vw;
-      }
-      h2 {
-        margin-top: 1.5vw;
-        font-size: 5vw;
-      }
-      p {
-        @include zero();
 
-        text-align: left;
-        font-size: 3vw;
+    .services {
+      @include center();
+      flex-wrap: wrap;
+      margin: 5vw 0;
+      div {
+        @include center();
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        width: 30vw;
+        height: 30vw;
+
+        // background: #fcc220;
+        margin-bottom: 5vw;
+        filter: drop-shadow(0px 1vw 1vw rgba(0, 0, 0, 0.15));
+
+        img {
+          box-shadow: 0px 0.2vw 3vw rgba(0, 0, 0, 0.144);
+          width: 25vw;
+          height: 25vw;
+          margin-bottom: 2vw;
+          object-fit: contain;
+
+          padding: 0.1vw;
+          background: linear-gradient(
+              180deg,
+              rgba(255, 186, 60, 0.098) 0%,
+              rgba(255, 143, 26, 0.035) 100%
+            ),
+            rgba(255, 255, 255, 0.1);
+
+          border-radius: 20px;
+        }
+
+        h6 {
+          text-align: center;
+          font-size: 1.12vw;
+          width: 25vw;
+          margin: 0;
+          padding: 0 5vw;
+          // width: 15vw;
+        }
+
+        p {
+          text-align: center;
+          width: 25vw;
+          opacity: 0.6;
+          // padding: 0 5vw;
+
+          font-size: 0.8vw;
+          // width: 15vw;
+        }
       }
     }
 
-    .belowbanner {
-      padding: 1.5vw;
-      h4 {
-        font-size: 3vw;
-        @include zero;
-        letter-spacing: 0.2vw;
-      }
-      b {
-        margin: 0.5vw;
-        letter-spacing: 0.2vw;
+    .mainservices {
+      @include center();
+      flex-wrap: wrap;
+      div {
+        @include center();
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        width: 40vw;
+        margin-bottom: 5vw;
+        &:nth-child(even) {
+          margin-top: 10vw;
+        }
+        img {
+          width: 30vw;
+          height: 30vw;
+          object-fit: contain;
+          padding: 1.5vw;
+          background: linear-gradient(
+              180deg,
+              rgba(255, 186, 60, 0.098) 0%,
+              rgba(255, 143, 26, 0.035) 100%
+            ),
+            rgba(255, 255, 255, 0.1);
 
-        font-size: 2.5vw;
-      }
-      button {
-        margin: 2vw;
-        padding: 2vw;
-        background: $orangelight;
-        letter-spacing: 0.1vw;
-        border: none;
-        font-size: 3vw;
-        border-radius: 0.4vw;
+          border-radius: 20px;
+        }
+
+        h6 {
+          text-align: center;
+          font-size: 1.2vw;
+          width: 30vw;
+          margin: 0;
+          padding: 0 5vw;
+          // width: 15vw;
+        }
+
+        p {
+          text-align: center;
+          width: 30vw;
+          opacity: 0.6;
+          // padding: 0 5vw;
+
+          font-size: 1vw;
+          // width: 15vw;
+        }
       }
     }
   }

@@ -18,6 +18,7 @@ export default function Services() {
 
   return (
     <div className={styles.ServiceContainer}>
+     
       <section className={styles.Banner}>
         <div>
           <div>
@@ -53,6 +54,7 @@ export default function Services() {
 
         <hr />
       </section>
+     
       <section className={styles.mainservices}>
         {allservices.map((list, index) => (
           <div key={index}>

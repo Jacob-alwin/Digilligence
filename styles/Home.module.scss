@@ -256,7 +256,7 @@
             flex-direction: column;
             div {
               margin: 1vw;
-              box-shadow: 0px 26.9192px 35.8922px rgba(212, 217, 232, 0.2);
+              box-shadow: 0px 1vw 2vw rgba(212, 217, 232, 0.336);
               height: 5vw;
               // background: #0070f3;
               border-radius: 0.5vw;
@@ -785,44 +785,48 @@
       }
 
       .clients {
-        display: block;
         hr {
           margin-left: 4vw;
 
           margin-top: 5vw;
           height: 0.8vw;
+          align-self: start;
           width: 15vw;
         }
         h2 {
           margin-left: 4vw;
-
+          align-self: start;
           opacity: 1;
           font-size: 5.3vw;
         }
+        div {
+          display: flex;
+          ul {
+            width: 100%;
+            animation: marquee 20s linear infinite;
 
-        ul {
-          list-style: none;
-          @include inbetween;
-          overflow-x: scroll;
-          padding: 0 1vw;
-          &::-webkit-scrollbar {
-            width: 0;
-          }
-          li {
-            @include center;
-            flex-direction: column;
-            div {
-              margin: 2vw;
-              box-shadow: 0px 26.9192px 35.8922px rgba(212, 217, 232, 0.2);
-              height: 15vw;
-              // background: #0070f3;
-              border-radius: 0.5vw;
-              width: 30vw;
-              img {
-                padding: 2vw;
-                width: 30vw;
-                height: 15vw;
-                object-fit: contain;
+            list-style: none;
+            @include inbetween;
+            padding: 0 1vw;
+            &::-webkit-scrollbar {
+              width: 0;
+            }
+            li {
+              @include center;
+              flex-direction: column;
+              div {
+                margin: 3vw;
+                box-shadow: 0px 1vw 2vw rgba(212, 217, 232, 0.336);
+                height: 10vw;
+                // background: #0070f3;
+                border-radius: 0.5vw;
+                width: 20vw;
+                img {
+                  padding: 1vw;
+                  width: 20vw;
+                  height: 10vw;
+                  object-fit: contain;
+                }
               }
             }
           }

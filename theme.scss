@@ -1,4 +1,3 @@
-
 // @if (2==3) {
 $background: #ffff;
 $text: #000;
@@ -64,4 +63,42 @@ $orangeshade: #ffe3c5;
 @mixin list {
   @include zero;
   list-style: none;
+}
+
+.belowbanner {
+  @include center();
+  flex-direction: column;
+  background: linear-gradient(
+    89.99deg,
+    #ff9c33 12.34%,
+    #fcc220 110.97%,
+    rgba(252, 194, 32, 0.34) 110.97%
+  );
+  color: $background;
+  padding: 1.5vw;
+  h4 {
+    font-size: 2vw;
+    @include zero;
+  }
+  b {
+    margin: 0.5vw;
+
+    font-size: 1.5vw;
+  }
+  button {
+    margin: 1vw;
+    padding: 1vw;
+    background: $orangelight;
+    border: none;
+    color: $background;
+    font-size: 1.3vw;
+    border-radius: 0.4vw;
+    transition: all ease 0.5s;
+
+    &:hover {
+      transition: all ease 0.5s;
+      background: transparent;
+      color: $text;
+    }
+  }
 }

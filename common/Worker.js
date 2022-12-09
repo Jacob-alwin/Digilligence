@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "../styles/Services.module.scss";
 import CountUp from "react-countup";
 // import Size from "../utils/ScreenSize";
+import Link from "next/link";
 
 export default function Worker(props) {
   // .box {
@@ -34,7 +35,7 @@ export default function Worker(props) {
             </button>
           </div>
           <Image
-            src="/./images/Banner/1.png" // Route of the image file
+            src={props.data.img} // Route of the image file
             height={144} //Desired size with correct aspect ratio
             width={144} // Desired size with correct aspect ratio
             alt="Your Name"
@@ -96,19 +97,22 @@ export default function Worker(props) {
           <div>
             {props.data.do.map((list, index) => (
               <div key={index}>
-                <Image
-                  src={list.img} // Route of the image file
-                  height={144} //Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                  className="animate__animated animate__jackInTheBox"
-                />
+                <div className={styles.holder}>
+                  <Image
+                    src={list.img} // Route of the image file
+                    height={144} //Desired size with correct aspect ratio
+                    width={144} // Desired size with correct aspect ratio
+                    alt="Your Name"
+                    className="animate__animated animate__jackInTheBox"
+                  />
+                </div>
                 <h6>{list.caption}</h6>
               </div>
             ))}
           </div>
         </section>
       ) : null}
+      
       {props.data.strength ? (
         <section className={styles.progress}>
           <div>
@@ -146,7 +150,7 @@ export default function Worker(props) {
         </section>
       ) : null}
 
-      {props.data.do ? (
+      {props.data.project ? (
         <section className={styles.project}>
           <h5>Projects</h5>
           {props.data.project.map((list, index) => (
@@ -164,6 +168,7 @@ export default function Worker(props) {
                   View Portfolio
                 </button>
               </div>
+
               <Image
                 src={list.img} // Route of the image file
                 height={144} //Desired size with correct aspect ratio
@@ -181,15 +186,17 @@ export default function Worker(props) {
       <section className={styles.services}>
         {props.data.serivce.map((list, index) => (
           <div key={index}>
-            <Image
-              src={list.img} // Route of the image file
-              height={144} //Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
-              alt="Your Name"
-              className="animate__animated animate__jackInTheBox"
-            />
-            <h6>{list.Head}</h6>
-            <p>{list.paragraph}</p>
+            <Link href={list.link}>
+              <Image
+                src={list.img} // Route of the image file
+                height={144} //Desired size with correct aspect ratio
+                width={144} // Desired size with correct aspect ratio
+                alt="Your Name"
+                className="animate__animated animate__jackInTheBox"
+              />
+              <h6>{list.Head}</h6>
+              <p>{list.paragraph}</p>
+            </Link>
           </div>
         ))}
       </section>

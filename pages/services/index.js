@@ -53,7 +53,7 @@ export default function Services() {
 
         <hr />
       </section>
-      <section className={styles.services}>
+      <section className={styles.mainservices}>
         {allservices.map((list, index) => (
           <div key={index}>
             <Link href={list.link}>

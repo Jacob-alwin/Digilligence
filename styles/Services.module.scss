@@ -2,45 +2,6 @@
 @import "../caros-cufonfonts-webfont/style.css";
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 
-@mixin bordered($color, $width) {
-  border: $width solid $color;
-}
-
-@mixin bordered($color, $width) {
-  border: $width solid $color;
-}
-@mixin transition($time) {
-  transition: all ease $time;
-}
-
-@mixin zero {
-  padding: 0;
-  margin: 0;
-}
-
-@mixin center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin inbetween {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@mixin around {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-@mixin list {
-  @include zero;
-  list-style: none;
-}
-
 .ServiceContainer {
   font-family: "Caros Regular";
   // font-weight: 600;
@@ -108,12 +69,13 @@
           padding: 1vw 1.5vw;
           background: $orangelight;
           border: 0.1vw solid $orangedark;
-          border: none;
           font-size: 1.3vw;
           color: $background;
           border-radius: 10vw;
+          transition: all ease 0.2s;
 
           &:hover {
+            transition: all ease 0.4s;
             color: $orangelight;
             background: transparent;
             border: 0.1vw solid $orangedark;
@@ -178,12 +140,13 @@
     // flex-direction: column;
     padding: 5vw 0;
 
-    &:nth-child(3) {
+    &:nth-child(even) {
       background: #f8f8f8;
+      flex-direction: row-reverse;
     }
 
     img {
-      width: 20vw;
+      width: 35vw;
       height: max-content;
     }
 
@@ -247,12 +210,21 @@
 
       div {
         flex-direction: column;
-        img {
-          border-radius: 50%;
+        .holder {
+          background: linear-gradient(180deg, #ffe81a 50%, #ff9c33 50%);
           width: 10vw;
           height: 10vw;
-          padding: 1vw;
-          background: linear-gradient(180deg, #ffe81a 50%, #ff9c33 50%);
+          border-radius: 50%;
+          img {
+            width: 8vw;
+            height: 8vw;
+            object-fit: contain;
+            // padding: 0.5vw;
+
+            background: #ffface;
+            box-shadow: 0px 2vw 4vw rgba(0, 0, 0, 0.33);
+            border-radius: 50%;
+          }
         }
         h6 {
           font-weight: 100;
@@ -263,7 +235,7 @@
         }
 
         &:nth-child(odd) {
-          img {
+          .holder {
             background: linear-gradient(0deg, #ffe81a 50%, #ff9c33 50%);
           }
         }
@@ -302,11 +274,12 @@
       @include list();
       @include center();
       flex-wrap: wrap;
-      margin: 0 20vw;
+      margin: 0 15vw;
       li {
+        font-size: 2vw;
         color: $orangedark;
         @include around();
-        width: 25vw;
+        width: 30vw;
         display: flex;
       }
     }
@@ -320,28 +293,42 @@
     h5 {
       align-self: flex-start;
       // margin-top: 3vw;
-      background: $text;
+      background: #263238;
       color: $background;
-      font-size: 1.2vw;
-      padding: 0.5vw 2.5vw;
+      letter-spacing: 0.1vw;
+      font-weight: 400;
+      font-size: 1.5vw;
+      padding: 1vw 3vw 1vw 4vw;
     }
 
     div {
-      @include center;
+      @include inbetween;
       width: 80vw;
+      // background: #bd96fd;
+      margin: 5vw;
+      padding: 0;
+      flex-direction: row-reverse;
+      &:nth-child(even) {
+        flex-direction: row;
+      }
 
       div {
+        // background: #aefd96;
+        padding: 0;
+        margin: 0;
+        width: 40vw;
         cursor: default;
         display: block;
         ::selection {
           background: none;
         }
-
+        align-items: flex-start;
+        text-align: left;
         h4 {
           width: 38vw;
           color: $orange;
           font-weight: 700;
-          font-size: 1.3vw;
+          font-size: 1.2vw;
           opacity: 0.6;
           letter-spacing: 0.2vw;
           font-family: "Caros Regular";
@@ -351,18 +338,19 @@
           color: $text;
         }
         h2 {
-          width: 30vw;
-          color: $orange;
+          width: 35vw;
+          color: $textbold;
           font-weight: 700;
-          font-size: 3.3vw;
+          font-size: 1.7vw;
           font-family: "Caros Bold";
           @include zero();
         }
         p {
           letter-spacing: 0.01vw;
           word-spacing: 0.2vw;
-          font-size: 1.3vw;
-          width: 35vw;
+          font-size: 1.2vw;
+          width: 32vw;
+          opacity: 0.9;
           font-family: "Caros Light";
           @include zero();
           padding: 1.5vw 0;
@@ -375,12 +363,14 @@
           padding: 1vw 1.5vw;
           background: $orangelight;
           border: 0.1vw solid $orangedark;
-          border: none;
           font-size: 1.3vw;
           color: $background;
           border-radius: 10vw;
+          transition: all ease 0.3s;
 
           &:hover {
+            transition: all ease 0.3s;
+
             color: $orangelight;
             background: transparent;
             border: 0.1vw solid $orangedark;
@@ -398,55 +388,109 @@
   .services {
     @include center();
     flex-wrap: wrap;
+    margin: 5vw 0;
     div {
       @include center();
-      min-width: 30vw;
       flex-direction: column;
+      display: flex;
+      justify-content: center;
+      width: 30vw;
+      height: 30vw;
+
+      // background: #fcc220;
+      margin-bottom: 5vw;
+      filter: drop-shadow(0px 1vw 1vw rgba(0, 0, 0, 0.15));
 
       img {
-        width: 15vw;
-        height: max-content;
+        box-shadow: 0px 0.2vw 3vw rgba(0, 0, 0, 0.144);
+        width: 25vw;
+        height: 25vw;
+        margin-bottom: 2vw;
+        object-fit: contain;
+
+        padding: 0.1vw;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 186, 60, 0.098) 0%,
+            rgba(255, 143, 26, 0.035) 100%
+          ),
+          rgba(255, 255, 255, 0.1);
+
+        border-radius: 20px;
+      }
+
+      h6 {
+        text-align: center;
+        font-size: 1.12vw;
+        width: 25vw;
+        margin: 0;
+        padding: 0 5vw;
+        // width: 15vw;
+      }
+
+      p {
+        text-align: center;
+        width: 25vw;
+        opacity: 0.6;
+        // padding: 0 5vw;
+
+        font-size: 0.8vw;
+        // width: 15vw;
+      }
+    }
+  }
+
+  .mainservices {
+    @include center();
+    flex-wrap: wrap;
+    div {
+      @include center();
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      width: 40vw;
+      margin-bottom: 5vw;
+      &:nth-child(even) {
+        margin-top: 10vw;
+      }
+      img {
+        width: 30vw;
+        height: 30vw;
+        object-fit: contain;
+        padding: 1.5vw;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 186, 60, 0.098) 0%,
+            rgba(255, 143, 26, 0.035) 100%
+          ),
+          rgba(255, 255, 255, 0.1);
+
+        border-radius: 20px;
       }
 
       h6 {
         text-align: center;
         font-size: 1.2vw;
-        width: 15vw;
+        width: 30vw;
+        margin: 0;
+        padding: 0 5vw;
+        // width: 15vw;
+      }
+
+      p {
+        text-align: center;
+        width: 30vw;
+        opacity: 0.6;
+        // padding: 0 5vw;
+
+        font-size: 1vw;
+        // width: 15vw;
       }
     }
   }
+  
+ 
 
-  .belowbanner {
-    @include center();
-    flex-direction: column;
-    background: linear-gradient(
-      89.99deg,
-      #ff9c33 12.34%,
-      #fcc220 110.97%,
-      rgba(252, 194, 32, 0.34) 110.97%
-    );
-    color: $background;
-    padding: 1.5vw;
-    h4 {
-      font-size: 2vw;
-      @include zero;
-    }
-    b {
-      margin: 0.5vw;
-
-      font-size: 1.5vw;
-    }
-    button {
-      margin: 1vw;
-      padding: 1vw;
-      background: $orangelight;
-      border: none;
-      color: $background;
-
-      font-size: 1.3vw;
-      border-radius: 0.4vw;
-    }
-  }
 }
 
 @media screen and (max-width: 600px) {

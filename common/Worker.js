@@ -39,7 +39,7 @@ export default function Worker(props) {
             height={1500} //Desired size with correct aspect ratio
             width={1500} // Desired size with correct aspect ratio
             alt="Your Name"
-            className="animate__animated animate__jackInTheBox"
+            data-aos="zoom-in-up"
           />
         </div>
 
@@ -59,6 +59,7 @@ export default function Worker(props) {
                 height={1000} //Desired size with correct aspect ratio
                 width={1000} // Desired size with correct aspect ratio
                 alt="Your Name"
+                data-aos="zoom-in"
                 // className="animate__animated animate__jackInTheBox"
               />
               <h6>{list.caption}</h6>
@@ -75,14 +76,18 @@ export default function Worker(props) {
             height={1000} //Desired size with correct aspect ratio
             width={1000} // Desired size with correct aspect ratio
             alt="Your Name"
-            className="animate__animated animate__jackInTheBox"
+            data-aos="fade-up"
           />
           <div>
             <h2>{list.Heading}</h2>
             <hr />
-            <p>{list.description}</p>
-            {list.description2 ? <p>{list.description2}</p> : null}
-            {list.description3 ? <p>{list.description3}</p> : null}
+            <p data-aos="zoom-in">{list.description}</p>
+            {list.description2 ? (
+              <p data-aos="zoom-in">{list.description2}</p>
+            ) : null}
+            {list.description3 ? (
+              <p data-aos="zoom-in">{list.description3}</p>
+            ) : null}
           </div>
         </section>
       ))}
@@ -129,7 +134,7 @@ export default function Worker(props) {
             {props.data.strength.map((list, index) => (
               <li key={index}>
                 {list.count ? (
-                  <h3>
+                  <h3 data-aos="fade-up">
                     <CountUp
                       start={0}
                       end={list.count}
@@ -143,7 +148,7 @@ export default function Worker(props) {
                   </h3>
                 ) : null}
 
-                <h6>{list.caption}</h6>
+                <h6 data-aos="fade-down">{list.caption}</h6>
               </li>
             ))}
           </ul>
@@ -155,7 +160,7 @@ export default function Worker(props) {
           <h5>Projects</h5>
           {props.data.project.map((list, index) => (
             <div key={index}>
-              <div>
+              <div data-aos="fade-up">
                 <h4>{props.data.title}</h4>
                 <h2 className="animate__animated animate__fadeInUp">
                   <span> {list.Heading} </span>
@@ -164,7 +169,7 @@ export default function Worker(props) {
                   {list.description}
                 </p>
 
-                <button className="animate__animated animate__fadeInUp animate__delay-1s">
+                <button data-aos="zoom-in" data-aos-duration="1000">
                   View Portfolio
                 </button>
               </div>
@@ -174,7 +179,7 @@ export default function Worker(props) {
                 height={1000} //Desired size with correct aspect ratio
                 width={1000} // Desired size with correct aspect ratio
                 alt="Your Name"
-                className="animate__animated animate__jackInTheBox"
+                data-aos="zoom-in"
               />
             </div>
           ))}

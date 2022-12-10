@@ -18,7 +18,6 @@ export default function Services() {
 
   return (
     <div className={styles.ServiceContainer}>
-     
       <section className={styles.Banner}>
         <div>
           <div>
@@ -40,10 +39,10 @@ export default function Services() {
           </div>
           <Image
             src="/./images/Banner/1.png" // Route of the image file
-            height={144} //Desired size with correct aspect ratio
-            width={144} // Desired size with correct aspect ratio
+            height={1500} //Desired size with correct aspect ratio
+            width={1500} // Desired size with correct aspect ratio
             alt="Your Name"
-            className="animate__animated animate__jackInTheBox"
+            data-aos="fade-right"
           />
         </div>
 
@@ -54,17 +53,17 @@ export default function Services() {
 
         <hr />
       </section>
-     
+
       <section className={styles.mainservices}>
         {allservices.map((list, index) => (
           <div key={index}>
             <Link href={list.link}>
               <Image
                 src={list.img} // Route of the image file
-                height={144} //Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
+                height={1500} //Desired size with correct aspect ratio
+                width={1500} // Desired size with correct aspect ratio
                 alt={list.Head}
-                className="animate__animated animate__jackInTheBox"
+                data-aos="zoom-out-down"
               />
               <h6>{list.Head}</h6>
               <p>{list.paragraph}</p>

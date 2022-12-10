@@ -28,7 +28,7 @@ const process = [
 
 const about = [
   {
-    img: "/./images/AboutUs/Shared.png",
+    img: "/images/AboutUs/Shared.png",
     head: "What we do",
     decription1:
       "We're a team of Young Guns lead by our Founder Mr. Mervin Agera who believes in the tech revolution and understands the importance of delivery timely results to all the client.",
@@ -36,15 +36,16 @@ const about = [
       "Building an Enterprise is still a matter of paperwork, but there's alot that goes in order to turn it into a Brand. We will build that Brand for you at Digilligence.",
   },
   {
-    img: "/./images/AboutUs/Social.png",
+    img: "/images/AboutUs/Social.png",
     head: "Our Mission",
     decription1:
       "We are on a Mission to provide Digital Business Solutions for all types of industries across the globe and help them stand on their feet.",
     decription2:
       "Our team is set on a Mission to Build Brands of tomorrow by understanding our client's goals & working towards achieving it. The Mission mainly includes helping Small Business and Startups reach new heights with the help of our Digital Services!",
   },
+
   {
-    img: "/./images/AboutUs/SocialStratergy.png",
+    img: "/images/AboutUs/SocialStratergy.png",
     head: "What we do",
     decription1:
       "We have Vision to help India reach the pinnacle of Digital success and contribute towards the growth of the nation. We believe in Mutual Growth; the organization plans on growing Internationally.",

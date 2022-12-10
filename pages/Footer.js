@@ -67,7 +67,7 @@ function Footer() {
           </li>
         </ul>
       </footer>
-      <div className="bottom">2022 , Digiligence copyright</div>
+      <div className="bottom">2022, Digiligence copyright</div>
     </Fragment>
   );
 }

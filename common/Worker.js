@@ -59,7 +59,7 @@ export default function Worker(props) {
                 height={50} //Desired size with correct aspect ratio
                 width={50} // Desired size with correct aspect ratio
                 alt="Your Name"
-                className="animate__animated animate__jackInTheBox"
+                // className="animate__animated animate__jackInTheBox"
               />
               <h6>{list.caption}</h6>
             </div>

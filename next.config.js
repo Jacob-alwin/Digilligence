@@ -3,7 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-module.exports = nextConfig;
-
+module.exports = {
+  images: {
+    domains: ["localhost", "https://digilligence.in"],
+  },
+};
 // const withCSS = require("@zeit/next-css");
 // module.exports = withCSS();

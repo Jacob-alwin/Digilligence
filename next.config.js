@@ -5,7 +5,7 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ["localhost", "https://digilligence.in"],
+    domains: ["localhost", "https://digilligence.in", "digilligence.in"],
   },
 };
 // const withCSS = require("@zeit/next-css");

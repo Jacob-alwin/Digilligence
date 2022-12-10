@@ -43,6 +43,7 @@ export default function Services() {
             width={1500} // Desired size with correct aspect ratio
             alt="Your Name"
             data-aos="fade-right"
+            priority
           />
         </div>
 

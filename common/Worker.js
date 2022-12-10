@@ -40,6 +40,7 @@ export default function Worker(props) {
             width={1500} // Desired size with correct aspect ratio
             alt="Your Name"
             data-aos="zoom-in-up"
+            priority
           />
         </div>
 

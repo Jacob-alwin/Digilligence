@@ -5,7 +5,8 @@ import "aos/dist/aos.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
-import Cursor from "../utils/Cursor";
+import CustomCursor from "custom-cursor-react";
+import "custom-cursor-react/dist/index.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -27,8 +28,19 @@ function MyApp({ Component, pageProps }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
       </Head>
-      <Cursor />
       <Header />
+      <CustomCursor
+        targets={["h2", "h3", "button"]}
+        customClass="ring"
+        dimensions={30}
+        fill="#0000"
+        smoothness={{
+          movement: 0.2,
+          scale: 0.1,
+          opacity: 0.9,
+        }}
+        targetOpacity={0.5}
+      />
       <Component {...pageProps} />
       <Footer />
     </Fragment>

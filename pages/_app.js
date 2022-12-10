@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
+import Cursor from "../utils/Cursor";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -26,6 +27,7 @@ function MyApp({ Component, pageProps }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
       </Head>
+      <Cursor />
       <Header />
       <Component {...pageProps} />
       <Footer />

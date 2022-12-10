@@ -36,8 +36,8 @@ export default function Worker(props) {
           </div>
           <Image
             src={props.data.img} // Route of the image file
-            height={144} //Desired size with correct aspect ratio
-            width={144} // Desired size with correct aspect ratio
+            height={1500} //Desired size with correct aspect ratio
+            width={1500} // Desired size with correct aspect ratio
             alt="Your Name"
             className="animate__animated animate__jackInTheBox"
           />
@@ -56,8 +56,8 @@ export default function Worker(props) {
             <div key={index}>
               <Image
                 src={list.img} // Route of the image file
-                height={50} //Desired size with correct aspect ratio
-                width={50} // Desired size with correct aspect ratio
+                height={1000} //Desired size with correct aspect ratio
+                width={1000} // Desired size with correct aspect ratio
                 alt="Your Name"
                 // className="animate__animated animate__jackInTheBox"
               />
@@ -72,8 +72,8 @@ export default function Worker(props) {
         <section className={styles.blog} key={index}>
           <Image
             src={list.img} // Route of the image file
-            height={144} //Desired size with correct aspect ratio
-            width={144} // Desired size with correct aspect ratio
+            height={1000} //Desired size with correct aspect ratio
+            width={1000} // Desired size with correct aspect ratio
             alt="Your Name"
             className="animate__animated animate__jackInTheBox"
           />
@@ -100,7 +100,7 @@ export default function Worker(props) {
                 <div className={styles.holder}>
                   <Image
                     src={list.img} // Route of the image file
-                    height={144} //Desired size with correct aspect ratio
+                    height={1000} //Desired size with correct aspect ratio
                     width={144} // Desired size with correct aspect ratio
                     alt="Your Name"
                     className="animate__animated animate__jackInTheBox"
@@ -112,7 +112,7 @@ export default function Worker(props) {
           </div>
         </section>
       ) : null}
-      
+
       {props.data.strength ? (
         <section className={styles.progress}>
           <div>
@@ -171,8 +171,8 @@ export default function Worker(props) {
 
               <Image
                 src={list.img} // Route of the image file
-                height={144} //Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
+                height={1000} //Desired size with correct aspect ratio
+                width={1000} // Desired size with correct aspect ratio
                 alt="Your Name"
                 className="animate__animated animate__jackInTheBox"
               />
@@ -189,8 +189,8 @@ export default function Worker(props) {
             <Link href={list.link}>
               <Image
                 src={list.img} // Route of the image file
-                height={144} //Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
+                height={1000} //Desired size with correct aspect ratio
+                width={1000} // Desired size with correct aspect ratio
                 alt="Your Name"
                 className="animate__animated animate__jackInTheBox"
               />

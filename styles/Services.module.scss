@@ -84,7 +84,7 @@
       }
 
       img {
-        width: 23vw;
+        width: 40vw;
         height: max-content;
       }
     }
@@ -124,6 +124,8 @@
         flex-direction: column;
 
         img {
+          width: 4vw;
+          height: 4vw;
           border-radius: 50%;
         }
         h6 {

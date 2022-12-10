@@ -11,8 +11,8 @@ function Careers() {
         <section className={styles.Banner}>
           <Image
             src="/images/Career/careerbanner.png" // Route of the image file
-            height={144} //Desired size with correct aspect ratio
-            width={144} // Desired size with correct aspect ratio
+            height={1920} //Desired size with correct aspect ratio
+            width={1920} // Desired size with correct aspect ratio
             alt="Your Name"
             className="animate__animated animate__jackInTheBox"
           />
@@ -81,8 +81,8 @@ function Careers() {
               <div key={index}>
                 <Image
                   src={here.img} // Route of the image file
-                  height={144} //Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1920} //Desired size with correct aspect ratio
+                  width={1920} // Desired size with correct aspect ratio
                   alt="Your Name"
                   // className="animate__animated animate__jackInTheBox"
                 />
@@ -104,8 +104,8 @@ function Careers() {
                 <div>
                   <Image
                     src="/images/Career/qoutes.png" // Route of the image file
-                    height={144} //Desired size with correct aspect ratio
-                    width={144} // Desired size with correct aspect ratio
+                    height={500} //Desired size with correct aspect ratio
+                    width={500} // Desired size with correct aspect ratio
                     alt="Your Name"
                     className="animate__animated animate__jackInTheBox"
                   />
@@ -114,8 +114,8 @@ function Careers() {
                 <div>
                   <Image
                     src={person.picture} // Route of the image file
-                    height={144} //Desired size with correct aspect ratio
-                    width={144} // Desired size with correct aspect ratio
+                    height={500} //Desired size with correct aspect ratio
+                    width={500} // Desired size with correct aspect ratio
                     alt="Your Name"
                     className="animate__animated animate__jackInTheBox"
                   />

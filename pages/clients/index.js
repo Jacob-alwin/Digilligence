@@ -26,8 +26,8 @@ export default function Clients() {
                 <div>
                   <Image
                     src={list.img} // Route of the image file
-                    height={144} // Desired size with correct aspect ratio
-                    width={144} // Desired size with correct aspect ratio
+                    height={1000} // Desired size with correct aspect ratio
+                    width={1000} // Desired size with correct aspect ratio
                     alt="Your Name"
                   />
                 </div>
@@ -45,8 +45,8 @@ export default function Clients() {
               <li key={index}>
                 <Image
                   src={list} // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />
               </li>
@@ -63,8 +63,8 @@ export default function Clients() {
                   <div key={imgIndex}>
                     <Image
                       src={img} // Route of the image file
-                      height={144} // Desired size with correct aspect ratio
-                      width={144} // Desired size with correct aspect ratio
+                      height={1000} // Desired size with correct aspect ratio
+                      width={1000} // Desired size with correct aspect ratio
                       alt="Your Name"
                     />
                   </div>
@@ -82,8 +82,8 @@ export default function Clients() {
               <li key={index}>
                 <Image
                   src={list} // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />
               </li>

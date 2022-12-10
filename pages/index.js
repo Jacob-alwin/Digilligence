@@ -57,8 +57,8 @@ export default function Home() {
             </div>
             <Image
               src="/images/Banner/1.png" // Route of the image file
-              height={144} //Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={2000} //Desired size with correct aspect ratio
+              width={2000} // Desired size with correct aspect ratio
               alt="Your Name"
               className="animate__animated animate__jackInTheBox"
             />
@@ -87,8 +87,8 @@ export default function Home() {
                 <div className={styles.back} data-aos="fade-up">
                   <Image
                     src={list.img} // Route of the image file
-                    height={144} //Desired size with correct aspect ratio
-                    width={144} // Desired size with correct aspect ratio
+                    height={2000} //Desired size with correct aspect ratio
+                    width={2000} // Desired size with correct aspect ratio
                     alt="Your Name"
                   />
                 </div>
@@ -180,8 +180,8 @@ export default function Home() {
                     <div key={imgIndex}>
                       <Image
                         src={img} // Route of the image file
-                        height={144} // Desired size with correct aspect ratio
-                        width={144} // Desired size with correct aspect ratio
+                        height={1000} // Desired size with correct aspect ratio
+                        width={1000} // Desired size with correct aspect ratio
                         alt="Your Name"
                       />
                     </div>
@@ -196,8 +196,8 @@ export default function Home() {
                     <div key={imgIndex}>
                       <Image
                         src={img} // Route of the image file
-                        height={144} // Desired size with correct aspect ratio
-                        width={144} // Desired size with correct aspect ratio
+                        height={500} // Desired size with correct aspect ratio
+                        width={500} // Desired size with correct aspect ratio
                         alt="Your Name"
                       />
                     </div>
@@ -221,8 +221,8 @@ export default function Home() {
                 <div className={styles.author}>
                   <Image
                     src={list.img}
-                    height={144}
-                    width={144}
+                    height={500}
+                    width={500}
                     alt="Your Name"
                   />
                   <div>
@@ -243,14 +243,14 @@ export default function Home() {
               <li data-aos="fade-right">
                 <Image
                   src="/images/Home/Project1/1.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
                 <Image
                   src="/images/Home/Project1/4.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
               </li>
@@ -258,34 +258,34 @@ export default function Home() {
                 {" "}
                 <Image
                   src="/images/Home/Project1/8.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />
                 <Image
                   src="/images/Home/Project1/5.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
                 <Image
                   src="/images/Home/Project1/2.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
               </li>
               <li data-aos="fade-left">
                 <Image
                   src="/images/Home/Project1/3.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
                 <Image
                   src="/images/Home/Project1/7.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
               </li>
@@ -311,14 +311,14 @@ export default function Home() {
               <li>
                 <Image
                   src="/images/Home/Project2/1.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
                 <Image
                   src="/images/Home/Project2/5.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
               </li>
@@ -326,42 +326,42 @@ export default function Home() {
                 {" "}
                 <Image
                   src="/images/Home/Project2/2.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />
                 <Image
                   src="/images/Home/Project2/6.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
               </li>
               <li>
                 <Image
                   src="/images/Home/Project2/3.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
                 <Image
                   src="/images/Home/Project2/7.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
               </li>
               <li>
                 <Image
                   src="/images/Home/Project2/4.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
                 <Image
                   src="/images/Home/Project2/8.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />{" "}
               </li>
@@ -382,36 +382,36 @@ export default function Home() {
             <Image
               data-aos="fade-up"
               src="/images/Home/Project1/2.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={1000} // Desired size with correct aspect ratio
+              width={1000} // Desired size with correct aspect ratio
               alt="Your Name"
             />{" "}
             <Image
               data-aos="fade-up"
               src="/images/Home/Project1/3.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={1000} // Desired size with correct aspect ratio
+              width={1000} // Desired size with correct aspect ratio
               alt="Your Name"
             />{" "}
             <span data-aos="fade-up">
               <Image
                 src="/images/Home/Project1/5.png" // Route of the image file
-                height={144} // Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
+                height={1000} // Desired size with correct aspect ratio
+                width={1000} // Desired size with correct aspect ratio
                 alt="Your Name"
               />
               <Image
                 src="/images/Home/Project1/8.png" // Route of the image file
-                height={144} // Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
+                height={1000} // Desired size with correct aspect ratio
+                width={1000} // Desired size with correct aspect ratio
                 alt="Your Name"
               />
             </span>
             <Image
               data-aos="fade-up"
               src="/images/Home/Project1/7.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={1000} // Desired size with correct aspect ratio
+              width={1000} // Desired size with correct aspect ratio
               alt="Your Name"
             />{" "}
           </div>
@@ -420,15 +420,15 @@ export default function Home() {
             <Image
               data-aos="fade-up"
               src="/images/Home/Project2/4.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={1000} // Desired size with correct aspect ratio
+              width={1000} // Desired size with correct aspect ratio
               alt="Your Name"
             />
             <Image
               data-aos="fade-up"
               src="/images/Home/Project2/3.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={1000} // Desired size with correct aspect ratio
+              width={1000} // Desired size with correct aspect ratio
               alt="Your Name"
             />{" "}
             <div data-aos="fade-up">
@@ -443,29 +443,29 @@ export default function Home() {
             <Image
               data-aos="fade-up"
               src="/images/Home/Project2/7.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={1000} // Desired size with correct aspect ratio
+              width={1000} // Desired size with correct aspect ratio
               alt="Your Name"
             />{" "}
             <span data-aos="fade-up">
               <Image
                 src="/images/Home/Project2/1.png" // Route of the image file
-                height={144} // Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
+                height={1000} // Desired size with correct aspect ratio
+                width={1000} // Desired size with correct aspect ratio
                 alt="Your Name"
               />{" "}
               <Image
                 src="/images/Home/Project2/2.png" // Route of the image file
-                height={144} // Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
+                height={1000} // Desired size with correct aspect ratio
+                width={1000} // Desired size with correct aspect ratio
                 alt="Your Name"
               />
             </span>
             <Image
               data-aos="fade-up"
               src="/images/Home/Project2/5.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={1000} // Desired size with correct aspect ratio
+              width={1000} // Desired size with correct aspect ratio
               alt="Your Name"
             />{" "}
           </div>
@@ -479,8 +479,8 @@ export default function Home() {
               <li>
                 <Image
                   src="/images/Home/contact/icon/phone.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt=" "
                 />
                 <p>+91 8655997455</p>
@@ -488,8 +488,8 @@ export default function Home() {
               <li>
                 <Image
                   src="/images/Home/contact/icon/map.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt=" "
                 />
                 <p>
@@ -500,8 +500,8 @@ export default function Home() {
               <li>
                 <Image
                   src="/images/Home/contact/icon/mail.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt=" "
                 />
                 <p>biz@digilligence.com</p>
@@ -515,24 +515,24 @@ export default function Home() {
               <li>
                 <Image
                   src="/images/Home/contact/socialmedia/linkedin.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />
               </li>
               <li>
                 <Image
                   src="/images/Home/contact/socialmedia/instagram.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />
               </li>
               <li>
                 <Image
                   src="/images/Home/contact/socialmedia/facebook.png" // Route of the image file
-                  height={144} // Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                 />
               </li>

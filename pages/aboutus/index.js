@@ -90,8 +90,8 @@ export default function AboutUs() {
             </div>
             <Image
               src="/images/AboutUs/banner.png" // Route of the image file
-              height={144} //Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={1000} //Desired size with correct aspect ratio
+              width={1000} // Desired size with correct aspect ratio
               alt="Your Name"
               className="animate__animated animate__jackInTheBox"
             />
@@ -109,8 +109,8 @@ export default function AboutUs() {
               <li key={index}>
                 <Image
                   src={list.img} // Route of the image file
-                  height={144} //Desired size with correct aspect ratio
-                  width={144} // Desired size with correct aspect ratio
+                  height={1000} //Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
                   className="animate__animated animate__jackInTheBox"
                 />
@@ -125,8 +125,8 @@ export default function AboutUs() {
           <section className={styles.we} key={index}>
             <Image
               src={list.img} // Route of the image file
-              height={144} //Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={1000} //Desired size with correct aspect ratio
+              width={1000} // Desired size with correct aspect ratio
               alt="Your Name"
               className="animate__animated animate__jackInTheBox"
             />
@@ -146,6 +146,7 @@ export default function AboutUs() {
           </button>
         </section>
       </main>
+      
     </div>
   );
 }

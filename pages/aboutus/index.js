@@ -120,6 +120,31 @@ export default function AboutUs() {
             ))}
           </ul>
         </section>
+        <section className={styles.Mprocess}>
+          <div>
+            <hr />
+            <h2>Our Process</h2>
+            <hr />
+          </div>
+
+          <ul>
+            {process.map((list, index) => (
+              <li key={index}>
+                <Image
+                  src={list.img} // Route of the image file
+                  height={1000} //Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
+                  alt="Your Name"
+                  className="animate__animated animate__jackInTheBox"
+                />
+                <div>
+                  <h5>{list.head}</h5>
+                  <p>{list.decription}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
 
         {about.map((list, index) => (
           <section className={styles.we} key={index}>
@@ -146,7 +171,6 @@ export default function AboutUs() {
           </button>
         </section>
       </main>
-      
     </div>
   );
 }

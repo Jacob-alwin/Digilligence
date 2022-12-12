@@ -72,10 +72,10 @@
             padding: 1vw 1.5vw;
             background: $orangelight;
             border: 0.1vw solid $orangedark;
-            border: none;
             font-size: 1.3vw;
             color: $background;
             border-radius: 10vw;
+            transition: 0.5s ease all;
 
             &:hover {
               color: $orangelight;
@@ -86,7 +86,7 @@
         }
 
         img {
-          width: 23vw;
+          width: 40vw;
           height: max-content;
         }
       }
@@ -160,6 +160,9 @@
           }
         }
       }
+    }
+    .Mprocess {
+      display: none;
     }
     .we {
       @include around();
@@ -255,6 +258,13 @@
             ::selection {
               background: none;
             }
+            hr {
+              width: 15vw;
+            }
+            h4 {
+              font-size: 2.5vw;
+              margin: 2vw 0;
+            }
 
             h2 {
               width: 38vw;
@@ -272,10 +282,9 @@
               }
             }
             p {
-              letter-spacing: 0.01vw;
-              font-size: 2.2vw;
-              width: 60vw;
-              text-align: start;
+              letter-spacing: 0.02vw;
+              font-size: 2.4vw;
+              width: 45vw;
             }
 
             button {
@@ -303,26 +312,91 @@
         }
       }
       .process {
+        display: none;
+      }
+
+      .Mprocess {
         margin: 10vw 0;
+        @include center;
+        flex-direction: column;
+        background: linear-gradient(175.95deg, #fbbc05 4.29%, #ff8f1a 97.68%);
 
         div {
+          width: 100%;
+          flex-direction: row;
+          @include center;
           hr {
             width: 10vw;
             height: 0.5vw;
+            border: none;
+            margin: 0 5vw;
+            border-radius: 1.2vw;
+            opacity: 0.5;
+            background: $background;
+            font-size: 3vw;
           }
           h2 {
             font-size: 4vw;
+            color: $textbold;
+            font-weight: 300;
+            color: $background;
+            font-family: "Caros Bold";
           }
         }
 
         ul {
-          flex-direction: column;
+          width: 100%;
+          @include list;
+          @include around;
+          flex-wrap: wrap;
           li {
-            h5 {
+            @include center;
+            width: 100vw;
+
+            &:nth-child(even) {
+              flex-direction: row-reverse;
+            }
+
+            div {
+              display: flex;
+              flex-direction: column;
+              width: 60vw;
+
+              &:nth-child(even) {
+                flex-direction: column;
+              }
+              p {
+                @include zero;
+                margin-bottom: 5vw;
+
+                width: 60vw;
+                opacity: 0.8;
+                // text-align: center;
+                font-size: 2.5vw;
+                color: $background;
+                font-weight: 300;
+                margin: 0;
+                letter-spacing: 0.05vw;
+              }
+
+              h5 {
+                width: 100%;
+                text-align: start;
+                font-size: 3.5vw;
+                color: $background;
+                font-weight: 300;
+                letter-spacing: 0.05vw;
+                @include zero;
+                margin: 1vw 0;
+              }
             }
             img {
-            }
-            p {
+              width: 30vw;
+              height: 30vw;
+              padding: 0vw;
+              border-radius: 50%;
+              object-fit: contain;
+              filter: drop-shadow(0px 0.5vw 1vw rgba(0, 0, 0, 0.25));
             }
           }
         }

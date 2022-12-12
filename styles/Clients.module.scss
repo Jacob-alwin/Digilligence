@@ -344,563 +344,121 @@
 
 @media screen and (max-width: 600px) {
   .HomeContainer {
-    .nav {
-      padding: 0 5vw;
-      height: max-content;
-      img {
-        width: 30vw;
-        height: max-content;
-      }
-      div {
-        width: 40vw;
-        font-size: 4.8vw;
-        span {
-          width: 2vw;
-          height: 0.5vw;
-
-          &::after {
-            width: 3.3vw;
-            height: 0.5vw;
-
-            top: -1.2vw;
-          }
-          &::before {
-            width: 3.3vw;
-            height: 0.5vw;
-            bottom: -1.2vw;
-          }
-
-          &:hover {
-            width: 3.3vw;
-          }
-        }
-      }
-    }
+    font-family: "Caros Regular";
+    // font-weight: 600;
+    // padding: 0 2rem;
+    background: $background;
+    color: $text;
 
     main {
-      .Banner {
-        @include center;
-        flex-direction: column;
+      .serve {
+        h2 {
+          font-size: 4vw;
+        }
 
-        div {
-          @include center;
-          width: 90vw;
+        ul {
+          width: 80%;
+          flex-wrap: wrap;
+          li {
+            @include center;
+            flex-direction: column;
 
-          div {
-            position: relative;
-            cursor: default;
-            display: block;
-            ::selection {
-              background: none;
-            }
-
-            h2 {
-              width: 38vw;
-              font-size: 4.3vw;
-              color: $orange;
-              font-weight: 700;
-              line-height: 4.2vw;
-
-              font-family: "Caros ExtraBold";
-              span {
-                font-size: 3.8vw;
-                font-family: "Caros Bold";
-
-                color: $text;
-              }
+            img {
+              width: 20vw;
+              height: 20vw;
             }
             p {
-              letter-spacing: 0.01vw;
-              font-size: 2.2vw;
-              width: 60vw;
-              text-align: start;
+              width: 20vw;
+              font-size: 3.3vw;
             }
-
-            button {
-              cursor: pointer;
-              padding: 1vw 1.5vw;
-              background: $orangelight;
-              border: 0.1vw solid $orangedark;
-              border: none;
-              font-size: 2.3vw;
-              color: $background;
-              border-radius: 1vw;
-
-              &:first-of-type {
-                display: none;
-              }
-            }
-          }
-
-          img {
-            position: absolute;
-            width: 45vw;
-            right: 0;
-            height: max-content;
           }
         }
       }
-      .we {
-        margin: 0 4vw;
-        flex-direction: column;
-        display: block;
-        hr {
-          margin-top: 5vw;
-          height: 0.8vw;
-          width: 15vw;
-        }
+
+      .grew {
         h2 {
-          margin-top: 1.5vw;
-          font-size: 5vw;
+          font-size: 4vw;
         }
-        p {
-          @include zero();
+        ul {
+          width: 80%;
 
-          text-align: left;
-          font-size: 3vw;
+          list-style: none;
+          @include center;
+          overflow-x: scroll;
+          padding: 0 1vw;
+          li {
+            img {
+              width: 20vw;
+              height: 20vw;
+            }
+          }
         }
       }
-
-      .service {
-        margin: 0 4vw;
-
-        display: block;
+      .market {
+        @include center;
         flex-direction: column;
-        hr {
-          margin-top: 1vw;
-          height: 0.8vw;
-          width: 15vw;
-        }
-        h3 {
+        /* Add the blur effect */
+        width: 100%;
+
+        h2 {
           opacity: 0.6;
-          font-size: 5.3vw;
+          font-family: "Caros ExtraBold";
+          margin-bottom: 1vw;
+          font-size: 4vw;
           color: $textbold;
         }
 
         ul {
           flex-wrap: wrap;
-          li {
-            @include center;
-            flex-direction: column;
-            margin: 5vw;
-            img {
-              min-width: 20vw;
-            }
-            p {
-              margin-top: 3vw;
-              width: 20vw;
-              font-family: "Caros Light";
-              font-size: 3vw;
-            }
-          }
-        }
-      }
-
-      .progress {
-        ul {
-          @include center;
-          flex-direction: column;
-          border-radius: 1vw;
-
-          li {
-            flex-direction: column;
-            padding: 2vw 0;
-
-            h3 {
-              font-size: 10.5vw;
-            }
-
-            h6 {
-              font-size: 3.5vw;
-              width: max-content;
-              font-weight: 500;
-              text-align: center;
-            }
-          }
-
-          hr {
-            height: 0.4vw;
-            width: 60vw;
-          }
-        }
-      }
-
-      .clients {
-        display: block;
-        hr {
-          margin-left: 4vw;
-
-          margin-top: 5vw;
-          height: 0.8vw;
-          width: 15vw;
-        }
-        h2 {
-          margin-left: 4vw;
-
-          opacity: 1;
-          font-size: 5.3vw;
-        }
-
-        ul {
-          list-style: none;
-          @include inbetween;
-          overflow-x: scroll;
-          padding: 0 1vw;
-          &::-webkit-scrollbar {
-            width: 0;
-          }
           li {
             @include center;
             flex-direction: column;
             div {
               margin: 2vw;
               box-shadow: 0px 26.9192px 35.8922px rgba(212, 217, 232, 0.2);
-              height: 15vw;
+              height: 10vw;
+              background: $background;
+              box-shadow: 0 0.1vw 1vw 0vw rgba(0, 0, 0, 0.123);
+
               // background: #0070f3;
               border-radius: 0.5vw;
-              width: 30vw;
+              width: 20vw;
               img {
-                padding: 2vw;
-                width: 30vw;
-                height: 15vw;
+                padding: 1vw;
+                width: 20vw;
+                height: 10vw;
                 object-fit: contain;
               }
             }
           }
-        }
-      }
-
-      .testimonial {
-        @include center;
-        flex-direction: column;
-        // max-height: 20vw;
-        background: $orangelight;
-        hr {
-          height: 0.7vw;
-          width: 70vw;
-          border-radius: 10vw;
-          opacity: 0.3;
-          border: none;
-          background: $background;
-          // border: 1px solid rgba(255, 255, 255, 0.3);
-          box-shadow: 100px 26000.9192px 30005.8922px rgba(0, 0, 0, 0.712);
-        }
-
-        h2 {
-          font-family: "Caros Bold";
-          margin-bottom: 1vw;
-          font-size: 4vw;
-          letter-spacing: 0.02vw;
-          color: $background;
-        }
-
-        .carousel {
-          display: flex;
-          width: 100%;
-          overflow-x: scroll;
-          div {
-            margin: 1vw;
-            .comment {
-              width: 70vw;
-              height: 30vw;
-              padding: 2vw;
-
-              &::after {
-                border-left: 2vw solid transparent;
-                border-right: 2vw solid transparent;
-
-                border-top: 2.5vw solid $background;
-                bottom: -2vw;
-                left: 10vw;
-              }
-              b {
-                font-size: 3.8vw;
-              }
-              p {
-                font-size: 2.2vw;
-              }
-            }
-            .author {
-              margin-left: 8vw;
-              margin-top: 1vw;
-              display: flex;
-              img {
-                margin-right: 1vw;
-                width: 10vw;
-                margin-top: 3vw;
-
-                border-radius: 50%;
-                height: 10vw;
-              }
-              b {
-                @include zero;
-                font-size: 3.5vw;
-                letter-spacing: 0.1vw;
-                color: $background;
-              }
-              p {
-                @include zero;
-                letter-spacing: 0.03vw;
-                font-size: 2.6vw;
-                font-weight: 200;
-                color: $background;
-              }
-            }
-          }
-        }
-      }
-
-      .project {
-        display: none;
-      }
-
-      .projectM {
-        @include center;
-        flex-direction: column;
-        display: block;
-        margin: 5vw;
-        hr {
-          width: 15vw;
-          border: none;
-          margin: 0;
-          border-radius: 1.2vw;
-          height: 0.4vw;
-          background: $orange;
-        }
-        h3 {
-          margin: 2vw 0;
-          font-size: 4.5vw;
-          color: $textbold;
-          margin-bottom: 5vw;
-          font-family: "Caros ExtraBold";
-        }
-        div {
-          display: flex;
-          flex-wrap: wrap;
-          width: 90vw;
-          margin: 1vw 0;
-          img {
-            width: 10vw;
-
-            height: max-content;
-
-            &:nth-child(2) {
-              border-radius: 4vw 4vw 0 0;
-              width: 35vw;
-            }
-            &:nth-child(3) {
-              border-radius: 4vw 0vw 0 4vw;
-              width: 40.4vw;
-            }
-
-            &:nth-child(5) {
-              border-radius: 0 0vw 4vw 0;
-              width: 31vw;
-            }
-          }
-
-          span {
-            display: flex;
-            flex-direction: column;
-            padding: 1vw;
-
-            br {
-              width: 0;
-            }
-            img {
-              padding: 0.5vw;
-
-              &:nth-child(1) {
-                width: 16.6vw;
-              }
-              &:nth-child(2) {
-                border-radius: 0vw 0;
-                width: 16.6vw;
-              }
-            }
-          }
-
-          div {
-            width: 55vw;
-            display: block;
-            h6 {
-              font-size: 3.2vw;
-              opacity: 0.3;
-              @include zero;
-            }
-            h2 {
-              opacity: 0.8;
-              font-size: 4.5vw;
-              @include zero;
-              margin-top: 0.5vw;
-              font-family: "Caros ExtraBold";
-            }
-            h5 {
-              @include zero;
-              margin-top: 1vw;
-              font-size: 3.5vw;
-              font-family: "Caros Light";
-            }
-            button {
-              padding: 1.5vw;
-              background: #ffba3c;
-              margin-top: 2vw;
-              border: none;
-              font-size: 3.2vw;
-              box-shadow: 0px 5.36886px 10.7377px rgba(255, 143, 26, 0.25);
-              border-radius: 1vw;
-            }
-          }
-
-          &:last-of-type {
-            // @include center();
-
-            div {
-              width: 50vw;
-              padding: 2vw;
-            }
-            img {
-              padding: 1vw;
-              width: 10vw;
-              // width: 100%;
-              border-radius: 2vw;
-
-              height: max-content;
-
-              &:nth-child(1) {
-                width: 20vw;
-              }
-              &:nth-child(2) {
-                width: 20vw;
-              }
-              &:nth-child(4) {
-                width: 38vw;
-              }
-
-              &:nth-child(6) {
-                width: 32vw;
-              }
-            }
-
-            span {
-              display: flex;
-              flex-direction: column;
-
-              br {
-                width: 0;
-              }
-              img {
-                &:nth-child(1) {
-                  width: 20vw;
-                }
-                &:nth-child(2) {
-                  margin-top: 0.8vw;
-                  width: 20vw;
-                }
-              }
-            }
-          }
-        }
-        .Time {
-          margin: 10vw 0 0 0;
-          height: 90vw;
-          overflow-y: hidden;
-        }
-      }
-
-      .contact {
-        @include center();
-        width: 100%;
-        flex-direction: column;
-        // background: #ff9c33;
-
-        div {
-          margin: 2vw 0;
-          @include center;
-          width: 100%;
-
-          &:last-child {
-            display: flex;
-            hr {
-              margin: 0;
-              width: 15vw;
-              border: none;
-              border-radius: 1.2vw;
-              height: 0.5vw;
-              font-size: 3vw;
-            }
-            ul {
-              @include center();
-              width: max-content;
-              li {
-                width: 10vw;
-                margin: 0 2vw;
-
-                img {
-                  width: 10vw;
-                  height: 10vw;
-                  padding: 3vw;
-                }
-                p {
-                  font-size: 2vw;
-                }
-              }
-            }
-          }
           hr {
-            margin: 0;
-            width: 15vw;
+            width: 0.01vw;
+            height: 10vw;
+            border-radius: 10vw;
+            opacity: 0.3;
             border: none;
-            border-radius: 1.2vw;
-            height: 0.4vw;
-            font-size: 3vw;
+            background: $orangelight;
           }
-          h3 {
-            opacity: 1;
-            font-size: 3.5vw;
-          }
+        }
+      }
+
+      .grid {
+        h2 {
+          font-size: 4vw;
         }
 
         ul {
           li {
-            width: 30vw;
-            @include center();
-            flex-direction: column;
             img {
-              width: 10vw;
-              height: 10vw;
-              padding: 3vw;
-            }
-            p {
-              font-size: 2vw;
+              padding: 1vw;
+              width: 15vw;
+              height: 15vw;
+              object-fit: contain;
             }
           }
         }
       }
 
-      .belowbanner {
-        padding: 1.5vw;
-        h4 {
-          font-size: 3vw;
-          @include zero;
-          letter-spacing: 0.2vw;
-        }
-        b {
-          margin: 0.5vw;
-          letter-spacing: 0.2vw;
-
-          font-size: 2.5vw;
-        }
-        button {
-          margin: 2vw;
-          padding: 2vw;
-          background: $orangelight;
-          letter-spacing: 0.1vw;
-          border: none;
-          font-size: 3vw;
-          border-radius: 0.4vw;
-        }
-      }
     }
   }
 }

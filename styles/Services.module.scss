@@ -598,15 +598,14 @@
       padding: 5vw 0;
       flex-direction: row-reverse;
       position: relative;
-
       &:nth-child(even) {
         background: #ffffff;
       }
 
       img {
         position: absolute;
-        top: 15vw;
-        right: 10vw;
+        margin: 0 auto;
+        top: 25vw;
         height: 40vw;
         width: max-content;
       }
@@ -635,8 +634,9 @@
           font-family: "Caros Light";
 
           &:first-of-type {
-            width: 40vw;
-            height: 35vw;
+            margin-top: 50vw;
+            width: 90vw;
+            height: max-content;
           }
           // text-align: center;
         }
@@ -663,40 +663,24 @@
         @include zero;
         font-weight: 700;
         margin: 2vw 0;
-        font-size: 1.5vw;
+        font-size: 2.5vw;
       }
       div {
-        width: 100%;
-        @include center;
-
-        &:first-child {
-          @include around();
-        }
+        flex-wrap: wrap;
 
         div {
-          flex-direction: column;
+          width: 40vw;
           .holder {
-            background: linear-gradient(180deg, #ffe81a 50%, #ff9c33 50%);
-            width: 10vw;
-            height: 10vw;
-            border-radius: 50%;
+            width: 25vw;
+            height: 25vw;
             img {
-              width: 8vw;
-              height: 8vw;
-              object-fit: contain;
-              // padding: 0.5vw;
-
-              background: #ffface;
-              box-shadow: 0px 2vw 4vw rgba(0, 0, 0, 0.33);
-              border-radius: 50%;
+              width: 20vw;
+              height: 20vw;
             }
           }
           h6 {
-            font-weight: 100;
-            font-size: 1vw;
-            width: 10vw;
-            color: $orangedark;
-            text-align: center;
+            font-size: 3vw;
+            width: 20vw;
           }
 
           &:nth-child(odd) {
@@ -878,7 +862,7 @@
             ),
             rgba(255, 255, 255, 0.1);
 
-          border-radius: 20px;
+          border-radius: 8px;
         }
 
         h6 {
@@ -906,47 +890,12 @@
       @include center();
       flex-wrap: wrap;
       div {
-        @include center();
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        width: 40vw;
-        margin-bottom: 5vw;
-        &:nth-child(even) {
-          margin-top: 10vw;
-        }
-        img {
-          width: 30vw;
-          height: 30vw;
-          object-fit: contain;
-          padding: 1.5vw;
-          background: linear-gradient(
-              180deg,
-              rgba(255, 186, 60, 0.098) 0%,
-              rgba(255, 143, 26, 0.035) 100%
-            ),
-            rgba(255, 255, 255, 0.1);
-
-          border-radius: 20px;
-        }
-
         h6 {
-          text-align: center;
-          font-size: 1.2vw;
-          width: 30vw;
-          margin: 0;
-          padding: 0 5vw;
-          // width: 15vw;
+          font-size: 2.4vw;
         }
 
         p {
-          text-align: center;
-          width: 30vw;
-          opacity: 0.6;
-          // padding: 0 5vw;
-
-          font-size: 1vw;
-          // width: 15vw;
+          font-size: 2vw;
         }
       }
     }

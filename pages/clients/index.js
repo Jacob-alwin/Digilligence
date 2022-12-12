@@ -29,6 +29,7 @@ export default function Clients() {
                     height={1000} // Desired size with correct aspect ratio
                     width={1000} // Desired size with correct aspect ratio
                     alt="Your Name"
+                    priority
                   />
                 </div>
 

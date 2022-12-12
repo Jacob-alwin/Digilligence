@@ -89,6 +89,9 @@
           width: 40vw;
           height: max-content;
         }
+        .Mimage {
+          display: none;
+        }
       }
     }
 
@@ -305,9 +308,17 @@
 
           img {
             position: absolute;
-            width: 45vw;
-            right: 0;
+            width: 30vw;
+            right: 5vw;
             height: max-content;
+          }
+
+          .image {
+            display: none;
+          }
+
+          .Mimage {
+            display: block;
           }
         }
       }

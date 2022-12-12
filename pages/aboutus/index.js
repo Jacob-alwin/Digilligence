@@ -26,6 +26,27 @@ const process = [
   },
 ];
 
+const Mprocess = [
+  {
+    img: "/images/AboutUs/Mprocess1.png",
+    head: "Strategize",
+    decription:
+      "After analyzing your requirements, our team will strategize & come with the Plan of Action. We begin quick by hunting the results needed to deliver immediate value, exceed expectations & out grow your competition!",
+  },
+  {
+    img: "/images/AboutUs/Mprocess2.png",
+    head: "Execute",
+    decription:
+      " Our team will assemble the right mix of expertise and technology to execute the strategy in order to delivery timely results.",
+  },
+  {
+    img: "/images/AboutUs/Mprocess3.png",
+    head: "Optimize",
+    decription:
+      " With the help of analytics, our team will measure the success of the campaign/project and take necessary steps to optimize the same for better results.",
+  },
+];
+
 const about = [
   {
     img: "/images/AboutUs/Shared.png",
@@ -93,7 +114,18 @@ export default function AboutUs() {
               height={1000} //Desired size with correct aspect ratio
               width={1000} // Desired size with correct aspect ratio
               alt="Your Name"
-              className="animate__animated animate__jackInTheBox"
+              className={
+                styles.image + " animate__animated animate__jackInTheBox"
+              }
+            />
+            <Image
+              src="/images/AboutUs/Mbanner.png" // Route of the image file
+              height={1000} //Desired size with correct aspect ratio
+              width={1000} // Desired size with correct aspect ratio
+              alt="Your Name"
+              className={
+                styles.Mimage + " animate__animated animate__jackInTheBox"
+              }
             />
           </div>
         </section>
@@ -128,7 +160,7 @@ export default function AboutUs() {
           </div>
 
           <ul>
-            {process.map((list, index) => (
+            {Mprocess.map((list, index) => (
               <li key={index}>
                 <Image
                   src={list.img} // Route of the image file

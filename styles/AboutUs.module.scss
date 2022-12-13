@@ -71,10 +71,10 @@
             cursor: pointer;
             padding: 1vw 1.5vw;
             background: $orangelight;
-            border: 0.1vw solid $orangedark;
             font-size: 1.3vw;
             color: $background;
             border-radius: 10vw;
+            border: 0.1vw solid $orangedark;
             transition: 0.5s ease all;
 
             &:hover {

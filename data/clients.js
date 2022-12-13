@@ -5,23 +5,23 @@ export const serve = [
   },
   {
     img: "/images/Clients/serve/2.svg",
-    caption: "food & resturant",
+    caption: "Travel",
   },
   {
     img: "/images/Clients/serve/3.svg",
-    caption: "food & resturant",
+    caption: "Share Market ",
   },
   {
     img: "/images/Clients/serve/4.svg",
-    caption: "food & resturant",
+    caption: "Real estate",
   },
   {
     img: "/images/Clients/serve/5.svg",
-    caption: "food & resturant",
+    caption: "Technology",
   },
   {
     img: "/images/Clients/serve/6.svg",
-    caption: "food & resturant",
+    caption: "Travel",
   },
 ];
 

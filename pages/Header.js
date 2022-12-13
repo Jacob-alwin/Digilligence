@@ -11,8 +11,8 @@ function Header() {
         <Link href="/">
           <Image
             src="/images/logo.svg" // Route of the image file
-            height={144} // Desired size with correct aspect ratio
-            width={144} // Desired size with correct aspect ratio
+            height={1000} // Desired size with correct aspect ratio
+            width={1000} // Desired size with correct aspect ratio
             alt="Your Name"
           />
         </Link>

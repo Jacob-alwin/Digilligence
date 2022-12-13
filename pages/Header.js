@@ -36,7 +36,7 @@ function Header() {
                 setmenu(false);
               }}
             >
-              About Us
+              About
             </Link>
           </h6>
           {/* <h6>

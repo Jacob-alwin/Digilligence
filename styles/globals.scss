@@ -43,6 +43,35 @@ body {
   /* Handle on hover */
 }
 
+img {
+  transform: scale(1);
+  transition: all ease 0.5s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  transform: scale(1);
+  transition: all ease 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+section {
+  transform: scale(1);
+  transition: all ease 0.2s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
 .ring {
   position: fixed;
   top: 0;

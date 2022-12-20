@@ -307,38 +307,6 @@
         }
       }
     }
-
-    .belowbanner {
-      @include center();
-      flex-direction: column;
-      background: linear-gradient(
-        89.99deg,
-        #ff9c33 12.34%,
-        #fcc220 110.97%,
-        rgba(252, 194, 32, 0.34) 110.97%
-      );
-      color: $background;
-      padding: 1.5vw;
-      h4 {
-        font-size: 2vw;
-        @include zero;
-      }
-      b {
-        margin: 0.5vw;
-
-        font-size: 1.5vw;
-      }
-      button {
-        margin: 1vw;
-        padding: 1vw;
-        background: $orangelight;
-        border: none;
-        font-size: 1.3vw;
-        color: $background;
-
-        border-radius: 0.4vw;
-      }
-    }
   }
 }
 
@@ -362,8 +330,10 @@
           li {
             @include center;
             flex-direction: column;
+            margin: 2vw;
 
             img {
+              padding: 2vw;
               width: 20vw;
               height: 20vw;
             }
@@ -443,22 +413,30 @@
       }
 
       .grid {
+        width: 100vw;
+        // background: #fcc220;
+        border: none;
+        outline: none;
+        height: max-content;
         h2 {
           font-size: 4vw;
         }
 
         ul {
+          border: none;
+          height: max-content;
+          outline: none;
+          width: 100vw;
           li {
             img {
               padding: 1vw;
-              width: 15vw;
-              height: 15vw;
+              width: 25vw;
+              height: 25vw;
               object-fit: contain;
             }
           }
         }
       }
-
     }
   }
 }

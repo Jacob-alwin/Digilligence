@@ -130,43 +130,119 @@ section {
     font-size: 2vw;
     @include inbetween;
 
-    span {
-      cursor: pointer;
-
-      width: 1vw;
-      height: 0.2vw;
-      position: relative;
-      border-radius: 1vw;
-      background-color: $text;
-      @include transition(0.2s);
-      cursor: pointer;
-
-      &::after {
-        position: absolute;
-        content: " ";
-        width: 1.3vw;
+    .hamburger {
+      // background-color: #fab46a;
+      width: 3vw;
+      height: 3vw;
+      .active {
+        cursor: pointer;
+        width: 1vw;
         height: 0.2vw;
+        position: relative;
         border-radius: 1vw;
-
-        right: 0;
         background-color: $text;
-        top: -0.4vw;
-      }
-      &::before {
-        position: absolute;
-        content: " ";
-        border-radius: 1vw;
-
-        width: 1.3vw;
-        height: 0.2vw;
-        right: 0;
-        background-color: $text;
-        bottom: -0.4vw;
-      }
-
-      &:hover {
         @include transition(0.2s);
-        width: 1.3vw;
+        cursor: pointer;
+
+        &::after {
+          position: absolute;
+          content: " ";
+          width: 1.3vw;
+          height: 0.2vw;
+          border-radius: 1vw;
+          @include transition(1s);
+          right: 0;
+          background-color: $text;
+          top: -0.5vw;
+        }
+        &::before {
+          position: absolute;
+          content: " ";
+          @include transition(1s);
+          border-radius: 1vw;
+          width: 1.3vw;
+          height: 0.2vw;
+          right: 0;
+          background-color: $text;
+          bottom: -0.5vw;
+        }
+      }
+      &:hover {
+        span {
+          @include transition(0.2s);
+          width: 1.3vw;
+          background: #fff;
+          // height: 0vw;
+          &::after {
+            width: 1.3vw;
+            transform: rotate(45deg);
+            top: 0vw;
+            @include transition(1s);
+          }
+          &::before {
+            width: 1.3vw;
+            bottom: 0vw;
+            @include transition(1s);
+            transform: rotate(135deg);
+          }
+        }
+      }
+      .unactive {
+        cursor: pointer;
+        width: 1vw;
+        height: 0.2vw;
+        position: relative;
+        border-radius: 1vw;
+        background: #fff;
+
+        @include transition(0.2s);
+        cursor: pointer;
+
+        &::after {
+          position: absolute;
+          content: " ";
+          width: 1.3vw;
+          height: 0.2vw;
+          border-radius: 1vw;
+          @include transition(1s);
+          right: 0;
+          background-color: $text;
+          top: 0vw;
+          transform: rotate(45deg);
+        }
+        &::before {
+          position: absolute;
+          content: " ";
+          @include transition(1s);
+          border-radius: 1vw;
+          width: 1.3vw;
+          height: 0.2vw;
+          right: 0;
+          background-color: $text;
+          bottom: 0vw;
+          transform: rotate(135deg);
+        }
+      }
+      &:hover {
+        span {
+          @include transition(0.2s);
+          width: 1.3vw;
+          background-color: $text;
+
+          // height: 0vw;
+          &::after {
+            width: 1.3vw;
+            top: -0.5vw;
+            transform: rotate(0deg);
+            @include transition(1s);
+          }
+          &::before {
+            width: 1.3vw;
+            bottom: -0.5vw;
+            transform: rotate(0deg);
+            @include transition(1s);
+          }
+        }
       }
     }
   }
@@ -178,24 +254,26 @@ section {
   height: 100vh;
   z-index: 2;
   overflow-y: hidden;
-  background-color: $orangelight;
+  background-color: #ffa500;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   ul {
     opacity: 0.75;
     position: absolute;
     @include list;
     width: 60vw;
+    top: 5vw;
     li {
       font-size: 4.5vw;
       font-family: "Caros Extrabold";
       cursor: pointer;
-      transition: all ease 0.5s;
+      transition: all ease 0.3s;
 
       &:hover {
-        transition: all ease 0.5s;
+        transition: all ease 0.3s;
         color: $background;
         ul {
           li {
@@ -208,7 +286,6 @@ section {
         top: 2vw;
         cursor: default;
         // background: #2ec5ce;
-
         width: 50vw;
         font-family: "Caros bold";
         margin-left: 22vw;
@@ -227,6 +304,77 @@ section {
             }
           }
         }
+      }
+    }
+  }
+  .dots {
+    margin-top: 10vh;
+    margin-left: 30vw;
+    position: absolute;
+    width: 20vw;
+    opacity: 0.6;
+    z-index: 0;
+    height: 20vw;
+    // background-color: #000;
+    background-image: radial-gradient($textbold 10%, transparent 11%),
+      radial-gradient($textbold 10%, transparent 11%);
+    background-size: 2vw 2vw;
+    background-position: 0 0, 2vw 2vw;
+    background-repeat: repeat;
+    clip-path: polygon(
+      57% 0,
+      100% 0,
+      100% 67%,
+      100% 100%,
+      0 100%,
+      0 68%,
+      58% 68%
+    );
+  }
+  .start {
+    z-index: 1;
+    margin-top: 40vh;
+    margin-left: 30vw;
+    position: absolute;
+    display: flex;
+    // bottom: 10vw;
+    width: 40vw;
+    @include around();
+    h3 {
+      font-size: 2vw;
+      color: #fff;
+    }
+    hr {
+      height: 3vw;
+      border: none;
+      width: 0.1vw;
+      background: #fff;
+    }
+    button {
+      border: none;
+      background: #fff;
+      padding: 1.5vw;
+      font-size: 1.5vw;
+      font-family: "Caros ExtraBold";
+      color: #ffa500;
+      border-radius: 10vw;
+    }
+  }
+  .socialmedia {
+    margin-top: 40vh;
+    margin-left: -60vw;
+    position: absolute;
+    display: flex;
+    bottom: 10vw;
+    // right: 100vw;
+    width: 20vw;
+    @include around();
+    div {
+      img {
+        width: 3vw;
+        height: 3vw;
+        font-size: 3vw;
+        color: #ffffff;
       }
     }
   }
@@ -394,33 +542,25 @@ a {
   }
 
   .belowbanner {
-    @include center();
-    flex-direction: column;
-    background: linear-gradient(
-      89.99deg,
-      #ff9c33 12.34%,
-      #fcc220 110.97%,
-      rgba(252, 194, 32, 0.34) 110.97%
-    );
-    color: $background;
     padding: 1.5vw;
     h4 {
-      font-size: 2vw;
+      font-size: 3vw;
       @include zero;
+      letter-spacing: 0.2vw;
     }
     b {
       margin: 0.5vw;
+      letter-spacing: 0.2vw;
 
-      font-size: 1.5vw;
+      font-size: 2.5vw;
     }
     button {
-      margin: 1vw;
-      padding: 1vw;
+      margin: 2vw;
+      padding: 2vw;
       background: $orangelight;
+      letter-spacing: 0.1vw;
       border: none;
-      font-size: 1.3vw;
-      color: $background;
-
+      font-size: 3vw;
       border-radius: 0.4vw;
     }
   }

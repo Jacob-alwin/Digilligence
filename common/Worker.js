@@ -19,6 +19,12 @@ export default function Worker(props) {
 
   return (
     <div className={styles.ServiceContainer}>
+      <Head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{props.metatitle}</title>
+        <meta name="description" content={props.metades} />
+        <meta name="keywords" content={props.metakey} />
+      </Head>
       <section className={styles.Banner}>
         <div>
           <div>

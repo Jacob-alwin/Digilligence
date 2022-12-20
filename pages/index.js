@@ -11,6 +11,21 @@ import CountUp from "react-countup";
 export default function Home() {
   return (
     <div className={styles.HomeContainer}>
+      <Head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>
+          Best Digital Marketing Agency in Thane, Mumbai | |Digilligence – The
+          Digital Marketing Company
+        </title>
+        <meta
+          name="description"
+          content="Experience working with the Best Digital Marketing Agency in Mumbai,Thane specializing in Social Media Marketing & Mobile App Development Services. Book a Free Consultation call :+91 8655997455"
+        />
+        <meta
+          name="keywords"
+          content="digital marketing agency in Mumbai, digital marketing company in Mumbai, digital marketing agencies in Mumbai, Digital Marketing Agency in Thane, Best Digital marketing agency in mumbai, The Intelligent Digital Marketing Agency"
+        />
+      </Head>
       <main>
         <section className={styles.Banner}>
           <div>
@@ -196,7 +211,6 @@ export default function Home() {
             {/* <Carousel slidesToShow={2}> */}
             {comments.map((list, index) => (
               <div key={index}>
-                
                 <div className={styles.comment}>
                   <b>{list.comment}</b>
                   <p>{list.paragragh}</p>
@@ -213,7 +227,6 @@ export default function Home() {
                     <p>{list.designation}</p>
                   </div>
                 </div>
-
               </div>
             ))}
             {/* </Carousel> */}

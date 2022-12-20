@@ -2,6 +2,12 @@ export const Socialmedia = {
   title: "SOCIAL MEDIA MARKETING",
   caption: "Digital Marketing and Social Media Marketing",
   img: "/images/Services/SMM/banner.png",
+  metatitle:
+    "Top Social Media Marketing Companies in Mumbai | Social Media Agency, Thane ",
+  metades:
+    "Digilligence is the Best Social Media Marketing Agency/Company in Mumbai. Leading Social Media Agency / Company in Mumbai dealing with all SMM work, paid advertising & marketing.",
+  metakey:
+    "Top Social Media Marketing Companies in Mumbai, Social Media Marketing Agency in Mumbai, Social Media Agency in Mumbai, Social Media Marketing Company in Mumbai, Social Media Marketing Agency in Thane, paid advertising,  SMM, leader, best",
   description:
     "We take pride in calling ourselves, one of the Best Social Media Marketing Agencies in Thane, Mumbai specializing in helping businesses grow their Social Media presence. Our team comprises an enthusiastic and dynamic team of innovative and adept Social Media Strategists that have a special knack for tackling Social Media Algorithms.",
   qoute:
@@ -119,6 +125,12 @@ export const Branding = {
   title: "Branding & Designing",
   caption: "Digital Marketing and Social Media Marketing",
   img: "/images/Services/Branding/banner.png",
+  metades:
+    "Digilligence is the Best Graphic Design Company & Agency in Thane, Mumbai. We help with brand designing, Logo Designing, Digital Brochures, or Pamphlets. Call 8655997455 now.",
+  metatitle:
+    "Professional Branding & Graphic Designing Company in Mumbai | Best Logo Design Company & Agency in Mumbai",
+  metakey:
+    "Graphic Design Company & Agency in Mumbai, Best Logo Design Company & Agency in Mumbai, Graphic Designing Company in Mumbai, Logo Designers in Mumbai, Best Logo Designing Companies in Navi Mumbai, Logo Designing in Thane",
   description:
     "We take pride in calling ourselves the Best Digital Marketing Agency in Thane that provides Branding and Graphic Designing services.",
   qoute:
@@ -239,6 +251,12 @@ export const SEO = {
   title: "Search Engine Optimization",
   caption: "Digital Marketing and Social Media Marketing",
   img: "/images/Services/SEO/banner.png",
+  metades:
+    "Most advanced research based professional SEO Services in india & all around the World. Get 360* Solution for your website by the Best SEO Experts in Mumbai & Thane.",
+  metatitle:
+    "SEO Agency in Thane, Mumbai | Top SEO Companies in Mumbai | Digilligence – Best SEO Agency, Thane",
+  metakey:
+    "search engine optimization agencies in mumbai, Top SEO Companies in Mumbai, SEO Agency in Mumbai, Best SEO Services Agency in Mumbai, seo expert in mumbai, Best SEO Services Agency in Thane",
   description:
     "We are Thane’s Premier SEO Agency delivering guaranteed results. Digilligence is by far the best SEO Agency. Our team of experts and SEO strategists analyses the target audience and devises keywords that help your Website go up the ranks of the SERP. We constantly monitor the growth and strategize keywords to direct organic traffic towards your platform.",
   qoute:
@@ -341,6 +359,12 @@ export const App = {
   title: "Mobile App Development",
   caption: "Digital Marketing and Social Media Marketing",
   img: "/images/Services/App/banner.png",
+  metatitle:
+    "Best Mobile App Development Company in Mumbai |Top App Developers, Mumbai | Digilligence",
+  metades:
+    "Best Mobile App Development Company in Mumbai, delivering the Best Mobile App development solutions.  Developers reate iPhone, iPad, Android, HTML5 and Windows apps. Call 8655997455 now.",
+  metakey:
+    "Best mobile app company in Mumbai, Top App Developers in Mumbai, Top Mobile App Development Company in Mumbai, Best Mobile App Development Company in Mumbai, App Developers in Mumbai, Top App Developers in Mumbai, Mobile App Developers in Mumbai",
   description:
     "We've developed over 100+ Mobile Apps for various niches across the world for various niches. We're a one-stop solution for startups & well-established enterprises.",
   qoute:
@@ -475,6 +499,13 @@ export const Web = {
   title: "Website Development",
   caption: "Digital Marketing and Social Media Marketing",
   img: "/images/Services/Website/banner.png",
+  metatitle:
+    "Web Development & Web Designing Company India | Digital Marketing Agency, Thane",
+  metades:
+    "We are the Best Website Development Company in Mumbai. We Design and Develop Websites that are safe and secure with modern UX & UI Designing capabilities. For more details call 8655997455",
+  metakey:
+    "GraphicWeb Development Companies in Mumbai, Best Web Development Companies in Mumbai, Website Design and Development Company in Mumbai, Best website development company in Mumbai, ecommerce website development company in Mumbai, best website designers in Mumbai, wordpress developer in Mumbai, php developer in Mumbai",
+
   description:
     "Building Highly Functional Websites to help you Market your Business & outrank your competitors. ",
   qoute: "Building cutting edge website that encompass the lastest technology",
@@ -596,6 +627,12 @@ export const UI = {
   title: "UX/UI Designing",
   caption: "Digital Marketing and Social Media Marketing",
   img: "/images/Services/UIUX/banner.png",
+  metatitle:
+    "With a wide experience across niches and a proven track record, Digilligence boasts to be one of Thane's Best Digital Marketing Agencies with a wide range of clients.",
+  metades:
+    "Top Social Media Marketing Companies in Mumbai | Social Media Agency, Thane ",
+  metakey:
+    "Top Social Media Marketing Companies in Mumbai, Social Media Marketing Agency in Mumbai, Social Media Agency in Mumbai, Social Media Marketing Company in Mumbai, Social Media Marketing Agency in Thane, paid advertising,  SMM, leader, best",
   description:
     "Designing best-in-class Mobile Apps & Websites for our Clients across the Globe",
   qoute:

@@ -36,13 +36,14 @@ function Header() {
                 setmenu(false);
               }}
             >
-              About
+              Contact
             </Link>
           </h6>
           {/* <h6>
         <Link href="/clients">Clients</Link>
       </h6> */}
-          <span
+          <div
+            className="hamburger"
             onClick={() => {
               if (menu) {
                 setmenu(false);
@@ -50,7 +51,13 @@ function Header() {
                 setmenu(true);
               }
             }}
-          ></span>
+          >
+            {menu ? (
+              <span className="unactive"></span>
+            ) : (
+              <span className="active"></span>
+            )}
+          </div>
         </div>
       </header>
 
@@ -86,7 +93,6 @@ function Header() {
                 <li>Search Engine Optimization</li>
               </ul>
             </li>
-
             <li>
               <Link
                 href="/careers"
@@ -95,6 +101,16 @@ function Header() {
                 }}
               >
                 Careers
+              </Link>
+            </li>{" "}
+            <li>
+              <Link
+                href="/careers"
+                onClick={() => {
+                  setmenu(false);
+                }}
+              >
+                Clients
               </Link>
             </li>
             <li>
@@ -108,10 +124,37 @@ function Header() {
               </Link>
             </li>
           </ul>
-
-          <div>
+          <span></span>
+          <div className="start">
+            <h3>Lets get cracking</h3>
+            <hr />
+            <button>Start Your Project</button>
+          </div>
+          <div className="dots"></div>
+          <div className="socialmedia">
             <div>
-              <i></i>
+              <Image
+                src="/images/facebook.svg" // Route of the image file
+                height={1000} // Desired size with correct aspect ratio
+                width={1000} // Desired size with correct aspect ratio
+                alt=" "
+              />
+            </div>
+            <div>
+              <Image
+                src="/images/instagram.svg" // Route of the image file
+                height={1000} // Desired size with correct aspect ratio
+                width={1000} // Desired size with correct aspect ratio
+                alt=" "
+              />
+            </div>
+            <div>
+              <Image
+                src="/images/linkedin.svg" // Route of the image file
+                height={1000} // Desired size with correct aspect ratio
+                width={1000} // Desired size with correct aspect ratio
+                alt=" "
+              />
             </div>
           </div>
         </nav>

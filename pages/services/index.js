@@ -18,6 +18,20 @@ export default function Services() {
 
   return (
     <div className={styles.ServiceContainer}>
+      <Head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>
+          Digilligence | Thane's Best Digital Marketing Agency | Services
+        </title>
+        <meta
+          name="description"
+          content="You're selecting Thane's Best Digital Marketing agency that provides premier result-oriented Digital Marketing services to clients across the globe."
+        />
+        <meta
+          name="keywords"
+          content="digital marketing agency in Mumbai, digital marketing company in Mumbai, digital marketing agencies in Mumbai, Digital Marketing Agency in Thane, Best Digital marketing agency in mumbai, The Intelligent Digital Marketing Agency"
+        />
+      </Head>
       <section className={styles.Banner}>
         <div>
           <div>

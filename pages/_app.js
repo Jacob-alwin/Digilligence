@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     AOS.init();
   }, []);
   const [theme, setTheme] = useState("light");
-  
+
   return (
     <Fragment>
       <Head>
@@ -21,6 +21,10 @@ function MyApp({ Component, pageProps }) {
         <meta
           name="description"
           content="Digillence is an Digital Marketing Agency"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
         />
         <link rel="icon" href="/logoicon.svg" width={100} height={100} />
         <link

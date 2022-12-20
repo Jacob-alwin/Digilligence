@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 
 .ContactContainer {
+  min-height: 80vh;
   font-family: "Caros Regular";
   // font-weight: 600;
   // padding: 0 2rem;
@@ -48,10 +49,13 @@
     }
 
     div {
-      margin: 5vw 0;
-      i {
-        font-size: 2vw;
-        margin: 1.5vw;
+      margin: 2vw 0;
+      display: flex;
+      img {
+        margin: 0;
+        width: 4vw;
+        height: 4vw;
+        margin-right: 2vw;
       }
     }
   }
@@ -73,6 +77,18 @@
         border: none;
         padding: 1.1vw;
         border-bottom: 0.1vw solid $orangelight;
+        &:focus {
+          border: none;
+          border-bottom: 0.1vw solid $orange;
+          outline: none;
+        }
+      }
+      textarea {
+        border: none;
+        padding: 1.1vw;
+        width: 35vw;
+        min-height: 5vw;
+        border-bottom: 0.1vw solid $text;
         &:focus {
           border: none;
           border-bottom: 0.1vw solid $orange;
@@ -176,6 +192,9 @@
         input {
           padding: 1.5vw;
           font-size: 3.5vw;
+        }
+        textarea{
+          width: 100%;
         }
       }
 

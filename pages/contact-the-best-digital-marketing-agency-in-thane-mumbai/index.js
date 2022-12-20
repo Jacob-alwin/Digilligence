@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { Fragment, useState } from "react";
 import styles from "../../styles/ContactUs.module.scss";
+import Head from "next/head";
 
 function ContactUs() {
   const [fullname, setFullname] = useState("");

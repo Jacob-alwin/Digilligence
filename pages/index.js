@@ -5,8 +5,8 @@ import styles from "../styles/Home.module.scss";
 import { clients, comments, service } from "../data/home";
 // import Script from "next/script";
 import CountUp from "react-countup";
-
 // import Size from "../utils/ScreenSize";
+// import Carousel from "nuka-carousel";
 
 export default function Home() {
   return (
@@ -32,8 +32,8 @@ export default function Home() {
                 Start Your Project
               </button>
             </div>
-            <Image
-              // loader="/images/Banner/1.png"
+            {/* <Image
+              loading=""
               src="/images/Banner/1.png" // Route of the image file
               height={2000} //Desired size with correct aspect ratio
               width={2000} // Desired size with correct aspect ratio
@@ -42,7 +42,7 @@ export default function Home() {
               blurDataURL="/images/logoicon.svg"
               className="animate__animated animate__jackInTheBox"
               priority
-            />
+            /> */}
           </div>
         </section>
         <section className={styles.we}>
@@ -193,8 +193,10 @@ export default function Home() {
           <h2>Here's what our client says</h2>
           <hr />
           <div className={styles.carousel}>
+            {/* <Carousel slidesToShow={2}> */}
             {comments.map((list, index) => (
               <div key={index}>
+                
                 <div className={styles.comment}>
                   <b>{list.comment}</b>
                   <p>{list.paragragh}</p>
@@ -211,8 +213,10 @@ export default function Home() {
                     <p>{list.designation}</p>
                   </div>
                 </div>
+
               </div>
             ))}
+            {/* </Carousel> */}
           </div>
         </section>
 

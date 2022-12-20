@@ -6,14 +6,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
 // import CustomCursor from "custom-cursor-react";
-import "custom-cursor-react/dist/index.css";
+// import "custom-cursor-react/dist/index.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init();
   }, []);
-
   const [theme, setTheme] = useState("light");
+  
   return (
     <Fragment>
       <Head>

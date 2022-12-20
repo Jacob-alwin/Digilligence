@@ -60,7 +60,7 @@ h6 {
   transition: all ease 0.2s;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 }
 section {
@@ -68,7 +68,7 @@ section {
   transition: all ease 0.2s;
 
   &:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
 }
 
@@ -235,6 +235,8 @@ section {
 .footer {
   @include around;
   padding: 4vw;
+  margin-top: auto;
+
   div {
     width: 20vw;
 

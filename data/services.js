@@ -89,32 +89,32 @@ export const Socialmedia = {
   serivce: [
     {
       img: "/images/Services/Branding.png",
-      link: "/services/Branding",
+      link: "/services/Branding-Graphic-Designing",
 
       Head: "BRANDING AND DESIGNING",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/Website.png",
-      link: "/services/Website",
+      link: "/services/best-website-developer-in-mumbai",
       Head: "WEBSITE DEVELOPMENT",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/App.png",
-      link: "/services/MobileApp",
+      link: "/services/best-Mobile-app-development-company-in-mumbai",
       Head: "MOBILE APP DEVELOPMENT",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/UI.png",
-      link: "/services/UXUI",
+      link: "/services/best-ux-ui-designing-agency-in-mumbai-thane",
       Head: "UI/UX DESIGNING",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/SEO.png",
-      link: "/services/SEO",
+      link: "/services/best-seo-agency-in-mumbai-thane",
       Head: "SEARCH ENGINE OPTIMIZATION",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
@@ -216,31 +216,31 @@ export const Branding = {
   serivce: [
     {
       img: "/images/Services/Social.png",
-      link: "/services/SocialMedia",
+      link: "/services/Social-media-marketing-agencies-in-Mumbai",
       Head: "SOCIAL MEDIA MARKETING ",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/Website.png",
-      link: "/services/Website",
+      link: "/services/best-website-developer-in-mumbai",
       Head: "WEBSITE DEVELOPMENT",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/App.png",
-      link: "/services/MobileApp",
+      link: "/services/best-Mobile-app-development-company-in-mumbai",
       Head: "MOBILE APP DEVELOPMENT",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/UI.png",
-      link: "/services/UXUI",
+      link: "/services/best-ux-ui-designing-agency-in-mumbai-thane",
       Head: "UI/UX DESIGNING",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/SEO.png",
-      link: "/services/SEO",
+      link: "/services/best-seo-agency-in-mumbai-thane",
       Head: "SEARCH ENGINE OPTIMIZATION",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
@@ -323,32 +323,32 @@ export const SEO = {
   serivce: [
     {
       img: "/images/Services/Branding.png",
-      link: "/services/Branding",
+      link: "/services/Branding-Graphic-Designing",
 
       Head: "BRANDING AND DESIGNING",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/Social.png",
-      link: "/services/SocialMedia",
+      link: "/services/Social-media-marketing-agencies-in-Mumbai",
       Head: "SOCIAL MEDIA MARKETING ",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/Website.png",
-      link: "/services/Website",
+      link: "/services/best-website-developer-in-mumbai",
       Head: "WEBSITE DEVELOPMENT",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/App.png",
-      link: "/services/MobileApp",
+      link: "/services/best-Mobile-app-development-company-in-mumbai",
       Head: "MOBILE APP DEVELOPMENT",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/UI.png",
-      link: "/services/UXUI",
+      link: "/services/best-ux-ui-designing-agency-in-mumbai-thane",
       Head: "UI/UX DESIGNING",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
@@ -462,33 +462,33 @@ export const App = {
   serivce: [
     {
       img: "/images/Services/Branding.png",
-      link: "/services/Branding",
+      link: "/services/Branding-Graphic-Designing",
 
       Head: "BRANDING AND DESIGNING",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/Social.png",
-      link: "/services/SocialMedia",
+      link: "/services/Social-media-marketing-agencies-in-Mumbai",
       Head: "SOCIAL MEDIA MARKETING ",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/Website.png",
-      link: "/services/Website",
+      link: "/services/best-website-developer-in-mumbai",
       Head: "WEBSITE DEVELOPMENT",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
 
     {
       img: "/images/Services/UI.png",
-      link: "/services/UXUI",
+      link: "/services/best-ux-ui-designing-agency-in-mumbai-thane",
       Head: "UI/UX DESIGNING",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/SEO.png",
-      link: "/services/SEO",
+      link: "/services/best-seo-agency-in-mumbai-thane",
       Head: "SEARCH ENGINE OPTIMIZATION",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
@@ -591,32 +591,32 @@ export const Web = {
   serivce: [
     {
       img: "/images/Services/Branding.png",
-      link: "/services/Branding",
+      link: "/services/Branding-Graphic-Designing",
 
       Head: "BRANDING AND DESIGNING",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/Social.png",
-      link: "/services/SocialMedia",
+      link: "/services/Social-media-marketing-agencies-in-Mumbai",
       Head: "SOCIAL MEDIA MARKETING ",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/App.png",
-      link: "/services/MobileApp",
+      link: "/services/best-Mobile-app-development-company-in-mumbai",
       Head: "MOBILE APP DEVELOPMENT",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/UI.png",
-      link: "/services/UXUI",
+      link: "/services/best-ux-ui-designing-agency-in-mumbai-thane",
       Head: "UI/UX DESIGNING",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/SEO.png",
-      link: "/services/SEO",
+      link: "/services/best-seo-agency-in-mumbai-thane",
       Head: "SEARCH ENGINE OPTIMIZATION",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
@@ -720,32 +720,32 @@ export const UI = {
   serivce: [
     {
       img: "/images/Services/Branding.png",
-      link: "/services/Branding",
+      link: "/services/Branding-Graphic-Designing",
 
       Head: "BRANDING AND DESIGNING",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/Social.png",
-      link: "/services/SocialMedia",
+      link: "/services/Social-media-marketing-agencies-in-Mumbai",
       Head: "SOCIAL MEDIA MARKETING ",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/Website.png",
-      link: "/services/Website",
+      link: "/services/best-website-developer-in-mumbai",
       Head: "WEBSITE DEVELOPMENT",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/App.png",
-      link: "/services/MobileApp",
+      link: "/services/best-Mobile-app-development-company-in-mumbai",
       Head: "MOBILE APP DEVELOPMENT",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
     {
       img: "/images/Services/SEO.png",
-      link: "/services/SEO",
+      link: "/services/best-seo-agency-in-mumbai-thane",
       Head: "SEARCH ENGINE OPTIMIZATION",
       paragraph: "Digital Marketing and Social Media Marketing",
     },
@@ -755,38 +755,38 @@ export const UI = {
 export const allservices = [
   {
     img: "/images/Services/Branding.png",
-    link: "/services/Branding",
+    link: "/services/Branding-Graphic-Designing",
 
     Head: "BRANDING AND DESIGNING",
     paragraph: "Digital Marketing and Social Media Marketing",
   },
   {
     img: "/images/Services/Social.png",
-    link: "/services/SocialMedia",
+    link: "/services/Social-media-marketing-agencies-in-Mumbai",
     Head: "SOCIAL MEDIA MARKETING ",
     paragraph: "Digital Marketing and Social Media Marketing",
   },
   {
     img: "/images/Services/Website.png",
-    link: "/services/Website",
+    link: "/services/best-website-developer-in-mumbai",
     Head: "WEBSITE DEVELOPMENT",
     paragraph: "Digital Marketing and Social Media Marketing",
   },
   {
     img: "/images/Services/App.png",
-    link: "/services/MobileApp",
+    link: "/services/best-Mobile-app-development-company-in-mumbai",
     Head: "MOBILE APP DEVELOPMENT",
     paragraph: "Digital Marketing and Social Media Marketing",
   },
   {
     img: "/images/Services/UI.png",
-    link: "/services/UXUI",
+    link: "/services/best-ux-ui-designing-agency-in-mumbai-thane",
     Head: "UI/UX DESIGNING",
     paragraph: "Digital Marketing and Social Media Marketing",
   },
   {
     img: "/images/Services/SEO.png",
-    link: "/services/SEO",
+    link: "/services/best-seo-agency-in-mumbai-thane",
     Head: "SEARCH ENGINE OPTIMIZATION",
     paragraph: "Digital Marketing and Social Media Marketing",
   },

@@ -6,8 +6,14 @@ import { clients, comments, service } from "../data/home";
 // import Script from "next/script";
 import CountUp from "react-countup";
 // import Size from "../utils/ScreenSize";
-// import Carousel from "nuka-carousel";
+import Carousel from "nuka-carousel";
+import Typewriter from "typewriter-effect";
 
+const img = [
+  "/images/Banner/1.png",
+  "/images/Banner/2.png",
+  "/images/Banner/3.png",
+];
 export default function Home() {
   return (
     <div className={styles.HomeContainer}>
@@ -35,11 +41,23 @@ export default function Home() {
                 <span> your Business to </span>
                 Digital heights
               </h2>
-              <p className="animate__animated animate__fadeInUp">
-                Building Robust Marketing strategies for your Businesses &
-                Brands to deliver Best ROI with accelerated and sustainable
-                growth.
-              </p>
+              <div
+                className={
+                  styles.writing + " animate__animated animate__fadeInUp"
+                }
+              >
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Building Robust Marketing strategies for your Businesses & Brands to deliver Best ROI with accelerated and sustainable growth.",
+                      "One of Mumbai's Best Digital Marketing Agency that gives you the best of both, Marketing & Development!",
+                      "We design & develop Hybrid Mobile Apps using Google's advanced framework with the Best Mobile Application Development services in Mumbai.",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </div>
               <button className="animate__animated animate__fadeInUp animate__delay-1s">
                 Know More
               </button>
@@ -47,17 +65,32 @@ export default function Home() {
                 Start Your Project
               </button>
             </div>
-            {/* <Image
-              loading=""
-              src="/images/Banner/1.png" // Route of the image file
-              height={2000} //Desired size with correct aspect ratio
-              width={2000} // Desired size with correct aspect ratio
-              alt="Your Name"
-              placeholder="blur"
-              blurDataURL="/images/logoicon.svg"
-              className="animate__animated animate__jackInTheBox"
-              priority
-            /> */}
+            <div className={styles.imgholder}>
+              <Carousel
+                animation="fade"
+                autoplay={true}
+                wrapAround={true}
+                autoplayInterval={10000}
+                // adaptiveHeight={true}
+                withoutControls={true}
+              >
+                {img.map((slide, index) => (
+                  <Image
+                    // loading=""
+                    key={index}
+                    src={slide} // Route of the image file
+                    height={2000} //Desired size with correct aspect ratio
+                    width={2000} // Desired size with correct aspect ratio
+                    alt="Your Name"
+                    placeholder="blur"
+                    blurDataURL="/images/logoicon.svg"
+                    data-aos="fade-up"
+                    className="animate__animated animate__jackInTheBox"
+                    priority
+                  />
+                ))}
+              </Carousel>
+            </div>
           </div>
         </section>
         <section className={styles.we}>

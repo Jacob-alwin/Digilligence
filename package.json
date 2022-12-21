@@ -16,12 +16,16 @@
     "eslint-config-next": "13.0.4",
     "lyef-counter": "^1.0.2",
     "next": "13.0.4",
+    "nuka-carousel": "^5.4.1",
     "react": "18.2.0",
+    "react-animated-slider": "^1.1.4",
     "react-countup": "^6.4.0",
     "react-device-detect": "^2.2.2",
     "react-dom": "18.2.0",
     "react-scroll-parallax": "^3.3.2",
+    "react-slideshow-image": "^4.1.1",
     "sass": "^1.56.1",
-    "sendgrid": "^5.2.3"
+    "sendgrid": "^5.2.3",
+    "typewriter-effect": "^2.19.0"
   }
 }

@@ -12,6 +12,7 @@
   flex-direction: column;
   @include zero;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   .Banner {
     position: relative;
@@ -218,6 +219,8 @@
     flex-direction: column;
     // padding: 5vw;
 
+    
+
     h3 {
       @include zero;
       font-size: 2vw;
@@ -230,8 +233,35 @@
       padding: 2vw;
       overflow-x: scroll;
 
+      ::selection {
+        background-color: #ff9c33;
+        color: #fff;
+      }
+      ::-moz-selection {
+        background-color: #ff9c33;
+        color: #fff;
+      }
+  
+      /* width */
       &::-webkit-scrollbar {
-        width: 1vw;
+        width: 1.2vw;
+        background: #ffe3c500;
+        border-radius: 0.5vw;
+      }
+  
+      /* Track */
+      &::-webkit-scrollbar-track {
+        border-radius: 0.5vw;
+        // margin: 2vw;
+      }
+  
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #ff9c33;
+        border-radius: 0.5vw;
+        &:hover {
+          background: #fab46a;
+        }
       }
       li {
         margin: 0.5vw;

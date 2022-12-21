@@ -20,7 +20,7 @@ function Header() {
         <div>
           <h6>
             <Link
-              href="/clients"
+              href="/best-digital-marketing-agency-in-thane-digilligence-clients"
               onClick={() => {
                 setmenu(false);
               }}
@@ -31,7 +31,7 @@ function Header() {
 
           <h6>
             <Link
-              href="/aboutus"
+              href="/about-us"
               onClick={() => {
                 setmenu(false);
               }}
@@ -66,7 +66,7 @@ function Header() {
           <ul>
             <li>
               <Link
-                href="/aboutus"
+                href="/about-us"
                 onClick={() => {
                   setmenu(false);
                 }}
@@ -85,12 +85,56 @@ function Header() {
               </Link>
 
               <ul>
-                <li>Social Media Marketing</li>
-                <li>Mobile App Development</li>
-                <li>Branding & Graphic Designing</li>
-                <li>Website Development</li>
-                <li>UX/UI Design</li>
-                <li>Search Engine Optimization</li>
+                <Link
+                  href="/services/Social-media-marketing-agencies-in-Mumbai"
+                  onClick={() => {
+                    setmenu(false);
+                  }}
+                >
+                  <li>Social Media Marketing</li>
+                </Link>
+
+                <Link
+                  href="/services/best-Mobile-app-development-company-in-mumbai"
+                  onClick={() => {
+                    setmenu(false);
+                  }}
+                >
+                  <li>Mobile App Development</li>
+                </Link>
+
+                <Link
+                  href="/services/Branding-Graphic-Designing"
+                  onClick={() => {
+                    setmenu(false);
+                  }}
+                >
+                  <li>Branding & Graphic Designing</li>
+                </Link>
+                <Link
+                  href="/services/best-website-developer-in-mumbai"
+                  onClick={() => {
+                    setmenu(false);
+                  }}
+                >
+                  <li>Website Development</li>
+                </Link>
+                <Link
+                  href="/services/best-ux-ui-designing-agency-in-mumbai-thane"
+                  onClick={() => {
+                    setmenu(false);
+                  }}
+                >
+                  <li>UX/UI Design</li>
+                </Link>
+                <Link
+                  href="/services/best-seo-agency-in-mumbai-thane"
+                  onClick={() => {
+                    setmenu(false);
+                  }}
+                >
+                  <li>Search Engine Optimization</li>
+                </Link>
               </ul>
             </li>
             <li>
@@ -102,10 +146,10 @@ function Header() {
               >
                 Careers
               </Link>
-            </li>{" "}
+            </li>
             <li>
               <Link
-                href="/careers"
+                href="/best-digital-marketing-agency-in-thane-digilligence-clients"
                 onClick={() => {
                   setmenu(false);
                 }}
@@ -115,7 +159,7 @@ function Header() {
             </li>
             <li>
               <Link
-                href="/contactus"
+                href="/contact-the-best-digital-marketing-agency-in-thane-mumbai"
                 onClick={() => {
                   setmenu(false);
                 }}

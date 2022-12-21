@@ -59,10 +59,24 @@ export default function Home() {
                 />
               </div>
               <button className="animate__animated animate__fadeInUp animate__delay-1s">
-                Know More
+                <Link
+                  href="/about-us"
+                  onClick={() => {
+                    setmenu(false);
+                  }}
+                >
+                  Know More
+                </Link>
               </button>
               <button className="animate__animated animate__fadeInUp animate__delay-2s">
-                Start Your Project
+                <Link
+                  href="/contact-the-best-digital-marketing-agency-in-thane-mumbai"
+                  onClick={() => {
+                    setmenu(false);
+                  }}
+                >
+                  Start Your Project
+                </Link>
               </button>
             </div>
             <div className={styles.imgholder}>
@@ -575,7 +589,14 @@ export default function Home() {
           <h4 data-aos="zoom-out">All Big things start</h4>
           <b>Let's connect over a cup of coffe</b>
           <button type="" data-aos="zoom-in">
-            Book your Free Coffee
+            <Link
+              href="/contact-the-best-digital-marketing-agency-in-thane-mumbai"
+              onClick={() => {
+                setmenu(false);
+              }}
+            >
+              Book your Free Coffee
+            </Link>
           </button>
         </section>
       </main>

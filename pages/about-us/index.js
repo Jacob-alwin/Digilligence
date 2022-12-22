@@ -207,8 +207,9 @@ export default function AboutUs() {
         <section className={styles.belowbanner}>
           <b>Let's connect over a cup of coffe</b>
           <button type="submit" data-aos="zoom-in">
-            Book your Free Coffee
-          </button>
+          <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
+              Book your Free Coffee
+            </Link>          </button>
         </section>
       </main>
     </div>

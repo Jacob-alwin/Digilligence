@@ -104,8 +104,9 @@ export default function Clients() {
           <h4 data-aos="zoom-out">All Big things start</h4>
           <b>Let's connect over a cup of coffe</b>
           <button type="" data-aos="zoom-in">
-            Book your Free Coffee
-          </button>
+          <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
+              Book your Free Coffee
+            </Link>          </button>
         </section>
       </main>
     </div>

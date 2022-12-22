@@ -5,9 +5,11 @@
 .HomeContainer {
   // font-weight: 600;
   // padding: 0 2rem;
-  background: $background;
+  // background: $background;
   color: $text;
-  overflow: hidden;
+  // overflow: hidden;
+  // background-color: #df000000;
+  // width: 700vw;
 
   main {
     .Banner {
@@ -34,19 +36,23 @@
             background: $orange;
             font-size: 3vw;
           }
-          h2 {
-            width: 38vw;
-            font-size: 4.3vw;
-            color: $orange;
-            font-weight: 700;
-            line-height: 4.2vw;
+          .head {
+            // background: #ff9c33;
+            width: 68vw;
+            h2 {
+              width: 68vw;
+              font-size: 4.3vw;
+              color: $orange;
+              font-weight: 700;
+              line-height: 4.2vw;
 
-            font-family: "Caros ExtraBold";
-            span {
-              font-size: 3.8vw;
-              font-family: "Caros Bold";
+              font-family: "Caros ExtraBold";
+              span {
+                font-size: 3.8vw;
+                font-family: "Caros Bold";
 
-              color: $text;
+                color: $text;
+              }
             }
           }
 

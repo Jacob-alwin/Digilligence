@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { Fragment, useState } from "react";
 import styles from "../../styles/ContactUs.module.scss";
 import Head from "next/head";
+import Link from "next/link";
 
 function ContactUs() {
   const [fullname, setFullname] = useState("");
@@ -84,30 +85,36 @@ function ContactUs() {
               16/Z, Wagle Industrial Estate, Thane, Maharashtra 400604
             </li>
           </ul>
-          <div>
+          <div className="socialmedia">
             <div>
-              <Image
-                src="/images/facebook.svg" // Route of the image file
-                height={1000} // Desired size with correct aspect ratio
-                width={1000} // Desired size with correct aspect ratio
-                alt=" "
-              />
+              <Link href="https://www.facebook.com/digilligence.in">
+                <Image
+                  src="/images/facebook.svg" // Route of the image file
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
+                  alt=" "
+                />
+              </Link>
             </div>
             <div>
-              <Image
-                src="/images/instagram.svg" // Route of the image file
-                height={1000} // Desired size with correct aspect ratio
-                width={1000} // Desired size with correct aspect ratio
-                alt=" "
-              />
+              <Link href="https://www.instagram.com/digilligence/">
+                <Image
+                  src="/images/instagram.svg" // Route of the image file
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
+                  alt=" "
+                />
+              </Link>
             </div>
             <div>
-              <Image
-                src="/images/linkedin.svg" // Route of the image file
-                height={1000} // Desired size with correct aspect ratio
-                width={1000} // Desired size with correct aspect ratio
-                alt=" "
-              />
+              <Link href="https://www.linkedin.com/company/digilligence">
+                <Image
+                  src="/images/linkedin.svg" // Route of the image file
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
+                  alt=" "
+                />
+              </Link>
             </div>
           </div>
         </div>

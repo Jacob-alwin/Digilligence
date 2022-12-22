@@ -8,6 +8,8 @@ import CountUp from "react-countup";
 // import Size from "../utils/ScreenSize";
 import Carousel from "nuka-carousel";
 import Typewriter from "typewriter-effect";
+import Link from "next/link";
+import Particules from "../common/Particules";
 
 const img = [
   "/images/Banner/1.png",
@@ -32,15 +34,49 @@ export default function Home() {
           content="digital marketing agency in Mumbai, digital marketing company in Mumbai, digital marketing agencies in Mumbai, Digital Marketing Agency in Thane, Best Digital marketing agency in mumbai, The Intelligent Digital Marketing Agency"
         />
       </Head>
+      {/* <Particules /> */}
+
       <main>
         <section className={styles.Banner}>
           <div>
             <div>
-              <h2 className="animate__animated animate__fadeInUp">
-                Sky-Rocketing
-                <span> your Business to </span>
-                Digital heights
-              </h2>
+              <div className={styles.head}>
+                <Carousel
+                  animation="fade"
+                  autoplay={true}
+                  wrapAround={true}
+                  autoplayInterval={10000}
+                  // adaptiveHeight={true}
+                  withoutControls={true}
+                >
+                  <h2 className="animate__animated animate__fadeInUp">
+                    Sky-Rocketing
+                    <br />
+                    <span> your Business to </span>
+                    <br />
+                    Digital heights
+                  </h2>
+                  <h2 className="animate__animated animate__fadeInUp">
+                    <span>Bringing your </span>
+                    Ideas
+                    <br />
+                    <span>to life with </span>
+                    Next-gen
+                    <br />
+                    <span> Mobile Apps</span>
+                  </h2>
+                  <h2 className="animate__animated animate__fadeInUp">
+                    <span>Your Digital Partner for cooking</span>
+                    <br />
+                    Marketing Recipes
+                    <br />
+                    <span> to</span>
+                    <br />
+                    Designing Mobile APPS
+                  </h2>
+                </Carousel>
+              </div>
+
               <div
                 className={
                   styles.writing + " animate__animated animate__fadeInUp"
@@ -59,22 +95,10 @@ export default function Home() {
                 />
               </div>
               <button className="animate__animated animate__fadeInUp animate__delay-1s">
-                <Link
-                  href="/about-us"
-                  onClick={() => {
-                    setmenu(false);
-                  }}
-                >
-                  Know More
-                </Link>
+                <Link href="/about-us">Know More</Link>
               </button>
               <button className="animate__animated animate__fadeInUp animate__delay-2s">
-                <Link
-                  href="/contact-the-best-digital-marketing-agency-in-thane-mumbai"
-                  onClick={() => {
-                    setmenu(false);
-                  }}
-                >
+                <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
                   Start Your Project
                 </Link>
               </button>
@@ -291,16 +315,15 @@ export default function Home() {
                   height={1000} // Desired size with correct aspect ratio
                   width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
-                />{" "}
+                />
                 <Image
                   src="/images/Home/Project1/4.png" // Route of the image file
                   height={1000} // Desired size with correct aspect ratio
                   width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
-                />{" "}
+                />
               </li>
               <li data-aos="fade-up">
-                {" "}
                 <Image
                   src="/images/Home/Project1/8.png" // Route of the image file
                   height={1000} // Desired size with correct aspect ratio
@@ -312,13 +335,13 @@ export default function Home() {
                   height={1000} // Desired size with correct aspect ratio
                   width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
-                />{" "}
+                />
                 <Image
                   src="/images/Home/Project1/2.png" // Route of the image file
                   height={1000} // Desired size with correct aspect ratio
                   width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
-                />{" "}
+                />
               </li>
               <li data-aos="fade-left">
                 <Image
@@ -326,13 +349,13 @@ export default function Home() {
                   height={1000} // Desired size with correct aspect ratio
                   width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
-                />{" "}
+                />
                 <Image
                   src="/images/Home/Project1/7.png" // Route of the image file
                   height={1000} // Desired size with correct aspect ratio
                   width={1000} // Desired size with correct aspect ratio
                   alt="Your Name"
-                />{" "}
+                />
               </li>
             </ul>
             <div data-aos="fade-left">
@@ -558,28 +581,34 @@ export default function Home() {
             <h3>Connect with us</h3>
             <ul data-aos="fade-right">
               <li>
-                <Image
-                  src="/images/Home/contact/socialmedia/linkedin.png" // Route of the image file
-                  height={1000} // Desired size with correct aspect ratio
-                  width={1000} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                />
+                <Link href="https://www.facebook.com/digilligence.in">
+                  <Image
+                    src="/images/Home/contact/socialmedia/facebook.png" // Route of the image file
+                    height={1000} // Desired size with correct aspect ratio
+                    width={1000} // Desired size with correct aspect ratio
+                    alt=" "
+                  />
+                </Link>
               </li>
               <li>
-                <Image
-                  src="/images/Home/contact/socialmedia/instagram.png" // Route of the image file
-                  height={1000} // Desired size with correct aspect ratio
-                  width={1000} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                />
+                <Link href="https://www.instagram.com/digilligence/">
+                  <Image
+                    src="/images/Home/contact/socialmedia/instagram.png" // Route of the image file
+                    height={1000} // Desired size with correct aspect ratio
+                    width={1000} // Desired size with correct aspect ratio
+                    alt=" "
+                  />
+                </Link>
               </li>
               <li>
-                <Image
-                  src="/images/Home/contact/socialmedia/facebook.png" // Route of the image file
-                  height={1000} // Desired size with correct aspect ratio
-                  width={1000} // Desired size with correct aspect ratio
-                  alt="Your Name"
-                />
+                <Link href="https://www.linkedin.com/company/digilligence">
+                  <Image
+                    src="/images/Home/contact/socialmedia/linkedin.png" // Route of the image file
+                    height={1000} // Desired size with correct aspect ratio
+                    width={1000} // Desired size with correct aspect ratio
+                    alt=" "
+                  />
+                </Link>
               </li>
             </ul>
           </div>
@@ -589,12 +618,7 @@ export default function Home() {
           <h4 data-aos="zoom-out">All Big things start</h4>
           <b>Let's connect over a cup of coffe</b>
           <button type="" data-aos="zoom-in">
-            <Link
-              href="/contact-the-best-digital-marketing-agency-in-thane-mumbai"
-              onClick={() => {
-                setmenu(false);
-              }}
-            >
+            <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
               Book your Free Coffee
             </Link>
           </button>

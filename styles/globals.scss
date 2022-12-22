@@ -9,6 +9,10 @@ body {
   // cursor: none;
   font-family: "Caros Regular";
   background: #ffff;
+  background-image: url("/images/doodle.svg");
+  width: 100vw;
+  overflow-x: hidden;
+  // min-height: 100vh;
   ::selection {
     background-color: #ff9c33;
     color: #fff;
@@ -432,6 +436,21 @@ section {
   font-size: 1.2vw;
   @include center();
 }
+.partcontainer {
+  position: absolute;
+  min-height: 100vh;
+  // overflow: hidden;
+  z-index: 100;
+  .part {
+    // width: 100vw;
+    position: relative;
+
+    img {
+      position: absolute;
+    }
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;

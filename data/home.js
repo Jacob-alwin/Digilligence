@@ -71,22 +71,31 @@ export const comments = [
 
 export const service = [
   {
+    link: "/services/Social-media-marketing-agencies-in-Mumbai",
+
     img: "/images/Home/Service/1.png",
     name: "Social Media Marketing",
   },
   {
+    link: "/services/best-Mobile-app-development-company-in-mumbai",
+
     img: "/images/Home/Service/2.png",
     name: "Mobile App Development",
   },
   {
+    link: "/services/Branding-Graphic-Designing",
+
     img: "/images/Home/Service/3.png",
     name: "Branding & Graphic Designing",
   },
   {
+    link: "/services/best-website-developer-in-mumbai",
+
     img: "/images/Home/Service/4.png",
     name: "Website Development",
   },
   {
+    link: "/services/best-ux-ui-designing-agency-in-mumbai-thane",
     img: "/images/Home/Service/5.png",
     name: "UX/UI Development",
   },

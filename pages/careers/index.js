@@ -14,7 +14,8 @@ function Careers() {
             height={1920} //Desired size with correct aspect ratio
             width={1920} // Desired size with correct aspect ratio
             alt="Your Name"
-            className="animate__animated animate__jackInTheBox"
+            data-aos="zoom-in "
+            // className="animate__animated animate__jackInTheBox"
             priority
           />
           <span>cddd</span>

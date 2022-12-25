@@ -6,6 +6,7 @@ import CountUp from "react-countup";
 // import Size from "../utils/ScreenSize";
 import { allservices } from "../../data/services";
 import Link from "next/link";
+import Particules from "../../common/Particules";
 
 export default function Services() {
   // .box {
@@ -32,6 +33,9 @@ export default function Services() {
           content="digital marketing agency in Mumbai, digital marketing company in Mumbai, digital marketing agencies in Mumbai, Digital Marketing Agency in Thane, Best Digital marketing agency in mumbai, The Intelligent Digital Marketing Agency"
         />
       </Head>
+
+      <Particules />
+
       <section className={styles.Banner}>
         <div>
           <div>

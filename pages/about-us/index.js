@@ -204,12 +204,13 @@ export default function AboutUs() {
           </section>
         ))}
 
-        <section className={styles.belowbanner}>
+        <section className="bottombanner">
           <b>Let's connect over a cup of coffe</b>
           <button type="submit" data-aos="zoom-in">
-          <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
+            <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
               Book your Free Coffee
-            </Link>          </button>
+            </Link>{" "}
+          </button>
         </section>
       </main>
     </div>

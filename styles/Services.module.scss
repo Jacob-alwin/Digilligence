@@ -122,10 +122,12 @@
       @include center;
       div {
         flex-direction: column;
-
         img {
-          width: 4vw;
-          height: 4vw;
+          background: $orangeshade;
+
+          width: 6vw;
+          height: 6vw;
+          padding: 1vw;
           border-radius: 50%;
         }
         h6 {

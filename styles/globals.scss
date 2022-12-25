@@ -9,7 +9,7 @@ body {
   // cursor: none;
   font-family: "Caros Regular";
   background: #ffff;
-  background-image: url("/images/doodle.svg");
+  // background-image: url("/images/doodle.svg");
   width: 100vw;
   overflow-x: hidden;
   // min-height: 100vh;
@@ -313,7 +313,7 @@ section {
   }
   .dots {
     margin-top: 10vh;
-    margin-left: 30vw;
+    margin-left: 50vw;
     position: absolute;
     width: 20vw;
     opacity: 0.6;
@@ -403,21 +403,29 @@ section {
   ul {
     @include list;
     width: 20vw;
+    margin: 0;
+    padding: 0;
 
     li {
       text-align: left;
       padding: 0.2vw;
       font-size: 1.1vw;
       display: flex;
+
       align-items: center;
       &:first-child {
-        // background: #0070f3;
         padding: 1.2vw 0;
         font-size: 1.5vw;
         font-weight: 500;
       }
       span {
+        margin-left: -10vw;
+        // background: #0070f3;
         color: #2ec5ce;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
         font-family: "Nanum Pen Script", cursive;
       }
 
@@ -429,6 +437,44 @@ section {
     }
   }
 }
+
+.bottombanner {
+  @include center();
+  flex-direction: column;
+  background: linear-gradient(
+    89.99deg,
+    #ff9c33 12.34%,
+    #fcc220 110.97%,
+    rgba(252, 194, 32, 0.34) 110.97%
+  );
+  color: $background;
+  padding: 1.5vw;
+  h4 {
+    font-size: 2vw;
+    @include zero;
+  }
+  b {
+    margin: 0.5vw;
+
+    font-size: 1.5vw;
+  }
+  button {
+    margin: 1vw;
+    padding: 1vw;
+    background: $orangelight;
+    border: none;
+    font-size: 1.3vw;
+    color: $background;
+    border-radius: 0.4vw;
+    color: $background;
+    transition: all ease 0.5s;
+    &:hover {
+      transition: all ease 0.5s;
+      background: $orangedark;
+    }
+  }
+}
+
 .bottom {
   background: $textbold;
   color: $background;
@@ -481,8 +527,108 @@ a {
     div {
       width: 40vw;
       font-size: 4.8vw;
+      .hamburger {
+        // background-color: #fab46a;
+        width: 3vw;
+        height: 3vw;
+        .active {
+          cursor: pointer;
+          width: 3vw;
+          height: 0.5vw;
+
+          &::after {
+            width: 3vw;
+            height: 0.5vw;
+            top: -1vw;
+          }
+          &::before {
+            width: 3vw;
+            height: 0.5vw;
+            bottom: -1vw;
+          }
+        }
+        &:hover {
+          span {
+            @include transition(0.2s);
+            width: 3vw;
+            background: #fff;
+            // height: 0vw;
+            &::after {
+              width: 3vw;
+              transform: rotate(45deg);
+              top: 0vw;
+              @include transition(1s);
+            }
+            &::before {
+              width: 3vw;
+              bottom: 0vw;
+              @include transition(1s);
+              transform: rotate(135deg);
+            }
+          }
+        }
+
+        .unactive {
+          cursor: pointer;
+          width: 3vw;
+          height: 0.5vw;
+          position: relative;
+          border-radius: 1vw;
+          background: #fff;
+
+          @include transition(0.2s);
+          cursor: pointer;
+
+          &::after {
+            position: absolute;
+            content: " ";
+            width: 3vw;
+            height: 0.5vw;
+            border-radius: 1vw;
+            @include transition(1s);
+            right: 0;
+            background-color: $text;
+            top: 0vw;
+            transform: rotate(45deg);
+          }
+          &::before {
+            position: absolute;
+            content: " ";
+            @include transition(1s);
+            border-radius: 1vw;
+            width: 3vw;
+            height: 0.5vw;
+            right: 0;
+            background-color: $text;
+            bottom: 0vw;
+            transform: rotate(135deg);
+          }
+        }
+        &:hover {
+          span {
+            @include transition(0.2s);
+            width: 3vw;
+
+            background-color: $background;
+
+            // height: 0vw;
+            &::after {
+              width: 3vw;
+              top: 0vw;
+              transform: rotate(45deg);
+              @include transition(1s);
+            }
+            &::before {
+              width: 3vw;
+              bottom: 0vw;
+              transform: rotate(135deg);
+              @include transition(1s);
+            }
+          }
+        }
+      }
       span {
-        width: 2vw;
+        width: 5vw;
         height: 0.5vw;
 
         &::after {
@@ -560,30 +706,179 @@ a {
     }
   }
 
-  .belowbanner {
-    padding: 1.5vw;
+  .partcontainer {
+    display: none;
+  }
+
+  .menu {
+    // position: absolute;
+    width: 100%;
+    height: 93vh;
+    z-index: 2;
+    overflow-y: hidden;
+    background-color: #ffa500;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+
+    ul {
+      opacity: 0.75;
+      position: relative;
+      @include list;
+      width: 35vw;
+      // background-color: #2ec5ce;
+      top: 0;
+      top: 10vw;
+      li {
+        font-size: 7.5vw;
+        font-family: "Caros Extrabold";
+        cursor: pointer;
+        transition: all ease 0.3s;
+
+        &:hover {
+          transition: all ease 0.3s;
+          color: $background;
+          ul {
+            margin-bottom: 5vw;
+
+            li {
+              font-size: 3.5vw;
+              color: $text;
+            }
+          }
+        }
+        ul {
+          top: 2vw;
+          cursor: default;
+          // background: #2ec5ce;
+          width: 50vw;
+          font-family: "Caros bold";
+          margin-left: 0;
+          li {
+            cursor: pointer;
+            font-size: 0vw;
+
+            &:hover {
+              transition: all ease 0.5s;
+              color: $background;
+              ul {
+                li {
+                  opacity: 1;
+                  color: $text;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .dots {
+      margin-top: 30vh;
+      margin-left: 50vw;
+      position: absolute;
+      width: 30vw;
+      opacity: 0.6;
+      z-index: 0;
+      height: 40vw;
+      // background-color: #000;
+      background-image: radial-gradient($textbold 10%, transparent 11%),
+        radial-gradient($textbold 10%, transparent 11%);
+      background-size: 4vw 4vw;
+      background-position: 0 0, 2vw 2vw;
+      background-repeat: repeat;
+      clip-path: polygon(
+        57% 0,
+        100% 0,
+        100% 67%,
+        100% 100%,
+        0 100%,
+        0 68%,
+        58% 68%
+      );
+    }
+    .start {
+      z-index: 1;
+      margin-top: 50vh;
+      margin-left: 00vw;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      // bottom: 10vw;
+      width: 40vw;
+      @include around();
+      h3 {
+        font-size: 4vw;
+        color: #fff;
+        margin: 0;
+      }
+      hr {
+        margin: 3vw 0;
+        height: 0.1vw;
+        border: none;
+        width: 30vw;
+        background: #fff;
+      }
+      button {
+        border: none;
+        background: #fff;
+        padding: 2.5vw;
+        font-size: 3.5vw;
+        font-family: "Caros ExtraBold";
+        color: #ffa500;
+        border-radius: 10vw;
+      }
+    }
+    .socialmedia {
+      margin-left: 0vw;
+      position: absolute;
+      display: flex;
+      bottom: 20vw;
+      // right: 100vw;
+      width: 20vw;
+      @include around();
+      div {
+        img {
+          margin: 0 2vw;
+          width: 10vw;
+          height: 10vw;
+          font-size: 10vw;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .bottombanner {
+    @include center();
+    flex-direction: column;
+    background: linear-gradient(
+      89.99deg,
+      #ff9c33 12.34%,
+      #fcc220 110.97%,
+      rgba(252, 194, 32, 0.34) 110.97%
+    );
+    color: $background;
+    padding: 3.5vw;
     h4 {
-      font-size: 3vw;
+      font-size: 4vw;
       @include zero;
-      letter-spacing: 0.2vw;
     }
     b {
-      margin: 0.5vw;
-      letter-spacing: 0.2vw;
+      margin: 1.5vw;
 
       font-size: 2.5vw;
     }
     button {
-      margin: 2vw;
+      margin: 1vw;
       padding: 2vw;
       background: $orangelight;
-      letter-spacing: 0.1vw;
       border: none;
       font-size: 3vw;
-      border-radius: 0.4vw;
+      color: $background;
+      border-radius: 1.4vw;
     }
   }
-
   .bottom {
     padding: 1.5vw;
     letter-spacing: 0.1vw;

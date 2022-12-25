@@ -10,78 +10,6 @@
   color: $text;
 
   main {
-    .Banner {
-      @include center;
-      flex-direction: column;
-
-      div {
-        @include center;
-        width: 80vw;
-
-        div {
-          cursor: default;
-          display: block;
-          ::selection {
-            background: none;
-          }
-
-          hr {
-            width: 5vw;
-            border: none;
-            margin: 0;
-            border-radius: 1.2vw;
-            height: 0.4vw;
-            background: $orange;
-            font-size: 3vw;
-          }
-          h2 {
-            width: 38vw;
-            font-size: 4.3vw;
-            color: $orange;
-            font-weight: 700;
-            line-height: 4.2vw;
-
-            font-family: "Caros ExtraBold";
-            span {
-              font-size: 3.8vw;
-              font-family: "Caros Bold";
-
-              color: $text;
-            }
-          }
-          p {
-            letter-spacing: 0.01vw;
-            font-size: 1.3vw;
-            width: 50vw;
-            text-align: left;
-          }
-
-          button {
-            cursor: pointer;
-            padding: 1vw 1.5vw;
-            background: $orangelight;
-            border: 0.1vw solid $orangedark;
-            border: none;
-            font-size: 1.3vw;
-            color: $background;
-            border-radius: 10vw;
-
-            &:first-of-type {
-              margin-right: 1vw;
-              color: $orangelight;
-              background: transparent;
-              border: 0.1vw solid $orangedark;
-            }
-          }
-        }
-
-        img {
-          width: 23vw;
-          height: max-content;
-        }
-      }
-    }
-
     .serve {
       @include center;
       flex-direction: column;
@@ -196,9 +124,9 @@
 
       ul {
         width: 100%;
-        background: rgba(255, 166, 0, 0.404);
+        background: rgba(255, 166, 0, 0.233);
         background: radial-gradient(
-          rgba(255, 166, 0, 0.404),
+          rgba(255, 166, 0, 0.089),
           rgba(255, 166, 0, 0)
         );
         // background: radial-gradient(closest-side, #3f87a6, #ff9d2e4f, #f69c3c3f);

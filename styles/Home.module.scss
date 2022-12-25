@@ -43,6 +43,7 @@
               width: 68vw;
               font-size: 4.3vw;
               color: $orange;
+              margin: 0;
               font-weight: 700;
               line-height: 4.2vw;
 
@@ -64,7 +65,10 @@
             padding: 2vw 0;
             display: flex;
             flex-wrap: wrap;
+            align-items: flex-start;
             text-align: left;
+            // background-color: #fcc220;
+            height: 10vw;
           }
 
           button {
@@ -100,13 +104,14 @@
         }
 
         .imgholder {
-          width: 23vw;
+          width: 26vw;
           img {
             margin: 0;
             align-self: center;
             align-items: flex-end;
             // background: #b433ff;
             width: 23vw;
+            padding-right: 1vw;
             height: max-content;
           }
         }
@@ -628,37 +633,6 @@
       }
     }
 
-    .belowbanner {
-      @include center();
-      flex-direction: column;
-      background: linear-gradient(
-        89.99deg,
-        #ff9c33 12.34%,
-        #fcc220 110.97%,
-        rgba(252, 194, 32, 0.34) 110.97%
-      );
-      color: $background;
-      padding: 1.5vw;
-      h4 {
-        font-size: 2vw;
-        @include zero;
-      }
-      b {
-        margin: 0.5vw;
-
-        font-size: 1.5vw;
-      }
-      button {
-        margin: 1vw;
-        padding: 1vw;
-        background: $orangelight;
-        border: none;
-        font-size: 1.3vw;
-        color: $background;
-
-        border-radius: 0.4vw;
-      }
-    }
   }
 }
 
@@ -683,6 +657,7 @@
             ::selection {
               background: none;
             }
+            width: 60vw;
 
             h2 {
               width: 38vw;
@@ -699,10 +674,12 @@
                 color: $text;
               }
             }
-            p {
+            .writing {
               letter-spacing: 0.01vw;
-              font-size: 2.2vw;
+              font-size: 2.5vw;
               width: 60vw;
+              height: 15vw;
+
               text-align: start;
             }
 
@@ -722,11 +699,17 @@
             }
           }
 
-          img {
-            position: absolute;
-            width: 45vw;
-            right: 0;
-            height: max-content;
+          .imgholder {
+            width: 30vw;
+            img {
+              margin: 0;
+              align-self: center;
+              align-items: flex-end;
+              // background: #b433ff;
+              width: 30vw;
+              padding-right: 1vw;
+              height: max-content;
+            }
           }
         }
       }
@@ -1170,30 +1153,6 @@
               font-size: 2vw;
             }
           }
-        }
-      }
-
-      .belowbanner {
-        padding: 1.5vw;
-        h4 {
-          font-size: 3vw;
-          @include zero;
-          letter-spacing: 0.2vw;
-        }
-        b {
-          margin: 0.5vw;
-          letter-spacing: 0.2vw;
-
-          font-size: 2.5vw;
-        }
-        button {
-          margin: 2vw;
-          padding: 2vw;
-          background: $orangelight;
-          letter-spacing: 0.1vw;
-          border: none;
-          font-size: 3vw;
-          border-radius: 0.4vw;
         }
       }
     }

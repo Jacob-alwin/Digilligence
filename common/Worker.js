@@ -35,10 +35,11 @@ export default function Worker(props) {
             <p className="animate__animated animate__fadeInUp">
               {props.data.description}
             </p>
-
-            <button className="animate__animated animate__fadeInUp animate__delay-1s">
-              Start Your Project
-            </button>
+            <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
+              <button className="animate__animated animate__fadeInUp animate__delay-1s">
+                Start Your Project
+              </button>
+            </Link>
           </div>
           <Image
             src={props.data.img} // Route of the image file
@@ -215,9 +216,11 @@ export default function Worker(props) {
 
       <section className={styles.belowbanner}>
         <b>Let's connect over a cup of coffe</b>
-        <button type="" data-aos="zoom-in">
-          Book your Free Coffee
-        </button>
+        <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
+          <button type="" data-aos="zoom-in">
+            Book your Free Coffee
+          </button>
+        </Link>
       </section>
     </div>
   );

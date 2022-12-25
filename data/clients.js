@@ -28,15 +28,18 @@ export const serve = [
 export const grew = [
   "/images/Home/Clients/1 (20).png",
   "/images/Home/Clients/1 (11).png",
+  "/images/Home/Clients/1 (42).png",
+  "/images/Home/Clients/1 (43).png",
+  "/images/Home/Clients/1 (44).png",
 ];
 
 export const social = [
   "/images/Home/Clients/1 (9).png",
-  "/images/Home/Clients/1 (11).png",
   "/images/Home/Clients/1 (20).png",
   "/images/Home/Clients/1 (22).png",
   "/images/Home/Clients/1 (34).png",
   "/images/Home/Clients/1 (32).png",
+  "/images/Home/Clients/1 (33).png",
   "/images/Home/Clients/1 (11).png",
   "/images/Home/Clients/1 (37).png",
   "/images/Home/Clients/1 (31).png",
@@ -50,6 +53,9 @@ export const dev = [
   "/images/Home/Clients/1 (14).png",
   "/images/Home/Clients/1 (16).png",
   "/images/Home/Clients/1 (4).png",
+  "/images/Home/Clients/1 (39).png",
+  "/images/Home/Clients/1 (12).png",
+  "/images/Home/Clients/1 (22).png",
 ];
 
 export let develop = [];

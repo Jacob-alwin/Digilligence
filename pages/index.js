@@ -44,6 +44,7 @@ export default function Home() {
                 <Carousel
                   animation="fade"
                   autoplay={true}
+                  pauseOnHover={false}
                   wrapAround={true}
                   autoplayInterval={10000}
                   // adaptiveHeight={true}
@@ -76,24 +77,50 @@ export default function Home() {
                   </h2>
                 </Carousel>
               </div>
-
-              <div
-                className={
-                  styles.writing + " animate__animated animate__fadeInUp"
-                }
+              <Carousel
+                animation="fade"
+                autoplay={true}
+                pauseOnHover={false}
+                wrapAround={true}
+                autoplayInterval={10000}
+                // adaptiveHeight={true}
+                withoutControls={true}
               >
-                <Typewriter
-                  options={{
-                    strings: [
-                      "Building Robust Marketing strategies for your Businesses & Brands to deliver Best ROI with accelerated and sustainable growth.",
-                      "One of Mumbai's Best Digital Marketing Agency that gives you the best of both, Marketing & Development!",
-                      "We design & develop Hybrid Mobile Apps using Google's advanced framework with the Best Mobile Application Development services in Mumbai.",
-                    ],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </div>
+                <div
+                  className={
+                    styles.writing + " animate__animated animate__fadeInUp"
+                  }
+                >
+                  Building Robust Marketing strategies for your Businesses &
+                  Brands to deliver Best ROI with accelerated and sustainable
+                  growth.
+                </div>
+                <div
+                  className={
+                    styles.writing + " animate__animated animate__fadeInUp"
+                  }
+                >
+                  One of Mumbai's Best Digital Marketing Agency that gives you
+                  the best of both, Marketing & Development!
+                </div>
+                <div
+                  className={
+                    styles.writing + " animate__animated animate__fadeInUp"
+                  }
+                >
+                  We design & develop Hybrid Mobile Apps using Google's advanced
+                  framework with the Best Mobile Application Development
+                  services in Mumbai.
+                </div>
+              </Carousel>
+
+              {/* <Typewriter
+                options={{
+                  strings: ["", "", ""],
+                  autoStart: true,
+                  loop: true,
+                }}
+              /> */}
               <button className="animate__animated animate__fadeInUp animate__delay-1s">
                 <Link href="/about-us">Know More</Link>
               </button>
@@ -107,6 +134,7 @@ export default function Home() {
               <Carousel
                 animation="fade"
                 autoplay={true}
+                pauseOnHover={false}
                 wrapAround={true}
                 autoplayInterval={10000}
                 // adaptiveHeight={true}

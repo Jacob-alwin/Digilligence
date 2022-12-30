@@ -82,7 +82,7 @@ function ContactUs() {
             <li>biz@digilligence.in</li>
             <li>
               PLOT NO A-179, NEAR ASHAR IT PARK, OPP KALPATARU PRIME, Road No.
-              16/Z, Wagle Industrial Estate, Thane, Maharashtra 400604
+              16/Z, Wagle Industrial Estate, Thane, Maharashtra 400604{" "}
             </li>
           </ul>
           <div className="socialmedia">

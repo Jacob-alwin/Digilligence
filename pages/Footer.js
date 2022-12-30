@@ -22,19 +22,13 @@ function Footer() {
         <ul>
           <li>Services</li>
           <li>
-            <Link
-              href="/services/Social-media-marketing-agencies-in-Mumbai"
-            
-            >
+            <Link href="/services/Social-media-marketing-agencies-in-Mumbai">
               Social Media Marketing
             </Link>
           </li>
 
           <li>
-            <Link
-              href="/services/best-Mobile-app-development-company-in-mumbai"
-            
-            >
+            <Link href="/services/best-Mobile-app-development-company-in-mumbai">
               Mobile App Development
             </Link>
           </li>
@@ -95,7 +89,8 @@ function Footer() {
               width={144} // Desired size with correct aspect ratio
               alt="Your Name"
             />
-            Thane
+            PLOT NO A-179, NEAR ASHAR IT PARK, OPP KALPATARU PRIME, Road No.
+            16/Z, Wagle Industrial Estate, Thane, Maharashtra 400604
           </li>
           <li>
             <Image
@@ -104,7 +99,7 @@ function Footer() {
               width={144} // Desired size with correct aspect ratio
               alt="Your Name"
             />
-            +91 86559974455
+            +91 8655997455{" "}
           </li>
         </ul>
       </footer>

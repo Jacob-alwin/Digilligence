@@ -41,14 +41,13 @@ export default function Services() {
           <div>
             <h4>Services</h4>
             <h2 className="animate__animated animate__fadeInUp">
-              <span> Social Media Marketing </span>
+              <span> Crafting beautiful brands and engaging websites </span>
             </h2>
             <p className="animate__animated animate__fadeInUp">
-              Any organization’s strength lies in the employees and rightly so,
-              Team Digilligence is a power packed squad of Quaint Content
-              Writers, Artistic Graphic Designers, experienced Content
-              Strategists, technically sound UX/UI Designers, Skilled Website &
-              Application Developers.
+              Digilligence, the best Digital Marketing Agency in Mumbai, will
+              build your brand for you. We cover the whole spectrum of Digital
+              Marketing, from SEO optimization to Social Media Marketing and
+              much more!
             </p>
 
             <button className="animate__animated animate__fadeInUp animate__delay-1s">

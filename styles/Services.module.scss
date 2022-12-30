@@ -282,9 +282,15 @@
       li {
         font-size: 2vw;
         color: $orangedark;
-        @include around();
+        @include center();
         width: 30vw;
         display: flex;
+        h3 {
+          margin-right: 1vw;
+        }
+        h6 {
+          font-weight: 100;
+        }
       }
     }
   }

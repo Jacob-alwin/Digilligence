@@ -60,19 +60,35 @@ export default function Worker(props) {
         <hr />
         <h5>Our Process</h5>
         <div>
-          {props.data.process.map((list, index) => (
-            <div key={index}>
-              <Image
-                src={list.img} // Route of the image file
-                height={1000} //Desired size with correct aspect ratio
-                width={1000} // Desired size with correct aspect ratio
-                alt="Your Name"
-                data-aos="zoom-in"
-                // className="animate__animated animate__jackInTheBox"
-              />
-              <h6>{list.caption}</h6>
-            </div>
-          ))}
+          {props.data.processback
+            ? props.data.processback.map((list, index) => (
+                <div className={styles.back} key={index}>
+                  <div>
+                    <Image
+                      src={list.img} // Route of the image file
+                      height={1000} //Desired size with correct aspect ratio
+                      width={1000} // Desired size with correct aspect ratio
+                      alt="Your Name"
+                      data-aos="zoom-in"
+                      // className="animate__animated animate__jackInTheBox"
+                    />
+                  </div>
+                  <h6>{list.caption}</h6>
+                </div>
+              ))
+            : props.data.process.map((list, index) => (
+                <div className={styles.none} key={index}>
+                  <Image
+                    src={list.img} // Route of the image file
+                    height={1000} //Desired size with correct aspect ratio
+                    width={1000} // Desired size with correct aspect ratio
+                    alt="Your Name"
+                    data-aos="zoom-in"
+                    // className="animate__animated animate__jackInTheBox"
+                  />
+                  <h6>{list.caption}</h6>
+                </div>
+              ))}
         </div>
         <hr />
       </section>

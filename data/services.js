@@ -261,7 +261,7 @@ export const SEO = {
     "We are Thane’s Premier SEO Agency delivering guaranteed results. Digilligence is by far the best SEO Agency. Our team of experts and SEO strategists analyses the target audience and devises keywords that help your Website go up the ranks of the SERP. We constantly monitor the growth and strategize keywords to direct organic traffic towards your platform.",
   qoute:
     " If you are looking for the best SEO agency in Thane, Mumbai, look no further!",
-  process: [
+  processback: [
     {
       img: "/images/Services/SEO/1.png",
       caption: "Technical Audit",
@@ -370,7 +370,7 @@ export const App = {
   qoute:
     "Building cutting edge Mobile apps that encompass the latest technology",
 
-  process: [
+  processback: [
     {
       img: "/images/Services/App/process1.png",
       caption: "Strategize",
@@ -509,7 +509,7 @@ export const Web = {
   description:
     "Building Highly Functional Websites to help you Market your Business & outrank your competitors. ",
   qoute: "Building cutting edge website that encompass the lastest technology",
-  process: [
+  processback: [
     {
       img: "/images/Services/Website/process1.png",
       caption: "Understanding requirements",
@@ -638,7 +638,7 @@ export const UI = {
   qoute:
     "We create Digital Assets that become the bridge between our Client's Business Goals & their User's requirements and expectations!",
 
-  process: [
+  processback: [
     {
       img: "/images/Services/UIUX/process1.png",
       caption: "Empathize",

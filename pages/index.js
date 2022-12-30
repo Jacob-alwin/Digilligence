@@ -591,8 +591,8 @@ export default function Home() {
                   alt=" "
                 />
                 <p>
-                  Suite-409, Oracle Business Hub, Ambica Nagar Bustop, Wagle
-                  Estate, Thane.
+                  PLOT NO A-179, NEAR ASHAR IT PARK, OPP KALPATARU PRIME, Road
+                  No. 16/Z, Wagle Industrial Estate, Thane, Maharashtra 400604
                 </p>
               </li>
               <li>

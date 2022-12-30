@@ -9,8 +9,8 @@ function Footer() {
         <div>
           <Image
             src="/images/logo.svg" // Route of the image file
-            height={144} // Desired size with correct aspect ratio
-            width={144} // Desired size with correct aspect ratio
+            height={1000} // Desired size with correct aspect ratio
+            width={1000} // Desired size with correct aspect ratio
             alt="Your Name"
           />
           <p>
@@ -75,8 +75,8 @@ function Footer() {
             <Link href="/careers">
               <Image
                 src="/images/footericons/email.png" // Route of the image file
-                height={144} // Desired size with correct aspect ratio
-                width={144} // Desired size with correct aspect ratio
+                height={500} // Desired size with correct aspect ratio
+                width={500} // Desired size with correct aspect ratio
                 alt="Your Name"
               />
               biz@digillence.in
@@ -85,8 +85,8 @@ function Footer() {
           <li>
             <Image
               src="/images/footericons/location.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={500} // Desired size with correct aspect ratio
+              width={500} // Desired size with correct aspect ratio
               alt="Your Name"
             />
             PLOT NO A-179, NEAR ASHAR IT PARK, OPP KALPATARU PRIME, Road No.
@@ -95,8 +95,8 @@ function Footer() {
           <li>
             <Image
               src="/images/footericons/phone.png" // Route of the image file
-              height={144} // Desired size with correct aspect ratio
-              width={144} // Desired size with correct aspect ratio
+              height={500} // Desired size with correct aspect ratio
+              width={500} // Desired size with correct aspect ratio
               alt="Your Name"
             />
             +91 8655997455{" "}

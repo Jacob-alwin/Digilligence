@@ -52,7 +52,7 @@ while (client.length > 0) {
 
 export const comments = [
   {
-    img: "/images/Home/Testimonial/neha.png",
+    img: "/images/Home/Clients/1 (34).png",
     name: "Neha Chavan Raje",
     designation: "Managing Director of Sea Garden, Goa",
     comment: "Best Marketing company",
@@ -60,12 +60,36 @@ export const comments = [
       " Best services and result oriented approach. If you really wish to achieve success with the help of social media marketing, you must have digilligence doing marketing for you. Best results received so far for my business Sea Garden Boutique Beachfront Cottages. Highly Recommended.",
   },
   {
-    img: "/images/Home/Testimonial/harshal.png",
+    img: "/images/Home/Clients/1 (22).png",
     name: "Harshal Adarkar",
     designation: "Founder & Director of Shellcode IT Services",
     comment: "Team of young creative minds",
     paragragh:
       " We were looking for Digital Marketing Services in Mumbai & we came across Digilligence. They're a team of young creative minds. Right from Logo Designing, Branding & Social Media Marketing, we found Digilligence to be one of Mumbai's Best Digital Marketing Agency. Highly recommend to take their Services!.",
+  },
+  {
+    img: "/images/Home/Clients/1 (3).png",
+    name: "Gaurav Randive",
+    designation: "Founder of TheHours",
+    comment: "Team of young creative minds",
+    paragragh:
+      "Our Startup TheHours has had a wonderful relationship with Digilligence. We started with them by designing our app with Digi's UXUI team working on the user experience & user interface. Soon after our app was live, we opted for their digital marketing services and it has given us great brand awareness till now. Moving forward, we're going to tie-up with them for performance marketing as well. The team is highly passionate about their work and has a result-oriented approach!",
+  },
+  {
+    img: "/images/Home/Clients/1 (33).png",
+    name: "Sanal Nair",
+    designation: "Founder of Zaika Biryaniwala",
+    comment: "Team of young creative minds",
+    paragragh:
+      "With the ever-growiWng digital world, I decided to opt for the best digital marketing agency in Mumbai: Digilligence's digital marketing services for my brand Zaika Biryaniwala. Ever since they've taken over, it's been quite amazing to see our business grow digitally.",
+  },
+  {
+    img: "/images/Home/Clients/1 (32).png",
+    name: "Abhimanyu Nimbalkar",
+    designation: "Ajay Translink",
+    comment: "Team of young creative minds",
+    paragragh:
+      "Our company opted for Digilligence's branding services! They delivered an amazing Logo, and helped us with some crazy, out-of-the-box mockups for our trucks & trailers! They also customized an aesthetic brochure that we use for our business meetings. I would honestly say that they are surely The Best Digital Marketing Agency in Mumbai! ",
   },
 ];
 

@@ -309,28 +309,135 @@ export default function Home() {
           <h2>Here's what our client says</h2>
           <hr />
           <div className={styles.carousel}>
-            {/* <Carousel slidesToShow={2}> */}
-            {comments.map((list, index) => (
-              <div key={index}>
-                <div className={styles.comment}>
-                  <b>{list.comment}</b>
-                  <p>{list.paragragh}</p>
-                </div>
-                <div className={styles.author}>
-                  <Image
-                    src={list.img}
-                    height={500}
-                    width={500}
-                    alt="Your Name"
-                  />
-                  <div>
-                    <b>{list.name}</b>
-                    <p>{list.designation}</p>
+            <Carousel
+              slidesToShow={2}
+              wrapAround={true}
+              className={styles.LC}
+              defaultControlsConfig={{
+                nextButtonText: ">",
+                prevButtonText: "<",
+                // nextButtonClassName: { background: "red" },
+                nextButtonStyle: {
+                  background: "rgba(0, 0, 0, 0.3)",
+                  color: "white",
+                  borderRadius: "50%",
+                  fontSize: "3vw",
+                  width: "4vw",
+                  height: "4vw",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  opacity: ".6",
+                },
+                prevButtonStyle: {
+                  background: "rgba(0, 0, 0, 0.3)",
+                  color: "white",
+                  borderRadius: "50%",
+                  fontSize: "3vw",
+                  width: "4vw",
+                  height: "4vw",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+
+                  opacity: ".6",
+                },
+                // prevButtonClassName:{styles.Controller} ,
+
+                pagingDotsStyle: {
+                  fill: "black",
+                },
+              }}
+            >
+              {comments.map((list, index) => (
+                <div key={index}>
+                  <div className={styles.comment}>
+                    {/* <b>{list.comment}</b> */}
+                    <p>{list.paragragh}</p>
+                  </div>
+                  <div className={styles.author}>
+                    <Image
+                      src={list.img}
+                      height={1000}
+                      width={1000}
+                      alt="Your Name"
+                    />
+                    <div>
+                      <b>{list.name}</b>
+                      <p>{list.designation}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-            {/* </Carousel> */}
+              ))}
+            </Carousel>
+          </div>
+        </section>
+        <section className={styles.Mtestimonial}>
+          <h2>Here's what our client says</h2>
+          <hr />
+          <div className={styles.carousel}>
+            <Carousel
+              slidesToShow={1}
+              wrapAround={true}
+              className={styles.MC}
+              style={{ marginLeft: "10vw" }}
+              defaultControlsConfig={{
+                nextButtonText: ">",
+                prevButtonText: "<",
+                // nextButtonClassName: { background: "red" },
+                nextButtonStyle: {
+                  background: "rgba(0, 0, 0, 0.3)",
+                  color: "white",
+                  borderRadius: "50%",
+                  fontSize: "3vw",
+                  width: "4vw",
+                  height: "4vw",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  opacity: ".6",
+                },
+                prevButtonStyle: {
+                  background: "rgba(0, 0, 0, 0.3)",
+                  color: "white",
+                  borderRadius: "50%",
+                  fontSize: "3vw",
+                  width: "4vw",
+                  height: "4vw",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+
+                  opacity: ".6",
+                },
+                // prevButtonClassName:{styles.Controller} ,
+
+                pagingDotsStyle: {
+                  fill: "black",
+                },
+              }}
+            >
+              {comments.map((list, index) => (
+                <div key={index}>
+                  <div className={styles.comment}>
+                    {/* <b>{list.comment}</b> */}
+                    <p>{list.paragragh}</p>
+                  </div>
+                  <div className={styles.author}>
+                    <Image
+                      src={list.img}
+                      height={1000}
+                      width={1000}
+                      alt="Your Name"
+                    />
+                    <div>
+                      <b>{list.name}</b>
+                      <p>{list.designation}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Carousel>
           </div>
         </section>
 

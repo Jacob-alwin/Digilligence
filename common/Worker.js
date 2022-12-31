@@ -231,10 +231,10 @@ export default function Worker(props) {
       </section>
 
       <section className={styles.belowbanner}>
-        <b>Let's connect over a cup of coffe</b>
+        <b>Lets chat about how we can together</b>
         <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
           <button type="" data-aos="zoom-in">
-            Book your Free Coffee
+            Get in Touch
           </button>
         </Link>
       </section>

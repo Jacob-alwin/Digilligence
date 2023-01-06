@@ -22,11 +22,13 @@ function MyApp({ Component, pageProps }) {
           name="description"
           content="Digillence is an Digital Marketing Agency"
         />
+        <link rel="shortcut icon" href="/vercel.svg" type="image/x-icon" />
+        <link rel="icon" href="/vercel.svg" type="image/x-icon" />
+
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
         />
-        <link rel="icon" href="/logoicon.svg" width={5000} height={5000} />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"

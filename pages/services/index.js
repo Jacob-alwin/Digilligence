@@ -34,7 +34,7 @@ export default function Services() {
         />
       </Head>
 
-      <Particules />
+      {/* <Particules /> */}
 
       <section className={styles.Banner}>
         <div>
@@ -49,13 +49,14 @@ export default function Services() {
               Marketing, from SEO optimization to Social Media Marketing and
               much more!
             </p>
-
-            <button className="animate__animated animate__fadeInUp animate__delay-1s">
-              Start Your Project
-            </button>
+            <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
+              <button className="animate__animated animate__fadeInUp animate__delay-1s">
+                Start Your Project
+              </button>
+            </Link>
           </div>
           <Image
-            src="/./images/Banner/1.png" // Route of the image file
+            src="/images/Banner/1.png" // Route of the image file
             height={1500} //Desired size with correct aspect ratio
             width={1500} // Desired size with correct aspect ratio
             alt="Your Name"

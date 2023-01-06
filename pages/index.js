@@ -11,11 +11,7 @@ import Typewriter from "typewriter-effect";
 import Link from "next/link";
 import Particules from "../common/Particules";
 
-const img = [
-  "/images/Banner/1.png",
-  "/images/Banner/2.png",
-  "/images/Banner/3.png",
-];
+const img = ["/images/Banner/2.png", "/images/Banner/3.png"];
 export default function Home() {
   return (
     <div className={styles.HomeContainer}>
@@ -25,6 +21,8 @@ export default function Home() {
           Best Digital Marketing Agency in Thane, Mumbai | |Digilligence – The
           Digital Marketing Company
         </title>
+        <link rel="icon" href="/logoicon.svg" width={5000} height={5000} />
+
         <meta
           name="description"
           content="Experience working with the Best Digital Marketing Agency in Mumbai,Thane specializing in Social Media Marketing & Mobile App Development Services. Book a Free Consultation call :+91 8655997455"
@@ -37,19 +35,19 @@ export default function Home() {
       <Particules />
 
       <main>
-        <section className={styles.Banner}>
-          <div>
+        <Carousel
+          animation="fade"
+          autoplay={true}
+          pauseOnHover={false}
+          wrapAround={true}
+          autoplayInterval={10000}
+          // adaptiveHeight={true}
+          withoutControls={true}
+        >
+          <section className={styles.Banner}>
             <div>
-              <div className={styles.head}>
-                <Carousel
-                  animation="fade"
-                  autoplay={true}
-                  pauseOnHover={false}
-                  wrapAround={true}
-                  autoplayInterval={10000}
-                  // adaptiveHeight={true}
-                  withoutControls={true}
-                >
+              <div>
+                <div className={styles.head}>
                   <h2 className="animate__animated animate__fadeInUp">
                     Sky-Rocketing
                     <br />
@@ -57,35 +55,8 @@ export default function Home() {
                     <br />
                     Digital heights
                   </h2>
-                  <h2 className="animate__animated animate__fadeInUp">
-                    <span>Bringing your </span>
-                    Ideas
-                    <br />
-                    <span>to life with </span>
-                    Next-gen
-                    <br />
-                    <span> Mobile Apps</span>
-                  </h2>
-                  <h2 className="animate__animated animate__fadeInUp">
-                    <span>Your Digital Partner for cooking</span>
-                    <br />
-                    Marketing Recipes
-                    <br />
-                    <span> to</span>
-                    <br />
-                    Designing Mobile APPS
-                  </h2>
-                </Carousel>
-              </div>
-              <Carousel
-                animation="fade"
-                autoplay={true}
-                pauseOnHover={false}
-                wrapAround={true}
-                autoplayInterval={10000}
-                // adaptiveHeight={true}
-                withoutControls={true}
-              >
+                </div>
+
                 <div
                   className={
                     styles.writing + " animate__animated animate__fadeInUp"
@@ -95,6 +66,54 @@ export default function Home() {
                   Brands to deliver Best ROI with accelerated and sustainable
                   growth.
                 </div>
+
+                {/* <Typewriter
+                options={{
+                  strings: ["", "", ""],
+                  autoStart: true,
+                  loop: true,
+                }}
+              /> */}
+                <button className="animate__animated animate__fadeInUp animate__delay-1s">
+                  <Link href="/about-us">Know More</Link>
+                </button>
+                <button className="animate__animated animate__fadeInUp animate__delay-2s">
+                  <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
+                    Start Your Project
+                  </Link>
+                </button>
+              </div>
+              <div className={styles.imgholder}>
+                <Image
+                  // loading=""
+                  src="/images/Banner/1.png" // Route of the image file
+                  height={2000} //Desired size with correct aspect ratio
+                  width={2000} // Desired size with correct aspect ratio
+                  alt="Your Name"
+                  placeholder="blur"
+                  blurDataURL="/images/logoicon.svg"
+                  data-aos="fade-up"
+                  className="animate__animated animate__jackInTheBox"
+                  priority
+                />
+              </div>
+            </div>
+          </section>
+          <section className={styles.Banner}>
+            <div>
+              <div>
+                <div className={styles.head}>
+                  <h2 className="animate__animated animate__fadeInUp">
+                    <span>Bringing your </span>
+                    Ideas
+                    <br />
+                    <span>to life with </span>
+                    Next-gen
+                    <br />
+                    <span> Mobile Apps</span>
+                  </h2>
+                </div>
+
                 <div
                   className={
                     styles.writing + " animate__animated animate__fadeInUp"
@@ -103,6 +122,55 @@ export default function Home() {
                   One of Mumbai's Best Digital Marketing Agency that gives you
                   the best of both, Marketing & Development!
                 </div>
+
+                {/* <Typewriter
+                options={{
+                  strings: ["", "", ""],
+                  autoStart: true,
+                  loop: true,
+                }}
+              /> */}
+                <button className="animate__animated animate__fadeInUp animate__delay-1s">
+                  <Link href="/about-us">Know More</Link>
+                </button>
+                <button className="animate__animated animate__fadeInUp animate__delay-2s">
+                  <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
+                    Start Your Project
+                  </Link>
+                </button>
+              </div>
+              <div className={styles.imgholder}>
+                <Image
+                  // loading=""
+                  src="/images/Banner/2.png" // Route of the image file
+                  height={2000} //Desired size with correct aspect ratio
+                  width={2000} // Desired size with correct aspect ratio
+                  alt="Your Name"
+                  placeholder="blur"
+                  blurDataURL="/images/logoicon.svg"
+                  data-aos="fade-up"
+                  className="animate__animated animate__jackInTheBox"
+                  priority
+                />
+              </div>
+            </div>
+          </section>
+          <section className={styles.Banner}>
+            <div>
+              <div>
+                <div className={styles.head}>
+                  <h2 className="animate__animated animate__fadeInUp">
+                    <span>
+                      Your Digital Partner for cooking
+                      <br />
+                      Marketing{" "}
+                    </span>{" "}
+                    Recipes
+                    <br />
+                    <span> to Designing </span> Mobile APPS
+                  </h2>
+                </div>
+
                 <div
                   className={
                     styles.writing + " animate__animated animate__fadeInUp"
@@ -112,53 +180,40 @@ export default function Home() {
                   framework with the Best Mobile Application Development
                   services in Mumbai.
                 </div>
-              </Carousel>
 
-              {/* <Typewriter
+                {/* <Typewriter
                 options={{
                   strings: ["", "", ""],
                   autoStart: true,
                   loop: true,
                 }}
               /> */}
-              <button className="animate__animated animate__fadeInUp animate__delay-1s">
-                <Link href="/about-us">Know More</Link>
-              </button>
-              <button className="animate__animated animate__fadeInUp animate__delay-2s">
-                <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
-                  Start Your Project
-                </Link>
-              </button>
+                <button className="animate__animated animate__fadeInUp animate__delay-1s">
+                  <Link href="/about-us">Know More</Link>
+                </button>
+                <button className="animate__animated animate__fadeInUp animate__delay-2s">
+                  <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
+                    Start Your Project
+                  </Link>
+                </button>
+              </div>
+              <div className={styles.imgholder}>
+                <Image
+                  // loading=""
+                  src="/images/Banner/3.png" // Route of the image file
+                  height={2000} //Desired size with correct aspect ratio
+                  width={2000} // Desired size with correct aspect ratio
+                  alt="Your Name"
+                  placeholder="blur"
+                  blurDataURL="/images/logoicon.svg"
+                  data-aos="fade-up"
+                  className="animate__animated animate__jackInTheBox"
+                  priority
+                />
+              </div>
             </div>
-            <div className={styles.imgholder}>
-              <Carousel
-                animation="fade"
-                autoplay={true}
-                pauseOnHover={false}
-                wrapAround={true}
-                autoplayInterval={10000}
-                // adaptiveHeight={true}
-                withoutControls={true}
-              >
-                {img.map((slide, index) => (
-                  <Image
-                    // loading=""
-                    key={index}
-                    src={slide} // Route of the image file
-                    height={2000} //Desired size with correct aspect ratio
-                    width={2000} // Desired size with correct aspect ratio
-                    alt="Your Name"
-                    placeholder="blur"
-                    blurDataURL="/images/logoicon.svg"
-                    data-aos="fade-up"
-                    className="animate__animated animate__jackInTheBox"
-                    priority
-                  />
-                ))}
-              </Carousel>
-            </div>
-          </div>
-        </section>
+          </section>
+        </Carousel>
         <section className={styles.we}>
           <hr />
           <h2>We are Digiligence</h2>
@@ -306,7 +361,7 @@ export default function Home() {
         </section>
 
         <section className={styles.testimonial}>
-          <h2>Here's what our client says</h2>
+          <h2>Here's what our client say</h2>
           <hr />
           <div className={styles.carousel}>
             <Carousel
@@ -499,7 +554,12 @@ export default function Home() {
               <h6>Social Media</h6>
               <h2>Sea Garden, Goa</h2>
               <h5>From “Empty” to “Over Booked” -Sea Garden’s Success Story</h5>
-              <button>View Success Story</button>
+              <a
+                href="https://www.instagram.com/p/CV0Rbi1tTvv/"
+                target={"_blank"}
+              >
+                <button>View Success Story</button>
+              </a>
             </div>
           </div>
           <div>
@@ -510,7 +570,12 @@ export default function Home() {
                 Wide range of Hotels & more in just one click -The Hours Mobile
                 App
               </h5>
-              <button>View Portfolio</button>
+              <a
+                href="https://www.instagram.com/p/CV0Rbi1tTvv/"
+                target={"_blank"}
+              >
+                <button>View Portfolio</button>
+              </a>
             </div>
             <ul data-aos="fade-left">
               <li>
@@ -579,10 +644,15 @@ export default function Home() {
           <h3>Project We Boast about</h3>
           <div>
             <div data-aos="fade-up">
-              <h6>Social Media</h6>
+              <h6>Social Media Marketing</h6>
               <h2>Sea Garden, Goa</h2>
               <h5>From “Empty” to “Over Booked” -Sea Garden’s Success Story</h5>
-              <button>View Success Story</button>
+              <a
+                href="https://www.instagram.com/p/CV0Rbi1tTvv/"
+                target={"_blank"}
+              >
+                <button>View Success Story</button>
+              </a>
             </div>{" "}
             <Image
               data-aos="fade-up"
@@ -643,7 +713,12 @@ export default function Home() {
                 Wide range of Hotels & more in just one click -The Hours Mobile
                 App
               </h5>
-              <button>View Portfolio</button>
+              <a
+                href="https://www.instagram.com/p/CV0Rbi1tTvv/"
+                target={"_blank"}
+              >
+                <button>View Portfolio</button>
+              </a>{" "}
             </div>
             <Image
               data-aos="fade-up"
@@ -681,36 +756,46 @@ export default function Home() {
             <hr />
             <h3>Contact us</h3>
             <ul data-aos="fade-left">
+                <a href="tel:+91-865-599-7455" target={"_blank"}>
               <li>
-                <Image
-                  src="/images/Home/contact/icon/phone.png" // Route of the image file
-                  height={1000} // Desired size with correct aspect ratio
-                  width={1000} // Desired size with correct aspect ratio
-                  alt=" "
-                />
-                <p>+91 8655997455</p>
+                  <Image
+                    src="/images/Home/contact/icon/phone.png" // Route of the image file
+                    height={1000} // Desired size with correct aspect ratio
+                    width={1000} // Desired size with correct aspect ratio
+                    alt=" "
+                  />
+                  <p>+91 8655997455</p>
               </li>
+                </a>
+                <a
+                  href="https://maps.app.goo.gl/VQtnVp8mtZQbM29j7?g_st=ic"
+                  target={"_blank"}
+                >
               <li>
-                <Image
-                  src="/images/Home/contact/icon/map.png" // Route of the image file
-                  height={1000} // Desired size with correct aspect ratio
-                  width={1000} // Desired size with correct aspect ratio
-                  alt=" "
-                />
-                <p>
-                  PLOT NO A-179, NEAR ASHAR IT PARK, OPP KALPATARU PRIME, Road
-                  No. 16/Z, Wagle Industrial Estate, Thane, Maharashtra 400604
-                </p>
+                  <Image
+                    src="/images/Home/contact/icon/map.png" // Route of the image file
+                    height={1000} // Desired size with correct aspect ratio
+                    width={1000} // Desired size with correct aspect ratio
+                    alt=" "
+                    />
+                  <p>
+                    Suite - 409, Oracle Business Hub, Ambica Nagar Bustop,
+                    opposite Kalpataru Prime, Wagle Industrial Estate, Thane,
+                    Maharashtra 400604
+                  </p>
               </li>
-              <li>
-                <Image
-                  src="/images/Home/contact/icon/mail.png" // Route of the image file
-                  height={1000} // Desired size with correct aspect ratio
-                  width={1000} // Desired size with correct aspect ratio
-                  alt=" "
-                />
-                <p>biz@digilligence.com</p>
-              </li>
+                </a>
+              <a href="mailto:biz@digilligence.in" target={"_blank"}>
+                <li>
+                  <Image
+                    src="/images/Home/contact/icon/mail.png" // Route of the image file
+                    height={1000} // Desired size with correct aspect ratio
+                    width={1000} // Desired size with correct aspect ratio
+                    alt=" "
+                  />
+                  <p>biz@digilligence.in</p>
+                </li>
+              </a>
             </ul>
           </div>
           <div>
@@ -718,34 +803,43 @@ export default function Home() {
             <h3>Connect with us</h3>
             <ul data-aos="fade-right">
               <li>
-                <Link href="https://www.facebook.com/digilligence.in">
+                <a
+                  href="https://www.facebook.com/digilligence.in"
+                  target={"_blank"}
+                >
                   <Image
                     src="/images/Home/contact/socialmedia/facebook.png" // Route of the image file
                     height={1000} // Desired size with correct aspect ratio
                     width={1000} // Desired size with correct aspect ratio
                     alt=" "
                   />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="https://www.instagram.com/digilligence/">
+                <a
+                  href="https://www.instagram.com/digilligence/"
+                  target={"_blank"}
+                >
                   <Image
                     src="/images/Home/contact/socialmedia/instagram.png" // Route of the image file
                     height={1000} // Desired size with correct aspect ratio
                     width={1000} // Desired size with correct aspect ratio
                     alt=" "
                   />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="https://www.linkedin.com/company/digilligence">
+                <a
+                  href="https://www.linkedin.com/company/digilligence"
+                  target={"_blank"}
+                >
                   <Image
                     src="/images/Home/contact/socialmedia/linkedin.png" // Route of the image file
                     height={1000} // Desired size with correct aspect ratio
                     width={1000} // Desired size with correct aspect ratio
                     alt=" "
                   />
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

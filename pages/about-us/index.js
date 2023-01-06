@@ -67,7 +67,7 @@ const about = [
 
   {
     img: "/images/AboutUs/SocialStratergy.png",
-    head: "What we do",
+    head: "Our Mission",
     decription1:
       "We have Vision to help India reach the pinnacle of Digital success and contribute towards the growth of the nation. We believe in Mutual Growth; the organization plans on growing Internationally.",
     decription2:
@@ -110,10 +110,12 @@ export default function AboutUs() {
                 Strategists, technically sound UX/UI Designers, Skilled Website
                 & Application Developers.
               </p>
+              <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">
 
               <button className="animate__animated animate__fadeInUp animate__delay-1s">
                 Start Your Project
               </button>
+              </Link>
             </div>
             <Image
               src="/images/AboutUs/banner.png" // Route of the image file

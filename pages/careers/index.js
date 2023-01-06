@@ -25,7 +25,12 @@ function Careers() {
             transforms it into a brand by offering its digital marketing
             services
           </h5>
-          <button>Get in touch</button>
+
+          <button>
+            <a href="https://bit.ly/m/digilligence" target={"_blank"}>
+              Get in touch
+            </a>
+          </button>
         </section>
 
         {/* <section className={styles.Openings}>

@@ -194,7 +194,12 @@ export default function Worker(props) {
                 </p>
 
                 <button data-aos="zoom-in" data-aos-duration="1000">
-                  View Portfolio
+                  <a
+                    href="https://drive.google.com/drive/folders/1UjKduoWcJ5_6h-YySpmEGkAsIWHfLQaw?usp=sharing"
+                    target={"_blank"}
+                  >
+                    View Portfolio
+                  </a>
                 </button>
               </div>
 

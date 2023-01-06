@@ -74,15 +74,16 @@ function ContactUs() {
       <section className={styles.ContactContainer}>
         <div className={styles.left}>
           <h4>Connect with us!!</h4>
-          <h2>Digilligience</h2>
+          <h2>Digilligence</h2>
 
           <ul>
             <li>Connect with us on!!</li>
             <li>+91 8655997455</li>
             <li>biz@digilligence.in</li>
             <li>
-              PLOT NO A-179, NEAR ASHAR IT PARK, OPP KALPATARU PRIME, Road No.
-              16/Z, Wagle Industrial Estate, Thane, Maharashtra 400604{" "}
+              Suite - 409, Oracle Business Hub, Ambica Nagar Bustop, opposite
+              Kalpataru Prime, Wagle Industrial Estate, Thane, Maharashtra
+              400604{" "}
             </li>
           </ul>
           <div className="socialmedia">

@@ -361,6 +361,13 @@ section {
       font-family: "Caros ExtraBold";
       color: #ffa500;
       border-radius: 10vw;
+      cursor: pointer;
+      transition: all ease 0.5s;
+      &:hover {
+        background: transparent;
+        border: 0.1vw solid white;
+        color: #fff;
+      }
     }
   }
   .socialmedia {

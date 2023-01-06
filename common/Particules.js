@@ -15,6 +15,7 @@ function Particules() {
             left: "65vw",
             width: "10vw",
             height: "max-content",
+            rotate: "-15deg",
           }}
         />
         <Image
@@ -36,7 +37,7 @@ function Particules() {
           width={70} // Desired size with correct aspect ratio
           alt="Your Name"
           style={{
-            top: "35vw",
+            top: "32vw",
             left: "20vw",
             width: "7vw",
             height: "max-content",
@@ -51,6 +52,8 @@ function Particules() {
             top: "45vw",
             left: "10vw",
             width: "3vw",
+            rotate: "-20deg",
+
             height: "max-content",
           }}
         />
@@ -90,6 +93,7 @@ function Particules() {
             left: "5vw",
             width: "8vw",
             height: "max-content",
+            rotate:"20deg"
           }}
         />
         <Image
@@ -98,10 +102,11 @@ function Particules() {
           width={100} // Desired size with correct aspect ratio
           alt="Your Name"
           style={{
-            top: "145vw",
+            top: "143vw",
             left: "85vw",
             width: "10vw",
             height: "max-content",
+
           }}
         />
         <Image
@@ -110,10 +115,11 @@ function Particules() {
           width={10} // Desired size with correct aspect ratio
           alt="Your Name"
           style={{
-            top: "180vw",
+            top: "98vw",
             left: "5vw",
             width: "1vw",
             height: "max-content",
+
           }}
         />
         <Image
@@ -126,6 +132,8 @@ function Particules() {
             left: "-2vw",
             width: "7vw",
             height: "max-content",
+            rotate:"-50deg"
+
           }}
         />
         <Image
@@ -138,6 +146,8 @@ function Particules() {
             left: "90vw",
             width: "6vw",
             height: "max-content",
+            rotate:"-90deg"
+          
           }}
         />
         <Image
@@ -150,6 +160,8 @@ function Particules() {
             left: "90vw",
             width: "5vw",
             height: "max-content",
+            rotate:"-90deg"
+
           }}
         />
         <Image

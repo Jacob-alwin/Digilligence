@@ -172,7 +172,14 @@ function Header() {
           <div className="start">
             <h3>Lets get cracking</h3>
             <hr />
-            <button>Start Your Project</button>
+            <Link
+              onClick={() => {
+                setmenu(false);
+              }}
+              href="/contact-the-best-digital-marketing-agency-in-thane-mumbai"
+            >
+              <button>Start Your Project</button>
+            </Link>
           </div>
           <div className="dots"></div>
           <div className="socialmedia">

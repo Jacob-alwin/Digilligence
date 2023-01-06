@@ -16,6 +16,7 @@
     width: 50%;
     background: $orangelight;
     color: $background;
+    background-image: url("/images/doodle.svg");
 
     h2 {
       font-size: 2.5vw;
@@ -193,7 +194,7 @@
           padding: 1.5vw;
           font-size: 3.5vw;
         }
-        textarea{
+        textarea {
           width: 100%;
         }
       }

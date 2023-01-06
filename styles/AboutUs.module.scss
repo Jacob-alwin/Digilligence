@@ -13,6 +13,7 @@
     .Banner {
       @include center;
       flex-direction: column;
+      background-image: url("/images/doodle.svg");
 
       div {
         @include center;

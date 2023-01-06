@@ -89,8 +89,8 @@ function Footer() {
               width={500} // Desired size with correct aspect ratio
               alt="Your Name"
             />
-            PLOT NO A-179, NEAR ASHAR IT PARK, OPP KALPATARU PRIME, Road No.
-            16/Z, Wagle Industrial Estate, Thane, Maharashtra 400604
+            Suite - 409, Oracle Business Hub, Ambica Nagar Bustop, opposite
+            Kalpataru Prime, Wagle Industrial Estate, Thane, Maharashtra 400604
           </li>
           <li>
             <Image

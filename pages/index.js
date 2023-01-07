@@ -556,7 +556,7 @@ export default function Home() {
               <h5>From “Empty” to “Over Booked” -Sea Garden’s Success Story</h5>
               <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
-                target={"_blank"}
+                target={"_blank"} rel="noreferrer"
               >
                 <button>View Success Story</button>
               </a>
@@ -572,7 +572,7 @@ export default function Home() {
               </h5>
               <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
-                target={"_blank"}
+                target={"_blank"}  rel="noreferrer"
               >
                 <button>View Portfolio</button>
               </a>
@@ -649,7 +649,7 @@ export default function Home() {
               <h5>From “Empty” to “Over Booked” -Sea Garden’s Success Story</h5>
               <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
-                target={"_blank"}
+                target={"_blank"} rel="noreferrer"
               >
                 <button>View Success Story</button>
               </a>
@@ -757,7 +757,7 @@ export default function Home() {
             <hr />
             <h3>Contact us</h3>
             <ul data-aos="fade-left">
-              <a href="tel:+91-865-599-7455" target={"_blank"}>
+              <a href="tel:+91-865-599-7455" target={"_blank"} rel="noreferrer">
                 <li>
                   <Image
                     src="/images/Home/contact/icon/phone.png" // Route of the image file
@@ -770,7 +770,7 @@ export default function Home() {
               </a>
               <a
                 href="https://maps.app.goo.gl/VQtnVp8mtZQbM29j7?g_st=ic"
-                target={"_blank"}
+                target={"_blank"} rel="noreferrer"
               >
                 <li>
                   <Image
@@ -786,7 +786,7 @@ export default function Home() {
                   </p>
                 </li>
               </a>
-              <a href="mailto:biz@digilligence.in" target={"_blank"}>
+              <a href="mailto:biz@digilligence.in" target={"_blank"} rel="noreferrer">
                 <li>
                   <Image
                     src="/images/Home/contact/icon/mail.png" // Route of the image file
@@ -807,6 +807,7 @@ export default function Home() {
                 <a
                   href="https://www.facebook.com/digilligence.in"
                   target={"_blank"}
+                  rel="noreferrer"
                 >
                   <Image
                     src="/images/Home/contact/socialmedia/facebook.png" // Route of the image file
@@ -819,7 +820,7 @@ export default function Home() {
               <li>
                 <a
                   href="https://www.instagram.com/digilligence/"
-                  target={"_blank"}
+                  target={"_blank"} rel="noreferrer"
                 >
                   <Image
                     src="/images/Home/contact/socialmedia/instagram.png" // Route of the image file
@@ -833,6 +834,7 @@ export default function Home() {
                 <a
                   href="https://www.linkedin.com/company/digilligence"
                   target={"_blank"}
+                  rel="noreferrer"
                 >
                   <Image
                     src="/images/Home/contact/socialmedia/linkedin.png" // Route of the image file

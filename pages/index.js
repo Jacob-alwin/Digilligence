@@ -557,6 +557,7 @@ export default function Home() {
               <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
                 target={"_blank"}
+                rel="noreferrer"
               >
                 <button>View Success Story</button>
               </a>
@@ -573,6 +574,7 @@ export default function Home() {
               <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
                 target={"_blank"}
+                rel="noreferrer"
               >
                 <button>View Portfolio</button>
               </a>
@@ -650,6 +652,7 @@ export default function Home() {
               <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
                 target={"_blank"}
+                rel="noreferrer"
               >
                 <button>View Success Story</button>
               </a>
@@ -716,6 +719,8 @@ export default function Home() {
               <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
                 target={"_blank"}
+                rel="noreferrer"
+                rel="noreferrer"
               >
                 <button>View Portfolio</button>
               </a>{" "}
@@ -756,8 +761,8 @@ export default function Home() {
             <hr />
             <h3>Contact us</h3>
             <ul data-aos="fade-left">
-                <a href="tel:+91-865-599-7455" target={"_blank"}>
-              <li>
+              <a href="tel:+91-865-599-7455" target={"_blank"} rel="noreferrer">
+                <li>
                   <Image
                     src="/images/Home/contact/icon/phone.png" // Route of the image file
                     height={1000} // Desired size with correct aspect ratio
@@ -765,27 +770,32 @@ export default function Home() {
                     alt=" "
                   />
                   <p>+91 8655997455</p>
-              </li>
-                </a>
-                <a
-                  href="https://maps.app.goo.gl/VQtnVp8mtZQbM29j7?g_st=ic"
-                  target={"_blank"}
-                >
-              <li>
+                </li>
+              </a>
+              <a
+                href="https://maps.app.goo.gl/VQtnVp8mtZQbM29j7?g_st=ic"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <li>
                   <Image
                     src="/images/Home/contact/icon/map.png" // Route of the image file
                     height={1000} // Desired size with correct aspect ratio
                     width={1000} // Desired size with correct aspect ratio
                     alt=" "
-                    />
+                  />
                   <p>
                     Suite - 409, Oracle Business Hub, Ambica Nagar Bustop,
                     opposite Kalpataru Prime, Wagle Industrial Estate, Thane,
                     Maharashtra 400604
                   </p>
-              </li>
-                </a>
-              <a href="mailto:biz@digilligence.in" target={"_blank"}>
+                </li>
+              </a>
+              <a
+                href="mailto:biz@digilligence.in"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <li>
                   <Image
                     src="/images/Home/contact/icon/mail.png" // Route of the image file
@@ -806,6 +816,7 @@ export default function Home() {
                 <a
                   href="https://www.facebook.com/digilligence.in"
                   target={"_blank"}
+                  rel="noreferrer"
                 >
                   <Image
                     src="/images/Home/contact/socialmedia/facebook.png" // Route of the image file
@@ -819,6 +830,7 @@ export default function Home() {
                 <a
                   href="https://www.instagram.com/digilligence/"
                   target={"_blank"}
+                  rel="noreferrer"
                 >
                   <Image
                     src="/images/Home/contact/socialmedia/instagram.png" // Route of the image file
@@ -832,6 +844,7 @@ export default function Home() {
                 <a
                   href="https://www.linkedin.com/company/digilligence"
                   target={"_blank"}
+                  rel="noreferrer"
                 >
                   <Image
                     src="/images/Home/contact/socialmedia/linkedin.png" // Route of the image file

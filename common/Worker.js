@@ -197,6 +197,7 @@ export default function Worker(props) {
                   <a
                     href="https://drive.google.com/drive/folders/1UjKduoWcJ5_6h-YySpmEGkAsIWHfLQaw?usp=sharing"
                     target={"_blank"}
+                    rel="noreferrer"
                   >
                     View Portfolio
                   </a>

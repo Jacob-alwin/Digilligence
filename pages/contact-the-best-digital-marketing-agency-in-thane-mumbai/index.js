@@ -53,7 +53,7 @@ function ContactUs() {
     setFullname("");
     setEmail("");
     setNumber("");
-    setMessage("");
+    setMessage(""); 
     setDesigination("");
     // }
   };

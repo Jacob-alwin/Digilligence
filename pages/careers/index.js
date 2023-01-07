@@ -27,7 +27,7 @@ function Careers() {
           </h5>
 
           <button>
-            <a href="https://bit.ly/m/digilligence" target={"_blank"}>
+            <a href="https://bit.ly/m/digilligence" target={"_blank"} rel="noreferrer">
               Get in touch
             </a>
           </button>

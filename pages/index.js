@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className={styles.HomeContainer}>
       <Head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <title>
           Best Digital Marketing Agency in Thane, Mumbai | |Digilligence – The
           Digital Marketing Company
@@ -574,7 +574,7 @@ export default function Home() {
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
                 target={"_blank"}
               > */}
-                <button>View Portfolio</button>
+              <button>View Portfolio</button>
               {/* </a> */}
             </div>
             <ul data-aos="fade-left">

@@ -554,13 +554,12 @@ export default function Home() {
               <h6>Social Media</h6>
               <h2>Sea Garden, Goa</h2>
               <h5>From “Empty” to “Over Booked” -Sea Garden’s Success Story</h5>
-              <a
+              {/* <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
                 target={"_blank"}
-                rel="noreferrer"
-              >
-                <button>View Success Story</button>
-              </a>
+              > */}
+              <button>View Success Story</button>
+              {/* </a> */}
             </div>
           </div>
           <div>
@@ -571,13 +570,12 @@ export default function Home() {
                 Wide range of Hotels & more in just one click -The Hours Mobile
                 App
               </h5>
-              <a
+              {/* <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
                 target={"_blank"}
-                rel="noreferrer"
-              >
+              > */}
                 <button>View Portfolio</button>
-              </a>
+              {/* </a> */}
             </div>
             <ul data-aos="fade-left">
               <li>
@@ -649,13 +647,12 @@ export default function Home() {
               <h6>Social Media Marketing</h6>
               <h2>Sea Garden, Goa</h2>
               <h5>From “Empty” to “Over Booked” -Sea Garden’s Success Story</h5>
-              <a
+              {/* <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
                 target={"_blank"}
-                rel="noreferrer"
-              >
-                <button>View Success Story</button>
-              </a>
+              > */}
+              <button>View Success Story</button>
+              {/* </a> */}
             </div>{" "}
             <Image
               data-aos="fade-up"
@@ -716,14 +713,13 @@ export default function Home() {
                 Wide range of Hotels & more in just one click -The Hours Mobile
                 App
               </h5>
-              <a
+              {/* <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
                 target={"_blank"}
                 rel="noreferrer"
-                rel="noreferrer"
-              >
-                <button>View Portfolio</button>
-              </a>{" "}
+              >  */}
+              <button>View Portfolio</button>
+              {/* </a>{" "} */}
             </div>
             <Image
               data-aos="fade-up"
@@ -761,51 +757,46 @@ export default function Home() {
             <hr />
             <h3>Contact us</h3>
             <ul data-aos="fade-left">
-              <a href="tel:+91-865-599-7455" target={"_blank"} rel="noreferrer">
-                <li>
-                  <Image
-                    src="/images/Home/contact/icon/phone.png" // Route of the image file
-                    height={1000} // Desired size with correct aspect ratio
-                    width={1000} // Desired size with correct aspect ratio
-                    alt=" "
-                  />
-                  <p>+91 8655997455</p>
-                </li>
-              </a>
-              <a
+              {/* <a href="tel:+91-865-599-7455" target={"_blank"}> */}
+              <li>
+                <Image
+                  src="/images/Home/contact/icon/phone.png" // Route of the image file
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
+                  alt=" "
+                />
+                <p>+91 8655997455</p>
+              </li>
+              {/* </a> */}
+              {/* <a
                 href="https://maps.app.goo.gl/VQtnVp8mtZQbM29j7?g_st=ic"
                 target={"_blank"}
-                rel="noreferrer"
-              >
-                <li>
-                  <Image
-                    src="/images/Home/contact/icon/map.png" // Route of the image file
-                    height={1000} // Desired size with correct aspect ratio
-                    width={1000} // Desired size with correct aspect ratio
-                    alt=" "
-                  />
-                  <p>
-                    Suite - 409, Oracle Business Hub, Ambica Nagar Bustop,
-                    opposite Kalpataru Prime, Wagle Industrial Estate, Thane,
-                    Maharashtra 400604
-                  </p>
-                </li>
-              </a>
-              <a
-                href="mailto:biz@digilligence.in"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <li>
-                  <Image
-                    src="/images/Home/contact/icon/mail.png" // Route of the image file
-                    height={1000} // Desired size with correct aspect ratio
-                    width={1000} // Desired size with correct aspect ratio
-                    alt=" "
-                  />
-                  <p>biz@digilligence.in</p>
-                </li>
-              </a>
+              > */}
+              <li>
+                <Image
+                  src="/images/Home/contact/icon/map.png" // Route of the image file
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
+                  alt=" "
+                />
+                <p>
+                  Suite - 409, Oracle Business Hub, Ambica Nagar Bustop,
+                  opposite Kalpataru Prime, Wagle Industrial Estate, Thane,
+                  Maharashtra 400604
+                </p>
+              </li>
+              {/* </a> */}
+              {/* <a href="mailto:biz@digilligence.in" target={"_blank"}> */}
+              <li>
+                <Image
+                  src="/images/Home/contact/icon/mail.png" // Route of the image file
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
+                  alt=" "
+                />
+                <p>biz@digilligence.in</p>
+              </li>
+              {/* </a> */}
             </ul>
           </div>
           <div>
@@ -813,46 +804,43 @@ export default function Home() {
             <h3>Connect with us</h3>
             <ul data-aos="fade-right">
               <li>
-                <a
+                {/* <a
                   href="https://www.facebook.com/digilligence.in"
                   target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <Image
-                    src="/images/Home/contact/socialmedia/facebook.png" // Route of the image file
-                    height={1000} // Desired size with correct aspect ratio
-                    width={1000} // Desired size with correct aspect ratio
-                    alt=" "
-                  />
-                </a>
+                > */}
+                <Image
+                  src="/images/Home/contact/socialmedia/facebook.png" // Route of the image file
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
+                  alt=" "
+                />
+                {/* </a> */}
               </li>
               <li>
-                <a
+                {/* <a
                   href="https://www.instagram.com/digilligence/"
                   target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <Image
-                    src="/images/Home/contact/socialmedia/instagram.png" // Route of the image file
-                    height={1000} // Desired size with correct aspect ratio
-                    width={1000} // Desired size with correct aspect ratio
-                    alt=" "
-                  />
-                </a>
+                > */}
+                <Image
+                  src="/images/Home/contact/socialmedia/instagram.png" // Route of the image file
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
+                  alt=" "
+                />
+                {/* </a> */}
               </li>
               <li>
-                <a
+                {/* <a
                   href="https://www.linkedin.com/company/digilligence"
                   target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <Image
-                    src="/images/Home/contact/socialmedia/linkedin.png" // Route of the image file
-                    height={1000} // Desired size with correct aspect ratio
-                    width={1000} // Desired size with correct aspect ratio
-                    alt=" "
-                  />
-                </a>
+                > */}
+                <Image
+                  src="/images/Home/contact/socialmedia/linkedin.png" // Route of the image file
+                  height={1000} // Desired size with correct aspect ratio
+                  width={1000} // Desired size with correct aspect ratio
+                  alt=" "
+                />
+                {/* </a> */}
               </li>
             </ul>
           </div>

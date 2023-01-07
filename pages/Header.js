@@ -39,6 +39,16 @@ function Header() {
               Contact
             </Link>
           </h6>
+          <h6>
+            <Link
+              href="/services"
+              onClick={() => {
+                setmenu(false);
+              }}
+            >
+              Service
+            </Link>
+          </h6>
           {/* <h6>
         <Link href="/clients">Clients</Link>
       </h6> */}

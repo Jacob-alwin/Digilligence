@@ -361,7 +361,7 @@ export default function Home() {
         </section>
 
         <section className={styles.testimonial}>
-          <h2>Here's what our client say</h2>
+          <h2>Here's what our clients have to say</h2>
           <hr />
           <div className={styles.carousel}>
             <Carousel
@@ -498,7 +498,7 @@ export default function Home() {
 
         <section className={styles.project}>
           <hr />
-          <h3>Project We Boast about</h3>
+          <h3>Projects we boast about</h3>
           <div>
             <ul>
               <li data-aos="fade-right">
@@ -556,7 +556,8 @@ export default function Home() {
               <h5>From “Empty” to “Over Booked” -Sea Garden’s Success Story</h5>
               <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
-                target={"_blank"} rel="noreferrer"
+                target={"_blank"}
+                rel="noreferrer"
               >
                 <button>View Success Story</button>
               </a>
@@ -571,8 +572,9 @@ export default function Home() {
                 App
               </h5>
               <a
-                href="https://www.instagram.com/p/CV0Rbi1tTvv/"
-                target={"_blank"}  rel="noreferrer"
+                href="https://drive.google.com/drive/folders/1UjKduoWcJ5_6h-YySpmEGkAsIWHfLQaw?usp=sharing"
+                target={"_blank"}
+                rel="noreferrer"
               >
                 <button>View Portfolio</button>
               </a>
@@ -641,7 +643,7 @@ export default function Home() {
 
         <section className={styles.projectM}>
           <hr />
-          <h3>Project We Boast about</h3>
+          <h3>Projects we boast about</h3>
           <div>
             <div data-aos="fade-up">
               <h6>Social Media Marketing</h6>
@@ -649,7 +651,8 @@ export default function Home() {
               <h5>From “Empty” to “Over Booked” -Sea Garden’s Success Story</h5>
               <a
                 href="https://www.instagram.com/p/CV0Rbi1tTvv/"
-                target={"_blank"} rel="noreferrer"
+                target={"_blank"}
+                rel="noreferrer"
               >
                 <button>View Success Story</button>
               </a>
@@ -714,7 +717,7 @@ export default function Home() {
                 App
               </h5>
               <a
-                href="https://www.instagram.com/p/CV0Rbi1tTvv/"
+                href="https://drive.google.com/drive/folders/1UjKduoWcJ5_6h-YySpmEGkAsIWHfLQaw?usp=sharing"
                 target={"_blank"}
                 rel="noreferrer"
               >
@@ -770,7 +773,8 @@ export default function Home() {
               </a>
               <a
                 href="https://maps.app.goo.gl/VQtnVp8mtZQbM29j7?g_st=ic"
-                target={"_blank"} rel="noreferrer"
+                target={"_blank"}
+                rel="noreferrer"
               >
                 <li>
                   <Image
@@ -786,7 +790,11 @@ export default function Home() {
                   </p>
                 </li>
               </a>
-              <a href="mailto:biz@digilligence.in" target={"_blank"} rel="noreferrer">
+              <a
+                href="mailto:biz@digilligence.in"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <li>
                   <Image
                     src="/images/Home/contact/icon/mail.png" // Route of the image file
@@ -820,7 +828,8 @@ export default function Home() {
               <li>
                 <a
                   href="https://www.instagram.com/digilligence/"
-                  target={"_blank"} rel="noreferrer"
+                  target={"_blank"}
+                  rel="noreferrer"
                 >
                   <Image
                     src="/images/Home/contact/socialmedia/instagram.png" // Route of the image file
@@ -849,7 +858,7 @@ export default function Home() {
         </section>
 
         <section className="bottombanner">
-          <h4 data-aos="zoom-out">All Big things start</h4>
+          <h4 data-aos="zoom-out">All Big things start small</h4>
           <b>Let's connect over a cup of coffe</b>
           <button type="" data-aos="zoom-in">
             <Link href="/contact-the-best-digital-marketing-agency-in-thane-mumbai">

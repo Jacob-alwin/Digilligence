@@ -131,6 +131,7 @@ section {
   div {
     width: 18vw;
     font-size: 2vw;
+    gap: 1.5vw;
     @include inbetween;
 
     .hamburger {

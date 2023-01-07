@@ -56,7 +56,15 @@ function Footer() {
 
         <ul>
           <li>Quick Links</li>
-          <li>Our Work</li>
+          <li>
+            <a
+              href="https://drive.google.com/drive/folders/1UjKduoWcJ5_6h-YySpmEGkAsIWHfLQaw?usp=sharing"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              Our Work
+            </a>
+          </li>
           <li>
             <Link href="/about-us">About Us</Link>
           </li>
@@ -72,38 +80,52 @@ function Footer() {
         <ul>
           <li>Reach us</li>
           <li>
-            <Link href="/careers">
+            <a
+              href="mailto:biz@digilligence.in"
+              target={"_blank"}
+              rel="noreferrer"
+            >
               <Image
                 src="/images/footericons/email.png" // Route of the image file
                 height={500} // Desired size with correct aspect ratio
                 width={500} // Desired size with correct aspect ratio
                 alt="Your Name"
               />
-              biz@digillence.in
-            </Link>
+              biz@digilligence.in
+            </a>
           </li>
           <li>
-            <Image
-              src="/images/footericons/location.png" // Route of the image file
-              height={500} // Desired size with correct aspect ratio
-              width={500} // Desired size with correct aspect ratio
-              alt="Your Name"
-            />
-            Suite - 409, Oracle Business Hub, Ambica Nagar Bustop, opposite
-            Kalpataru Prime, Wagle Industrial Estate, Thane, Maharashtra 400604
+            <a
+              href="https://maps.app.goo.gl/VQtnVp8mtZQbM29j7?g_st=ic"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <Image
+                src="/images/footericons/location.png" // Route of the image file
+                height={500} // Desired size with correct aspect ratio
+                width={500} // Desired size with correct aspect ratio
+                alt="Your Name"
+              />
+              Suite - 409, Oracle Business Hub, Ambica Nagar Bustop, opposite
+              Kalpataru Prime, Wagle Industrial Estate, Thane, Maharashtra
+              400604
+            </a>
           </li>
+
           <li>
-            <Image
-              src="/images/footericons/phone.png" // Route of the image file
-              height={500} // Desired size with correct aspect ratio
-              width={500} // Desired size with correct aspect ratio
-              alt="Your Name"
-            />
-            +91 8655997455{" "}
+            <a href="tel:+91-865-599-7455" target={"_blank"} rel="noreferrer">
+              <Image
+                src="/images/footericons/phone.png" // Route of the image file
+                height={500} // Desired size with correct aspect ratio
+                width={500} // Desired size with correct aspect ratio
+                alt="Your Name"
+              />
+              +91 8655997455{" "}
+            </a>
           </li>
         </ul>
       </footer>
-      <div className="bottom">2022, Digiligence copyright</div>
+      <div className="bottom">©️ 2023, Digiligence. All Rights Reserved</div>
     </Fragment>
   );
 }

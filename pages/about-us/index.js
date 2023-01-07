@@ -67,7 +67,7 @@ const about = [
 
   {
     img: "/images/AboutUs/SocialStratergy.png",
-    head: "Our Mission",
+    head: "Our Vision",
     decription1:
       "We have Vision to help India reach the pinnacle of Digital success and contribute towards the growth of the nation. We believe in Mutual Growth; the organization plans on growing Internationally.",
     decription2:
